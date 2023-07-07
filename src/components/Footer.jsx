@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="absolute bottom-0 ">
         <div className="flex mb-10 gap-[20px] mx-auto">
           <div>
-            <img src="../../public/assets/logo.svg" alt="" />
+            <img src="../../src/assets/logo.svg" alt="" />
           </div>
           <div className="text-[#8F8F8F]">
             Copyright © 2023 Only web. All rights reserved.
