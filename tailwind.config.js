@@ -7,6 +7,9 @@ export default {
       colors: {
         purple_color: "#7A5AF8",
         white_color: "#FFFFFF",
+        border_color: "#DADADA",
+        light_purple_color: "#E5DEFF",
+        light_grey_color: "#8F8F8F",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
@@ -14,7 +17,6 @@ export default {
         dmSans: ["DM Sans ", "sans-serif"],
       },
     },
-    screens: {},
   },
   // eslint-disable-next-line no-undef
   plugins: [require("tw-elements-react/dist/plugin.cjs")],
