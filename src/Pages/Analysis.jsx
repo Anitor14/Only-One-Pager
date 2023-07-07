@@ -1,5 +1,5 @@
 const Analysis = () => {
-  return <div>Analysis</div>;
+  return <div>analysis</div>;
 };
 
 export default Analysis;
