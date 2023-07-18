@@ -9,7 +9,7 @@ export default {
         white_color: "#FFFFFF",
         border_color: "#DADADA",
         light_purple_color: "#E5DEFF",
-        light_grey_color: "#8F8F8F",
+        light_gray_color: "#8F8F8F",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
