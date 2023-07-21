@@ -1,31 +1,61 @@
+import { useState } from "react";
+import notificationBell from "../assets/images/notification.svg";
+import nLogo from "../assets/images/n_logo.svg";
+import navLogo from "../assets/images/nav_logo.png";
+import { NavLink } from "react-router-dom";
+import { Submenu } from "../components";
+
 const Navbar = () => {
+  const [showSubMenu, setShowSubMenu] = useState(false);
+
+  const handleSubMenuClose = (e) => {
+    setShowSubMenu(false);
+  };
   return (
-    <div className="border-b-2">
-      <div className=" max-w-[1512px] mx-auto ">
-        <div className="flex mt-[35px] w-full  justify-between mx-auto   ">
-          <div>
-            <img
-              className="w-[83px] h-[33px]"
-              src="../../src/assets/logo.svg"
-              alt=""
-            />
-          </div>
-          <div className="flex gap-[20px]">
-            <div>
-              <img src="../../src/assets/bell.svg" alt="" />
-            </div>
-            <div>
-              <img src="../../src/assets/n.svg" alt="" />
-            </div>
+    <nav className="h-32 border-b fixed border-border_color w-full sm:px-20 px-6 flex justify-center items-center bg-white">
+      <div className="xl:max-w-[1280px] w-full flex flex-col justify-center items-center">
+        <div className="h-[5.5rem] w-full flex items-center justify-between">
+          <img src={navLogo} className="w-20 h-8" />
+          <div className="flex items-center gap-5">
+            <img src={notificationBell} />
+            <img src={nLogo} onClick={() => setShowSubMenu((prev) => !prev)} />
           </div>
         </div>
-        <div className="flex pb-[46px] justify-center gap-[20px]">
-          <div>Dashboard</div>
-          <div>Templates</div>
-          <div>Analysis</div>
+        <div className="h-[2.5rem] w-full flex justify-center items-center gap-5">
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
+            }
+            to="/"
+          >
+            Dashboard
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
+            }
+            to="/template"
+          >
+            Template
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
+            }
+            to="/analysis"
+          >
+            Analysis
+          </NavLink>
         </div>
       </div>
-    </div>
+      {showSubMenu && <Submenu onClose={handleSubMenuClose} />}
+    </nav>
   );
 };
 

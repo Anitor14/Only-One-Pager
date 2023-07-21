@@ -14,7 +14,7 @@ const webData = [
 const Analysis = () => {
   return (
     <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
-      <div className=" w-[100%] sm:w-[80%] items-center justify-center grid grid-cols-[1fr] lg:grid-cols-[18rem,1fr] gap-6 lg:gap-3 mt-[3rem] ">
+      <div className=" w-full max-w-[66rem] items-center justify-center grid grid-cols-[1fr] lg:grid-cols-[18rem,1fr] gap-6 lg:gap-3 mt-[11.5rem] ">
         <div className="p-5  rounded border border-solid border-border_color min-h-[12rem] bg-white">
           <p className="text-left font-inter font-[500] text-[1rem] leading-normal">
             Total sites created.
@@ -52,7 +52,7 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                Week 2
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
                 Start
@@ -61,7 +61,7 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                Week 3
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
                 Start
@@ -70,7 +70,7 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                Week 4
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
                 Start
@@ -79,7 +79,7 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                Week 5
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
                 Start
@@ -88,7 +88,7 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                Week 6
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
                 Start
@@ -98,7 +98,7 @@ const Analysis = () => {
         </div>
       </div>
 
-      <div className="w-[100%] sm:w-[80%] mt-12 mb-[27rem]">
+      <div className="w-full max-w-[66rem] mt-12 mb-[27rem]">
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-5">
           All
         </p>

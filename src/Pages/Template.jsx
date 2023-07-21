@@ -5,12 +5,15 @@ const imagesDatum = [
   { name: "firstImage", image: firstTemplateImage },
   { name: "secondImage", image: secondTemplateImage },
   { name: "thirdImage", image: thirdTemplateImage },
+  { name: "firstImage", image: firstTemplateImage },
+  { name: "secondImage", image: secondTemplateImage },
+  { name: "thirdImage", image: thirdTemplateImage },
 ];
 
 const Template = () => {
   return (
     <div className="w-full sm:px-20 px-6 flex justify-center items-center bg-background_grey_color">
-      <div className="w-full max-w-[66rem] my-24 flex flex-col justify-center items-center bg-white text-center py-14 px-20 rounded-lg border border-border_color ">
+      <div className="w-full max-w-[66rem]  flex flex-col justify-center items-center bg-white text-center py-7 md:py-14 px-6 md:px-20 rounded-lg border my-64  border-border_color ">
         <p className="text-black_color font-inter font-[600] text-[1.5rem] leading-normal pb-5">
           Select Template
         </p>
@@ -22,7 +25,7 @@ const Template = () => {
           {imagesDatum.map((imageData, index) => {
             return (
               <div
-                className="bg-white rounded-lg overflow-hidden min-h-[13rem] shadow-md"
+                className="bg-white max-w-72 w-full rounded-lg overflow-hidden min-h-[13rem] shadow-md"
                 key={index}
               >
                 <img
@@ -30,6 +33,14 @@ const Template = () => {
                   alt={imageData.name}
                   className="w-full h-[10rem] object-cover"
                 />
+                <div className="w-full flex items-center justify-between p-3">
+                  <p className="text-purple_color font-inter font-[500] text-[1rem] leading-normal">
+                    Modern
+                  </p>
+                  <button className=" p-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+                    Select template
+                  </button>
+                </div>
               </div>
             );
           })}
