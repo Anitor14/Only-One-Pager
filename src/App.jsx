@@ -1,6 +1,14 @@
-import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components";
-import { Analysis, Dashboard, Profile, Template, Form } from "./Pages";
+import {
+  Analysis,
+  Dashboard,
+  Profile,
+  Template,
+  Form,
+  Upload,
+  SitePlan,
+} from "./Pages";
 
 function App() {
   return (
@@ -13,6 +21,8 @@ function App() {
           <Route path="/profile" element={<Profile />}></Route>
           <Route path="/analysis" element={<Analysis />}></Route>
           <Route path="/template" element={<Template />}></Route>
+          <Route path="/upload" element={<Upload />}></Route>
+          <Route path="/payment" element={<SitePlan />}></Route>
         </Routes>
         <Footer />
       </main>

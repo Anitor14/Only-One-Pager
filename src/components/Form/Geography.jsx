@@ -1,75 +1,62 @@
-import React from "react";
-
-export const Geography = () => {
+const Geography = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-      <div className="flex max-w-[700px] p-[20px] w-full  border-[1px] flex-col items-start gap-[20px]">
-        <div className="flex flex-col items-start gap-[10px]">
-          <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
-            Geography
-          </p>
-          <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
-            Tell us your location and target audience location
-          </p>
-        </div>
+    <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
+      <div className="flex flex-col items-start gap-[10px]">
+        <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
+          Geography
+        </p>
+        <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
+          Tell us your location and target audience location
+        </p>
+      </div>
 
+      <div className="flex flex-col w-full items-center justify-center gap-5">
         <div className="w-full">
           <select
-            className="border-[1px] text-[#8f8f8f] w-full h-[69px]"
-            name=""
-            id=""
+            className="border-[1px] rounded-[0.5rem] px-6 py-6 text-[#8f8f8f] w-full "
+            name="language"
+            id="language"
           >
-            <option className="text-center" value="">
+            <option className="text-left" value="language">
               --Select language--
             </option>
           </select>
         </div>
 
-        <div className="w-full border-[1px] h-[69px] justify-between flex flex-col sm:flex-row items-center px-[20px] rounded-[8px] bg-[#fff]">
-          <p className="text-center font-inter text-[16px]">
+        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
+          <p className="text-left font-inter text-[16px] text-black">
             Do you need google map integration
           </p>
           <div className="flex items-center gap-[44px]">
             <div className="flex items-center gap-[10px]">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" value="Yes" name="map" id="" />
               <p>Yes</p>
             </div>
             <div className="flex items-center gap-[10px]">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" value="No" name="map" id="" />
               <p>No</p>
             </div>
           </div>
         </div>
 
-        <div className="w-full border-[1px] h-[69px] justify-between flex flex-col sm:flex-row items-center px-[20px] rounded-[8px] bg-[#fff]">
-          <p className="text-center text-[#171717] font-inter text-[16px]">
+        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
+          <p className="text-left font-inter text-[16px] text-black">
             Do you have a domain
           </p>
           <div className="flex items-center gap-[44px]">
             <div className="flex items-center gap-[10px]">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" value="yes" name="domain" id="" />
               <p>Yes</p>
             </div>
             <div className="flex items-center gap-[10px]">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" value="no" name="domain" id="" />
               <p>No</p>
             </div>
           </div>
-        </div>
-
-        <div className="flex  items-start w-full justify-between">
-          <button className=" bg-[#fff] rounded-[8px] flex py-[14px] px-[25px] items-start gap-[10px]">
-            <p className="text-[#8f8f8f] font-inter text-[16px] font-normal leading-normal">
-              Previous
-            </p>
-          </button>
-          <button className="flex py-[11px] px-[25px] items-start gap-[10px] rounded-[8px] bg-[#7a5af8]">
-            <p className="text-[#fff] font-inter text-[16px] font-normal leading-normal">
-              Continue
-            </p>
-          </button>
         </div>
       </div>
     </div>
   );
 };
+
+export default Geography;

@@ -1,11 +1,10 @@
-import React from "react";
-import frame from "../assets/frame.svg";
-import { UploadTemplate } from "../UploadTemplate";
-import link from "../assets/link.svg";
+// import frame from "../assets/frame.svg";
+import { UploadTemplate } from "../components/UploadTemplate";
+// import link from "../assets/link.svg";
 import cross from "../assets/cross.svg";
-import { AddSection } from "../AddSection";
+import { AddSection } from "../components/AddSection";
 
-export const Upload = () => {
+const Upload = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex max-w-[850px] p-[20px] w-full flex-col items-start gap-[20px]">
@@ -54,3 +53,5 @@ export const Upload = () => {
     </div>
   );
 };
+
+export default Upload;

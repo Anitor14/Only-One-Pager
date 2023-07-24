@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import firstTemplateImage from "../assets/images/template_image_1.jpg";
 import secondTemplateImage from "../assets/images/template_image_2.jpg";
 import thirdTemplateImage from "../assets/images/template_image_3.jpg";
@@ -37,9 +38,12 @@ const Template = () => {
                   <p className="text-purple_color font-inter font-[500] text-[1rem] leading-normal">
                     Modern
                   </p>
-                  <button className=" p-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+                  <NavLink
+                    to={"/form"}
+                    className=" p-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+                  >
                     Select template
-                  </button>
+                  </NavLink>
                 </div>
               </div>
             );

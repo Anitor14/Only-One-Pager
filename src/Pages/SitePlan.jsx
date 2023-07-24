@@ -1,21 +1,20 @@
-import React from "react";
 import check from "../assets/check.svg";
 import paypal from "../assets/paypal.svg";
 import stripe from "../assets/stripe.svg";
 import crypto from "../assets/crypto.svg";
 
-export const SitePlan = () => {
+const SitePlan = () => {
   return (
-    <div className=" h-screen  flex justify-center items-center">
-      <div className="flex max-w-[500px] p-[20px] w-full  flex-col items-start gap-[20px]">
-        <div className="flex flex-col items-start gap-[10px]">
+    <div className="w-full sm:px-20 px-6 flex justify-center items-center bg-background_grey_color">
+      <div className="flex max-w-[34rem]  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
+        <div className="flex w-full text-left flex-col items-start gap-[10px]">
           <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
             Site Plan
           </p>
         </div>
 
-        <div className="w-full  p-[30px] border-[1px] ">
-          <div className="flex justify-between items-center">
+        <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg border-border_color ">
+          <div className="flex w-full justify-between items-center">
             <p className="text-[#171717]  font-inter text-[24px] leading-normal">
               Basic Plan
             </p>
@@ -49,21 +48,23 @@ export const SitePlan = () => {
           </div>
 
           <div className="mt-[50px] flex w-full gap-[12px] justify-center items-center flex-col">
-            <div className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
               <img src={paypal} alt="" />
               <p className="font-inter text-[14px] font-[500]">Paypal</p>
-            </div>
-            <div className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
+            </button>
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
               <img src={stripe} alt="" />
               <p className="font-inter text-[14px]">Stripe</p>
-            </div>
-            <div className="border-[1px] h-[40px] rounded-[5px] bg-[#fff] flex items-center justify-center gap-[10px] w-full">
+            </button>
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff] flex items-center justify-center gap-[10px] w-full">
               <img src={crypto} alt="" />
               <p className="font-inter text-[14px]">Crypto</p>
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+export default SitePlan;

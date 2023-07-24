@@ -35,7 +35,7 @@ const previewData = [
 ];
 const Review = () => {
   return (
-    <div className="max-w-[66rem] w-full flex flex-col gap-10 items-center justify-center">
+    <div className="max-w-[55rem] w-full flex flex-col gap-10 items-center justify-center">
       <div className="text-left w-full">
         <p className="font-inter font-[600] text-[2.125rem] leading-normal text-black mb-2">
           Review
