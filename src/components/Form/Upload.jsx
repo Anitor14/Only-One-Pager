@@ -1,11 +1,11 @@
 import React from "react";
 import frame from "../assets/frame.svg";
-import { UploadTemplate } from "../components/UploadTemplate";
+import { UploadTemplate } from "../UploadTemplate";
 import link from "../assets/link.svg";
 import cross from "../assets/cross.svg";
-import { AddSection } from "../components/AddSection";
+import { AddSection } from "../AddSection";
 
-export const Almost = () => {
+export const Upload = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex max-w-[850px] p-[20px] w-full flex-col items-start gap-[20px]">
