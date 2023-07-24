@@ -271,7 +271,7 @@ const Profile = () => {
             {/* <p className="font-inter text-[#4B4B4B] font-[400] text-[0.875rem] leading-normal">
               Download
             </p> */}
-            <img src={download} alt="download svg" />
+            <img src={download} className="cursor-pointer" alt="download svg" />
           </div>
         </div>
       </div>
