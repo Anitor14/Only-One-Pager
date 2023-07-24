@@ -15,17 +15,28 @@ const Navbar = () => {
     <nav className="h-32 border-b fixed border-border_color w-full sm:px-20 px-6 flex justify-center items-center bg-white">
       <div className="xl:max-w-[1280px] w-full flex flex-col justify-center items-center">
         <div className="h-[5.5rem] w-full flex items-center justify-between">
-          <img src={navLogo} className="w-20 h-8" />
+          <NavLink to={"/"}>
+            <img src={navLogo} className="w-20 h-8" />
+          </NavLink>
           <div className="flex items-center gap-5">
-            <img src={notificationBell} />
-            <img src={nLogo} onClick={() => setShowSubMenu((prev) => !prev)} />
+            <img
+              src={notificationBell}
+              alt="notification-bell"
+              className="cursor-pointer"
+            />
+            <img
+              src={nLogo}
+              className="cursor-pointer"
+              alt="notification-bell"
+              onClick={() => setShowSubMenu((prev) => !prev)}
+            />
           </div>
         </div>
         <div className="h-[2.5rem] w-full flex justify-center items-center gap-5">
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                ? "font-inter font-[400] text-[0.875rem] leading-normal  text-black relative active-highlight"
                 : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
             }
             to="/"
@@ -35,7 +46,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black relative active-highlight"
                 : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
             }
             to="/template"
@@ -45,7 +56,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black"
+                ? "font-inter font-[400] text-[0.875rem] leading-normal text-black relative active-highlight"
                 : "font-inter font-[400] text-[0.875rem] leading-normal text-light_gray_color"
             }
             to="/analysis"

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 const Submenu = ({ onClose }) => {
   const submenuRef = useRef(null);
   useEffect(() => {
@@ -21,9 +22,13 @@ const Submenu = ({ onClose }) => {
       <p className="font-inter font-[400] text-[1rem] leading-normal text-light_gray_color">
         Norman@gmail.com
       </p>
-      <p className="font-inter font-[400] text-[1rem] leading-normal text-black">
+      <NavLink
+        to="/profile"
+        className="font-inter font-[400] text-[1rem] leading-normal text-black"
+        onClick={onClose}
+      >
         Profile
-      </p>
+      </NavLink>
       <div className="w-full h-[0.0625rem] bg-[#DADADA]" />
       <p className="font-inter font-[400] text-[1rem] leading-normal text-black">
         Logout

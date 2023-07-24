@@ -13,3 +13,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.active-highlight:after {
+  content: "";
+  width: 100%;
+  height: 0.1875rem;
+  background: black;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 0.125rem 0.125rem 0rem 0rem;
+  bottom: -10px;
+}

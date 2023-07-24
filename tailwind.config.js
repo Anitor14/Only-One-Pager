@@ -21,5 +21,5 @@ export default {
     },
   },
   // eslint-disable-next-line no-undef
-  plugins: [require("tw-elements-react/dist/plugin.cjs")],
+  plugins: [require("prettier-plugin-tailwindcss")],
 };

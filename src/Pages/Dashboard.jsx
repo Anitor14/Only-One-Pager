@@ -1,9 +1,23 @@
 import windowGrid from "../assets/images/window-grid.svg";
 import plusIcon from "../assets/images/plus.svg";
-import pen from "../assets/images/pen.svg";
-import view from "../assets/images/view.svg";
-import message from "../assets/images/message.svg";
-import copy from "../assets/images/copy.svg";
+import templateImage from "../assets/images/template_image_2.jpg";
+import templateImageTwo from "../assets/images/template_image_3.jpg";
+import { WebsiteDetail } from "../components";
+import { NavLink } from "react-router-dom";
+
+const webData = [
+  {
+    webName: "Arosa Agriculture",
+    webPicture: templateImage,
+    date: "27/04/2023",
+  },
+  {
+    webName: "Origin Racing",
+    webPicture: templateImageTwo,
+    date: "27/04/2023",
+  },
+];
+
 const Dashboard = () => {
   return (
     <div className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
@@ -17,21 +31,34 @@ const Dashboard = () => {
       </div>
       <div className="w-full max-w-[66rem] mt-12 border border-border_color  place-items-center grid gap-5 grid-cols-[1fr] sm:grid-cols-[1fr,1fr] py-12 px-16 rounded-[0.5rem]">
         <div className=" h-48 w-full grid place-items-center border border-border_color px-6 py-6">
-          <img src={plusIcon} />
-          <p className="font-inter font-[400] text-[0.875rem] leading-normal text-black">
-            Create new website
-          </p>
+          <NavLink
+            to={"/form"}
+            className="flex flex-col items-center justify-center gap-2"
+          >
+            <img src={plusIcon} />
+            <p className="font-inter font-[400] text-[0.875rem] leading-normal text-black">
+              Create new website
+            </p>
+          </NavLink>
         </div>
         <div className=" h-48 w-full grid place-items-center border border-border_color px-6 py-6">
-          <img src={windowGrid} />
-          <p className="font-inter font-[400] text-[0.875rem] leading-normal text-black">
-            Template
-          </p>
+          <NavLink
+            to={"/form"}
+            className="flex flex-col items-center justify-center gap-2"
+          >
+            <img src={windowGrid} />
+            <p className="font-inter font-[400]  leading-normal text-black text-[0.875rem]">
+              Template
+            </p>
+          </NavLink>
         </div>
       </div>
 
       <div className="flex flex-col w-full mt-12 mb-16 gap-4 items-center justify-center">
-        <div className="w-full max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color py-5 px-5 rounded-[0.5rem]">
+        {webData.map((webDatum, index) => {
+          return <WebsiteDetail key={index} {...webDatum} />;
+        })}
+        {/* <div className="w-full max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color py-5 px-5 rounded-[0.5rem]">
           <div className="flex items-center  gap-6">
             <div className="w-6 h-6 bg-[#eee]"></div>
             <div className="flex flex-col items-left justify-between">
@@ -73,7 +100,7 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-        <div className="w-full max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color py-5 px-5 rounded-[0.5rem]">
+        <div className="w-full  max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color py-5 px-5 rounded-[0.5rem]">
           <div className="flex items-center  gap-6">
             <div className="w-6 h-6 bg-[#eee]"></div>
             <div className="flex flex-col items-left justify-between">
@@ -114,7 +141,7 @@ const Dashboard = () => {
               Copy
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
