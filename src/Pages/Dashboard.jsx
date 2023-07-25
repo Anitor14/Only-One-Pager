@@ -43,7 +43,7 @@ const Dashboard = () => {
         </div>
         <div className=" h-48 w-full grid place-items-center border border-border_color px-6 py-6">
           <NavLink
-            to={"/form"}
+            to={"/template"}
             className="flex flex-col items-center justify-center gap-2"
           >
             <img src={windowGrid} />

@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center gap-20 mt-10">
-          <p className="text-light_gray_color font-inter text-[0.875rem] font-normal leading-normal">
+          <p className=" xs:text-green text-light_gray_color font-inter text-[0.875rem] font-normal leading-normal">
             Home
           </p>
           <p className="text-light_gray_color font-inter text-[0.875rem] font-normal leading-normal">

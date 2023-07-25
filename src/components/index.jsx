@@ -5,5 +5,21 @@ import Button from "./Button";
 import Submenu from "./Submenu";
 import ReviewLayout from "./Form/ReviewComponents/ReviewLayout";
 import WebsiteDetail from "./Dashboard/websiteDetail";
+import Geography from "./Form/Geography";
+import Design from "./Form/Design";
+import Communication from "./Form/Communication";
+import Business from "./Form/Business";
 
-export { Navbar, Footer, Review, Button, Submenu, ReviewLayout, WebsiteDetail };
+export {
+  Navbar,
+  Footer,
+  Review,
+  Button,
+  Submenu,
+  ReviewLayout,
+  WebsiteDetail,
+  Geography,
+  Design,
+  Communication,
+  Business,
+};
