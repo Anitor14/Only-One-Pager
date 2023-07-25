@@ -4,7 +4,7 @@ const Communication = ({ formData, handleInputChange }) => {
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex flex-col items-start gap-[10px]">
         <p className="text-[#171717] font-inter text-left text-[34px] font-[600] leading-normal">
-          COMMUNICATION
+          Communication
         </p>
         <p className="text-[#8f8f8f] font-inter text-left text-[16px] leading-normal">
           Connect social handles to your website to improve your online presence
