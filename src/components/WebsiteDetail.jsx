@@ -7,7 +7,6 @@ import { Tooltip } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 
 const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
-  console.log();
   return (
     <div className="w-full  max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem]">
       <div className="flex items-center  gap-6">
