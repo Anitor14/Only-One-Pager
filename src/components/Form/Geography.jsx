@@ -11,9 +11,9 @@ const Geography = ({
         <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
           Geography
         </p>
-        <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
+        {/* <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
           Tell us your location and target audience location
-        </p>
+        </p> */}
       </div>
 
       <div className="flex flex-col w-full items-center justify-center gap-5">

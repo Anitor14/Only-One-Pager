@@ -18,24 +18,28 @@ const Form = () => {
     domain: "yes",
   });
 
-  const nameIsValid = formData.name.trim() !== "";
-  const businessDetailsIsValid = formData.business_details.trim() !== "";
-  const languageIsValid = formData.language.trim() !== "";
+  const [nameIsValid, setNameIsValid] = useState(true);
+  const [businessDetailsIsValid, setBusinessDetailsIsValid] = useState(true);
+  const [languageIsValid, setLanguageIsValid] = useState(true);
 
-  const isStep1Valid = nameIsValid && businessDetailsIsValid;
   const isStep2Valid =
     formData.logo.trim() !== "" &&
     formData.color.trim() !== "" &&
     formData.font.trim() !== "";
   const isStep3Valid =
     formData.email.trim() !== "" && formData.social.trim() !== "";
-  const isStep4Valid =
-    languageIsValid !== "" && formData.map !== "" && formData.domain !== "";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData);
-    navigate("/payment");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (currentStep === 4) {
+      const isLanguageValid = formData.language.trim() !== "";
+      if (!isLanguageValid) {
+        setLanguageIsValid(isLanguageValid);
+      } else {
+        console.log(formData);
+        navigate("/payment");
+      }
+    }
   };
 
   const handleSelectLanguage = (value) => {
@@ -43,7 +47,7 @@ const Form = () => {
       ...prevFormData,
       language: value,
     }));
-    console.log(formData);
+    setLanguageIsValid(true);
   };
 
   const handleInputChange = (event) => {
@@ -52,17 +56,28 @@ const Form = () => {
       ...prevFormData,
       [name]: value,
     }));
-    console.log(formData);
+    if (name === "name") {
+      setNameIsValid(true);
+    }
+    if (name === "business_details") {
+      setBusinessDetailsIsValid(true);
+    }
   };
 
   const handleNext = (e) => {
     e.preventDefault();
-    //checking if the current step is valid before proceeding.
-    if (
-      (currentStep === 1 && isStep1Valid) ||
+    if (currentStep === 1) {
+      const isNameValid = formData.name.trim() !== "";
+      const isBusinessDetailsValid = formData.business_details.trim() !== "";
+      if (isNameValid && isBusinessDetailsValid) {
+        setCurrentStep((prevStep) => prevStep + 1);
+      } else {
+        setNameIsValid(isNameValid);
+        setBusinessDetailsIsValid(isBusinessDetailsValid);
+      }
+    } else if (
       (currentStep === 2 && isStep2Valid) ||
-      (currentStep === 3 && isStep3Valid) ||
-      (currentStep === 4 && isStep4Valid)
+      (currentStep === 3 && isStep3Valid)
     ) {
       setCurrentStep((prevStep) => prevStep + 1);
     }
@@ -107,37 +122,30 @@ const Form = () => {
   };
   return (
     <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
-      <form className="flex flex-col items-center justify-center mt-[11.5rem] mb-[27rem] w-full">
+      <form className="flex flex-col items-center justify-center mt-[11.5rem] mb-[12rem] sm:mb-[24rem] w-full">
         {renderForm()}
-        <div className="w-full max-w-[55rem] mt-14 flex items-center justify-between">
+        <div className="w-full max-w-[55rem] mt-6 flex items-center justify-between">
           <button
-            className="rounded-[0.5rem] border border-border_color py-4 px-6 bg-white font-inter text-[1rem] font-[500] text-light_gray_color leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75"
+            className={` ${
+              currentStep === 1 ? "invisible" : "block"
+            } rounded-[0.5rem] border border-border_color py-2 px-6 bg-white font-inter text-[1rem] font-[500] text-light_gray_color leading-normal w-28 `}
             onClick={handlePrevious}
-            disabled={currentStep == 1 ? true : false}
           >
             Previous
           </button>
           {currentStep == 4 ? (
             <button
-              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75 "
+              className={`rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28  `}
               onClick={handleSubmit}
-              disabled={
-                !isStep1Valid || !isStep2Valid || !isStep3Valid || !isStep4Valid
-              }
             >
               Submit
             </button>
           ) : (
             <button
-              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75"
+              className="rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 "
               onClick={handleNext}
-              disabled={
-                (currentStep === 1 && !isStep1Valid) ||
-                (currentStep === 2 && !isStep2Valid) ||
-                (currentStep === 3 && !isStep3Valid)
-              }
             >
-              Next
+              Continue
             </button>
           )}
         </div>

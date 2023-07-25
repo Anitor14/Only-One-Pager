@@ -14,7 +14,7 @@ const imagesDatum = [
 const Template = () => {
   return (
     <div className="w-full sm:px-20 px-6 flex justify-center items-center bg-background_grey_color">
-      <div className="w-full max-w-[66rem]  flex flex-col justify-center items-center bg-white text-center py-7 md:py-14 px-6 md:px-20 rounded-lg border my-64  border-border_color ">
+      <div className="w-full max-w-[66rem]  flex flex-col justify-center items-center bg-white text-center py-7 md:py-14 px-6 md:px-20 rounded-lg border  my-48 sm:my-64  border-border_color ">
         <p className="text-black_color font-inter  text-[1.5rem] leading-normal font-[600] pb-5">
           Select Template
         </p>
