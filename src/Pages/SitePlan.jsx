@@ -7,6 +7,7 @@ import arrow from "../assets/arrow.svg";
 
 const SitePlan = () => {
   const navigate = useNavigate();
+  // add this comment
   return (
     <div className="w-full sm:px-20 px-6 flex justify-center items-center bg-background_grey_color">
       <div
