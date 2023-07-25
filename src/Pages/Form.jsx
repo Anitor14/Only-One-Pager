@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Geography, Design, Communication, Business } from "../components";
+import { useNavigate } from "react-router-dom";
 const Form = () => {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
 
   const [formData, setFormData] = useState({
-    name: "Oando filling station",
+    name: "",
     business_details: "",
-    message: "",
     logo: "yes",
     color: "yes",
     font: "yes",
@@ -33,8 +34,8 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here with the formData object
     console.log(formData);
+    navigate("/payment");
   };
 
   const handleSelectLanguage = (value) => {
@@ -46,7 +47,7 @@ const Form = () => {
   };
 
   const handleInputChange = (event) => {
-    const { name, value, type, checked } = event.target;
+    const { name, value } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
