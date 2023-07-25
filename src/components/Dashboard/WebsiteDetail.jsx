@@ -26,7 +26,7 @@ const WebsiteDetail = ({ webPicture, webName, date }) => {
       </div>
       <div className="flex items-center gap-5">
         <Tooltip
-          label={"Click to start a message line with the developers"}
+          label={"Message a developer"}
           color="violet"
           withArrow
           offset={10}
@@ -39,7 +39,7 @@ const WebsiteDetail = ({ webPicture, webName, date }) => {
           </button>
         </Tooltip>
         <Tooltip
-          label={"Click to continue editing your website."}
+          label={"Continue editing website."}
           color="violet"
           withArrow
           offset={10}
@@ -53,7 +53,7 @@ const WebsiteDetail = ({ webPicture, webName, date }) => {
         </Tooltip>
 
         <Tooltip
-          label={"Go to your website."}
+          label={"View your website."}
           color="violet"
           withArrow
           offset={10}
