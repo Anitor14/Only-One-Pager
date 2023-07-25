@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import pen from "../../assets/images/pen.svg";
 import view from "../../assets/images/view.svg";
 import message from "../../assets/images/message.svg";
 import copy from "../../assets/images/copy.svg";
 import { Tooltip } from "@mantine/core";
+import { NavLink } from "react-router-dom";
 
 const WebsiteDetail = ({ webPicture, webName, date }) => {
   return (
@@ -44,12 +46,15 @@ const WebsiteDetail = ({ webPicture, webName, date }) => {
           withArrow
           offset={10}
         >
-          <button className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+          <NavLink
+            to={"/upload"}
+            className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+          >
             <span>
               <img src={pen} alt="pen" />
             </span>
             Edit
-          </button>
+          </NavLink>
         </Tooltip>
 
         <Tooltip
