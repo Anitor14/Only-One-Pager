@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
-import pen from "../../assets/images/pen.svg";
-import view from "../../assets/images/view.svg";
-import message from "../../assets/images/message.svg";
-import copy from "../../assets/images/copy.svg";
+import pen from "../assets/images/pen.svg";
+import view from "../assets/images/view.svg";
+import message from "../assets/images/inbox.svg";
+import copy from "../assets/images/copy.svg";
 import { Tooltip } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 
@@ -35,7 +34,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <button className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
             <span>
-              <img src={message} alt="pen" />
+              <img src={message} alt="message" />
             </span>
             Message
           </button>
