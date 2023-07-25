@@ -1,5 +1,10 @@
 import { Select, Radio } from "@mantine/core";
-const Geography = ({ formData, handleInputChange, handleSelectLanguage }) => {
+const Geography = ({
+  formData,
+  handleInputChange,
+  handleSelectLanguage,
+  languageIsValid,
+}) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex flex-col items-start gap-[10px]">
@@ -25,6 +30,7 @@ const Geography = ({ formData, handleInputChange, handleSelectLanguage }) => {
               { value: "italian", label: "Italian" },
             ]}
             onChange={handleSelectLanguage}
+            error={languageIsValid !== true ? "pick a language" : ""}
           />
         </div>
 

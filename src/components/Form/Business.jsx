@@ -1,6 +1,11 @@
 import { Textarea } from "@mantine/core";
 import { TextInput } from "@mantine/core";
-const Business = ({ formData, handleInputChange }) => {
+const Business = ({
+  formData,
+  handleInputChange,
+  nameIsValid,
+  businessDetailsIsValid,
+}) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex w-full flex-col items-start text-left gap-[10px]">
@@ -21,6 +26,7 @@ const Business = ({ formData, handleInputChange }) => {
           value={formData.name}
           onChange={handleInputChange}
           withAsterisk
+          error={nameIsValid !== true ? "business name cannot be empty" : ""} // Add error prop to show error state if the name is invalid
         />
         <Textarea
           name="business_details"
@@ -30,6 +36,11 @@ const Business = ({ formData, handleInputChange }) => {
           radius="md"
           withAsterisk
           minRows={7}
+          error={
+            businessDetailsIsValid !== true
+              ? "business details cannot be empty"
+              : ""
+          }
         />
       </div>
     </div>

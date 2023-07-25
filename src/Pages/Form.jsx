@@ -17,6 +17,20 @@ const Form = () => {
     domain: "yes",
   });
 
+  const nameIsValid = formData.name.trim() !== "";
+  const businessDetailsIsValid = formData.business_details.trim() !== "";
+  const languageIsValid = formData.language.trim() !== "";
+
+  const isStep1Valid = nameIsValid && businessDetailsIsValid;
+  const isStep2Valid =
+    formData.logo.trim() !== "" &&
+    formData.color.trim() !== "" &&
+    formData.font.trim() !== "";
+  const isStep3Valid =
+    formData.email.trim() !== "" && formData.social.trim() !== "";
+  const isStep4Valid =
+    languageIsValid !== "" && formData.map !== "" && formData.domain !== "";
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle form submission here with the formData object
@@ -42,7 +56,15 @@ const Form = () => {
 
   const handleNext = (e) => {
     e.preventDefault();
-    setCurrentStep((prevStep) => prevStep + 1);
+    //checking if the current step is valid before proceeding.
+    if (
+      (currentStep === 1 && isStep1Valid) ||
+      (currentStep === 2 && isStep2Valid) ||
+      (currentStep === 3 && isStep3Valid) ||
+      (currentStep === 4 && isStep4Valid)
+    ) {
+      setCurrentStep((prevStep) => prevStep + 1);
+    }
   };
   const handlePrevious = (e) => {
     e.preventDefault();
@@ -53,7 +75,12 @@ const Form = () => {
     switch (currentStep) {
       case 1:
         return (
-          <Business handleInputChange={handleInputChange} formData={formData} />
+          <Business
+            handleInputChange={handleInputChange}
+            formData={formData}
+            nameIsValid={nameIsValid}
+            businessDetailsIsValid={businessDetailsIsValid}
+          />
         );
       case 2:
         return (
@@ -72,6 +99,7 @@ const Form = () => {
             handleInputChange={handleInputChange}
             formData={formData}
             handleSelectLanguage={handleSelectLanguage}
+            languageIsValid={languageIsValid}
           />
         );
     }
@@ -82,7 +110,7 @@ const Form = () => {
         {renderForm()}
         <div className="w-full max-w-[55rem] mt-14 flex items-center justify-between">
           <button
-            className="rounded-[0.5rem] border border-border_color py-4 px-6 bg-white font-inter text-[1rem] font-[500] text-light_gray_color leading-normal w-28 disabled:cursor-not-allowed"
+            className="rounded-[0.5rem] border border-border_color py-4 px-6 bg-white font-inter text-[1rem] font-[500] text-light_gray_color leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75"
             onClick={handlePrevious}
             disabled={currentStep == 1 ? true : false}
           >
@@ -90,15 +118,23 @@ const Form = () => {
           </button>
           {currentStep == 4 ? (
             <button
-              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28"
+              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75 "
               onClick={handleSubmit}
+              disabled={
+                !isStep1Valid || !isStep2Valid || !isStep3Valid || !isStep4Valid
+              }
             >
               Submit
             </button>
           ) : (
             <button
-              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28"
+              className="rounded-[0.5rem] border bg-purple_color border-border_color py-4 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 disabled:cursor-not-allowed disabled:opacity-75"
               onClick={handleNext}
+              disabled={
+                (currentStep === 1 && !isStep1Valid) ||
+                (currentStep === 2 && !isStep2Valid) ||
+                (currentStep === 3 && !isStep3Valid)
+              }
             >
               Next
             </button>
