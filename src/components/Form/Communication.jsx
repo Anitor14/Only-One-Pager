@@ -1,4 +1,5 @@
-const Communication = () => {
+import { Radio } from "@mantine/core";
+const Communication = ({ formData, handleInputChange }) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex flex-col items-start gap-[10px]">
@@ -12,34 +13,46 @@ const Communication = () => {
 
       <div className="flex flex-col w-full items-center justify-center gap-5">
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="text-left font-inter text-[16px] text-black">
+          <p className="font-inter text-[1rem] font-[400] leading-normal">
             Do you have a business email for contact
           </p>
-          <div className="flex items-center gap-[44px]">
-            <div className="flex items-center gap-[10px]">
-              <input type="checkbox" value="Yes" name="map" id="" />
-              <p>Yes</p>
-            </div>
-            <div className="flex items-center gap-[10px]">
-              <input type="checkbox" value="No" name="map" id="" />
-              <p>No</p>
-            </div>
+          <div className="flex items-center gap-10">
+            <Radio
+              value="yes"
+              label="Yes"
+              name="email"
+              onChange={handleInputChange}
+              checked={formData.email === "yes"}
+            />
+            <Radio
+              value="no"
+              label="No"
+              name="email"
+              onChange={handleInputChange}
+              checked={formData.email === "no"}
+            />
           </div>
         </div>
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="text-left font-inter text-[16px] text-black">
+          <p className="font-inter text-[1rem] font-[400] leading-normal">
             Would you like to link your business social handles to your website
           </p>
-          <div className="flex items-center gap-[44px]">
-            <div className="flex items-center gap-[10px]">
-              <input type="checkbox" value="yes" name="domain" id="" />
-              <p>Yes</p>
-            </div>
-            <div className="flex items-center gap-[10px]">
-              <input type="checkbox" value="no" name="domain" id="" />
-              <p>No</p>
-            </div>
+          <div className="flex items-center gap-10">
+            <Radio
+              value="yes"
+              label="Yes"
+              name="social"
+              onChange={handleInputChange}
+              checked={formData.social === "yes"}
+            />
+            <Radio
+              value="no"
+              label="No"
+              name="social"
+              onChange={handleInputChange}
+              checked={formData.social === "no"}
+            />
           </div>
         </div>
       </div>

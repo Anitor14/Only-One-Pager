@@ -1,4 +1,6 @@
-const Business = () => {
+import { Textarea } from "@mantine/core";
+import { TextInput } from "@mantine/core";
+const Business = ({ formData, handleInputChange }) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex w-full flex-col items-start text-left gap-[10px]">
@@ -12,17 +14,22 @@ const Business = () => {
       </div>
 
       <div className="flex flex-col gap-1.5 w-full ">
-        <label
-          htmlFor="business_details"
-          className="font-inter text-[0.875rem] font-[400] leading-normal text-black"
-        >
-          Tell us all about your business
-        </label>
-        <textarea
+        <TextInput
           type="text"
+          name="name"
+          label="Website Name"
+          value={formData.name}
+          onChange={handleInputChange}
+          withAsterisk
+        />
+        <Textarea
           name="business_details"
-          id="business_details"
-          className="w-full border border-border_color rounded-[0.5rem] p-6"
+          value={formData.business_details}
+          onChange={handleInputChange}
+          label="Tell us all about your business"
+          radius="md"
+          withAsterisk
+          minRows={7}
         />
       </div>
     </div>
