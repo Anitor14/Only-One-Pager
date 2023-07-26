@@ -67,40 +67,13 @@ const Analysis = () => {
                 Start
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center text-center">
-              <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 4
-              </p>
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
-              </p>
-            </div>
-            <div className="flex flex-col justify-center items-center text-center">
-              <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 5
-              </p>
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
-              </p>
-            </div>
-            <div className="flex flex-col justify-center items-center text-center">
-              <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 6
-              </p>
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
-              </p>
-            </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full max-w-[66rem] mt-12 mb-[27rem]">
+      <div className="w-full max-w-[66rem] mt-12 mb-[10rem] sm:mb-[20rem]">
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-5">
-          All
+          All Sites
         </p>
         <div className="w-full items-center justify-between px-5 py-1 grid grid-cols-[1fr,2rem] gap-8  rounded-[0.5rem] border border-border_color bg-white">
           <div className="flex justify-between items-center">
@@ -122,9 +95,9 @@ const Analysis = () => {
               );
             })}
           </div>
-          <div className="w-[2rem] flex items-center justify-end">
+          {/* <div className="w-[2rem] flex items-center justify-end">
             <img src={arrowLeftSvg} />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
