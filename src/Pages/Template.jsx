@@ -22,7 +22,7 @@ const Template = () => {
           Create no-code websites with templates that suits your business
           requirements
         </p>
-        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr,1fr,1fr] justify-between gap-5 mt-7 ">
+        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr,1fr,1fr] justify-between gap-5 gap-y-[3rem] mt-7 ">
           {imagesDatum.map((imageData, index) => {
             return (
               <div
@@ -48,6 +48,13 @@ const Template = () => {
               </div>
             );
           })}
+        </div>
+        <div className=" w-full flex justify-center mt-[50px]  text-[#fff]  ">
+          <button className="bg-[#7a5af8] rounded-[0.5rem] py-[0.3rem] px-[1.625rem] w-[8rem]">
+            <p className="text-[1rem] font-inter leading-normal font-[500]">
+              See More
+            </p>
+          </button>
         </div>
       </div>
     </div>
