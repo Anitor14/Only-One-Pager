@@ -33,27 +33,47 @@ const SitePlan = () => {
             </p>
           </div>
 
-          <div className="inline-flex flex-col  items-start mt-[50px] gap-[20px]">
+          <p className="font-inter font-[400] mt-4 text-[1rem] text-black ">
+            You only pay a monthly fee of €89 and a one-time setup fee of €159.
+          </p>
+
+          <div className="flex flex-col items-start mt-[2rem] gap-[20px]">
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Custom Domain</p>
+              <p>SEO optimized </p>
             </div>
 
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Custom Domain</p>
+              <p>Realtime Backups </p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Custom Domain</p>
+              <p>Global edge caching</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Custom Domain</p>
+              <p>Free domain for 1 year</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Custom Domain</p>
+              <p>Business email accounts</p>
+            </div>
+            <div className="flex items-center gap-[9px]">
+              <img src={check} alt="" />
+              <p>Automatic plugin updates</p>
+            </div>
+            <div className="flex items-center gap-[9px]">
+              <img src={check} alt="" />
+              <p>One Year Updates & Support </p>
+            </div>
+            <div className="flex items-center gap-[9px]">
+              <img src={check} alt="" />
+              <p>Global CDN with 28+ locations </p>
+            </div>
+            <div className="flex items-center gap-[9px]">
+              <img src={check} alt="" />
+              <p> Managed protection against malware </p>
             </div>
           </div>
 
