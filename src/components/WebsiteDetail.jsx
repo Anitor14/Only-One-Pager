@@ -25,14 +25,17 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
           </p>
         </div>
       </div>
-      <div className="flex max-sm:w-full overflow-x-auto items-center gap-5">
+      <div className="flex max-sm:w-full py-3 max-sm:overflow-x-auto items-center gap-5">
         <Tooltip
           label={"Message a developer"}
           color="violet"
           withArrow
           offset={10}
         >
-          <button className="inline-flex w-[8rem] items-center justify-center gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+          <button
+            className=" transform transition-[all_0.25s] hover:translate-y-[-0.25em]           inline-flex w-[8rem] items-center justify-center gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black
+          "
+          >
             <span>
               <img src={message} alt="message" />
             </span>
@@ -47,7 +50,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <NavLink
             to={"/upload"}
-            className="inline-flex items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+            className="inline-flex transform transition-[all_0.25s] hover:translate-y-[-0.25em] items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
           >
             <span>
               <img src={pen} alt="pen" />
@@ -64,7 +67,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <button
             disabled={preview === false}
-            className={`inline-flex items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%] `}
+            className={`inline-flex enabled:transform enabled:transition-[all_0.25s] enabled:hover:translate-y-[-0.25em] items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%] disabled:cursor-not-allowed`}
           >
             <span>
               <img src={view} alt="pen" />
@@ -81,7 +84,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <button
             disabled={preview === false}
-            className="inline-flex items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%]"
+            className="inline-flex enabled:transform enabled:transition-[all_0.25s] enabled:hover:translate-y-[-0.25em] items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%] disabled:cursor-not-allowed"
           >
             <span>
               <img src={copy} alt="pen" />
