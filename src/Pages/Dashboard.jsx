@@ -4,17 +4,18 @@ import templateImage from "../assets/images/template_image_2.jpg";
 import templateImageTwo from "../assets/images/template_image_3.jpg";
 import { WebsiteDetail } from "../components";
 import { NavLink } from "react-router-dom";
+import onlyLogo from "../assets/images/Vector.png"
 
 const webData = [
   {
     webName: "Arosa Agriculture",
-    webPicture: templateImage,
+    webPicture: onlyLogo,
     date: "27/04/2023",
     preview: false,
   },
   {
     webName: "Origin Racing",
-    webPicture: templateImageTwo,
+    webPicture: onlyLogo,
     date: "27/04/2023",
     preview: true,
   },
