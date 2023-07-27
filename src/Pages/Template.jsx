@@ -26,7 +26,7 @@ const Template = () => {
           {imagesDatum.map((imageData, index) => {
             return (
               <div
-                className="bg-white  w-full rounded-lg overflow-hidden min-h-[13rem] max-w-72 shadow-md"
+                className="bg-white  w-full rounded-lg overflow-hidden min-h-[13rem] max-w-72 shadow-md hover:scale-105 ease-in duration-300"
                 key={index}
               >
                 <img

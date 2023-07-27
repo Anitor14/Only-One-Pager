@@ -35,7 +35,7 @@ const Analysis = () => {
           </div>
           <div className="h-2 w-full bg-light_purple_color rounded-[1.875rem] mt-6">
             <div
-              className="h-2 bg-purple_color rounded-[1.875rem]"
+              className="h-2 bg-purple_color rounded-[1.875rem]  hover:scale-105 ease-in duration-300 cursor-pointer"
               style={{ width: "20%" }}
             ></div>
           </div>
