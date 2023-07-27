@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
   return (
-    <div className="w-full  max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem]">
+    <div className="w-full  max-w-[66rem] gap-6 flex flex-col sm:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-105 ease-in duration-300">
       <div className="flex items-center  gap-6">
         <div className="w-6 h-6 bg-[#eee] cursor-pointer">
           <img
