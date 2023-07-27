@@ -75,29 +75,24 @@ const Analysis = () => {
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-5">
           All Sites
         </p>
-        <div className="w-full items-center justify-between px-5 py-1 grid grid-cols-[1fr,2rem] gap-8  rounded-[0.5rem] border border-border_color bg-white">
-          <div className="flex justify-between items-center">
-            {webData.map((webDatum, index) => {
-              return (
-                <div
-                  className="flex justify-between gap-3 items-center"
-                  key={index}
-                >
-                  <img
-                    src={webDatum.webImage}
-                    alt={webDatum.webText}
-                    className=""
-                  />
-                  <p className="font-inter font-[400] text-[0.875rem] text-black">
-                    {webDatum.webText}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          {/* <div className="w-[2rem] flex items-center justify-end">
-            <img src={arrowLeftSvg} />
-          </div> */}
+        <div className="w-full items-center overflow-x-auto  px-5 py-1 flex justify-between rounded-[0.5rem] border border-border_color bg-white">
+          {webData.map((webDatum, index) => {
+            return (
+              <div
+                className="flex justify-between p-2 gap-3 items-center"
+                key={index}
+              >
+                <img
+                  src={webDatum.webImage}
+                  alt={webDatum.webText}
+                  className=""
+                />
+                <p className="font-inter font-[400] text-[0.875rem] text-black">
+                  {webDatum.webText}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
