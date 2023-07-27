@@ -32,7 +32,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
           withArrow
           offset={10}
         >
-          <button className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+          <button className="inline-flex transform transition-[all_0.25s] hover:translate-y-[-0.25em] items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
             <span>
               <img src={message} alt="message" />
             </span>
@@ -47,7 +47,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <NavLink
             to={"/upload"}
-            className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+            className="inline-flex transform transition-[all_0.25s] hover:translate-y-[-0.25em] items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
           >
             <span>
               <img src={pen} alt="pen" />
@@ -64,7 +64,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <button
             disabled={preview === false}
-            className={`inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%] `}
+            className={`inline-flex enabled:transform enabled:transition-[all_0.25s] enabled:hover:translate-y-[-0.25em] items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%] `}
           >
             <span>
               <img src={view} alt="pen" />
@@ -81,7 +81,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
         >
           <button
             disabled={preview === false}
-            className="inline-flex items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%]"
+            className="inline-flex enabled:transform enabled:transition-[all_0.25s] enabled:hover:translate-y-[-0.25em] items-center gap-2 p-3 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black disabled:opacity-[40%]"
           >
             <span>
               <img src={copy} alt="pen" />
