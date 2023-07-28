@@ -135,14 +135,14 @@ const Form = () => {
           </button>
           {currentStep == 4 ? (
             <button
-              className={`hover:bg-[#fff] transform transition-[all_0.25s] hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28   `}
+              className={`hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28   `}
               onClick={handleSubmit}
             >
               Submit
             </button>
           ) : (
             <button
-              className="hover:bg-[#fff] transform transition-[all_0.25s] hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 "
+              className="hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 "
               onClick={handleNext}
             >
               Continue
