@@ -25,7 +25,6 @@
   background-color: transparent;
 }
 
-
 .active-highlight:after {
   content: "";
   width: 100%;
@@ -36,4 +35,43 @@
   position: absolute;
   border-radius: 0.125rem 0.125rem 0rem 0rem;
   bottom: -10px;
+}
+
+.quote {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+
+/* motivation.css */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 500ms,
+    transform 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition:
+    opacity 500ms,
+    transform 500ms;
 }

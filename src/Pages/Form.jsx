@@ -1,6 +1,30 @@
 import { useState } from "react";
 import { Geography, Design, Communication, Business } from "../components";
 import { useNavigate } from "react-router-dom";
+import motivationImage1 from "../assets/images/motivationImageOne.png";
+import motivationImage2 from "../assets/images/motivation-image-five.png";
+import motivationImage3 from "../assets/images/motivation-image-three.png";
+import motivationImage4 from "../assets/images/motivation-image-six.png";
+import Motivation from "../components/Form/Motivation";
+
+const motivationData = [
+  {
+    image: motivationImage1,
+    quote: "Keep going, you're on the right track!",
+  },
+  {
+    image: motivationImage2,
+    quote: "Let's journey together, step by step",
+  },
+  {
+    image: motivationImage3,
+    quote: "Keep the momentum, great things are ahead.",
+  },
+  {
+    image: motivationImage4,
+    quote: "Almost there! The cookies are just a click away",
+  },
+];
 const Form = () => {
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
@@ -22,6 +46,7 @@ const Form = () => {
   const [businessDetailsIsValid, setBusinessDetailsIsValid] = useState(true);
   const [languageIsValid, setLanguageIsValid] = useState(true);
 
+  const motivationDatum = motivationData[currentStep - 1];
   const isStep2Valid =
     formData.logo.trim() !== "" &&
     formData.color.trim() !== "" &&
@@ -122,6 +147,7 @@ const Form = () => {
   };
   return (
     <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
+      <Motivation {...motivationDatum} />
       <form className="flex flex-col items-center justify-center mt-[11.5rem] mb-[12rem] sm:mb-[24rem] w-full">
         {renderForm()}
         <div className="w-full max-w-[55rem] mt-6 flex items-center justify-between">
