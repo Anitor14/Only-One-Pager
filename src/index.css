@@ -27,7 +27,12 @@
 
 // matine select style.
 .mantine-1cn2mlo {
-  height: 4rem;
+  height: 4rem !important;
+}
+
+.mantine-1cu6yj8:checked {
+  background: #7a5af8 !important;
+  border-color: #7a5af8 !important;
 }
 
 .active-highlight:after {

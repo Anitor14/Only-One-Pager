@@ -1,15 +1,42 @@
 import { NavLink } from "react-router-dom";
-import firstTemplateImage from "../assets/images/template_image_1.jpg";
-import secondTemplateImage from "../assets/images/template_image_2.jpg";
-import thirdTemplateImage from "../assets/images/template_image_3.jpg";
+import firstTemplateImage from "../assets/images/firstTemplate.png";
+import secondTemplateImage from "../assets/images/secondTemplate.png";
+import thirdTemplateImage from "../assets/images/thirdTemplate.png";
+import fourthTemplateImage from "../assets/images/fourthTemplate.png";
+import fifthTemplateImage from "../assets/images/fifthTemplate.png";
+import sixthTemplateImage from "../assets/images/sixthTemplate.png";
 
 const imagesDatum = [
-  { name: "firstImage", image: firstTemplateImage },
-  { name: "secondImage", image: secondTemplateImage },
-  { name: "thirdImage", image: thirdTemplateImage },
-  { name: "firstImage", image: firstTemplateImage },
-  { name: "secondImage", image: secondTemplateImage },
-  { name: "thirdImage", image: thirdTemplateImage },
+  {
+    name: "firstTemplate",
+    image: firstTemplateImage,
+    url: "https://www.elegantthemes.com/layouts/hvac/hvac-landing-page/live-demo",
+  },
+  {
+    name: "secondTemplate",
+    image: secondTemplateImage,
+    url: "https://www.elegantthemes.com/layouts/veterinarian/veterinarian-landing-page/live-demo",
+  },
+  {
+    name: "thirdTemplate",
+    image: thirdTemplateImage,
+    url: "https://www.elegantthemes.com/layouts/poke-restaurant/poke-restaurant-landing-page/live-demo",
+  },
+  {
+    name: "fourthTemplate",
+    image: fourthTemplateImage,
+    url: "https://beresin.tokotema.com/",
+  },
+  {
+    name: "fifthTemplate",
+    image: fifthTemplateImage,
+    url: "https://htmldesigntemplates.com/eventen/template-kit/home/",
+  },
+  {
+    name: "sixTemplate",
+    image: sixthTemplateImage,
+    url: "https://kitdemo.moxcreative.com/chattera/template-kit/homepage/",
+  },
 ];
 
 const Template = () => {
@@ -37,9 +64,12 @@ const Template = () => {
                 />
                 <div className="w-full flex items-center  justify-between p-3 ">
                   <div className="transform transition-[all_0.25s] hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] cursor-pointer">
-                    <p className="p-2 rounded-[0.25rem]   bg-[#fff] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-purple_color">
+                    <NavLink
+                      to={imageData.url}
+                      className="p-2 rounded-[0.25rem]   bg-[#fff] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-purple_color"
+                    >
                       Preview
-                    </p>
+                    </NavLink>
                   </div>
                   <NavLink
                     to={"/form"}

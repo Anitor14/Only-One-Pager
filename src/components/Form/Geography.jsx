@@ -11,9 +11,9 @@ const Geography = ({
         <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
           Geography
         </p>
-        {/* <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
-          Tell us your location and target audience location
-        </p> */}
+        <p className="text-[#8f8f8f] font-inter text-[16px] leading-normal">
+          Geo-enable your website, share your whereabouts
+        </p>
       </div>
 
       <div className="flex flex-col w-full items-center justify-center gap-5">
@@ -36,7 +36,7 @@ const Geography = ({
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you need google map integration
+            Do you need google map integration?
           </p>
           <div className="flex items-center gap-10">
             <Radio
@@ -58,22 +58,22 @@ const Geography = ({
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you have a business email for contact
+            Do you have a domain?
           </p>
           <div className="flex items-center gap-10">
             <Radio
               value="yes"
               label="Yes"
-              name="email"
+              name="domain"
               onChange={handleInputChange}
-              checked={formData.email === "yes"}
+              checked={formData.domain === "yes"}
             />
             <Radio
               value="no"
               label="No"
-              name="email"
+              name="domain"
               onChange={handleInputChange}
-              checked={formData.email === "no"}
+              checked={formData.domain === "no"}
             />
           </div>
         </div>

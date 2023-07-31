@@ -12,7 +12,7 @@ const Motivation = ({ image, quote }) => {
 
     const hideTimeout = setTimeout(() => {
       setIsShowing(false);
-    }, 4000);
+    }, 8000);
 
     return () => {
       clearTimeout(showTimeout);

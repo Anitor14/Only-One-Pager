@@ -32,14 +32,14 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     business_details: "",
-    logo: "yes",
-    color: "yes",
-    font: "yes",
-    email: "yes",
-    social: "yes",
+    logo: "",
+    color: "",
+    font: "",
+    email: "",
+    social: "",
     language: "",
-    map: "yes",
-    domain: "yes",
+    map: "",
+    domain: "",
   });
 
   const [nameIsValid, setNameIsValid] = useState(true);
@@ -154,7 +154,7 @@ const Form = () => {
           <button
             className={` ${
               currentStep === 1 ? "invisible" : "block"
-            } rounded-[0.5rem] border border-border_color py-2 px-6 bg-white font-inter text-[1rem] font-[500] text-light_gray_color leading-normal w-28 `}
+            } rounded-[0.5rem] border border-border_color py-2 px-6 bg-white font-inter text-[1rem] font-[500] text-purple_color leading-normal w-28 `}
             onClick={handlePrevious}
           >
             Previous
