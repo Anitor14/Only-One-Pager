@@ -4,7 +4,7 @@ import templateImage from "../assets/images/template_image_2.jpg";
 import templateImageTwo from "../assets/images/template_image_3.jpg";
 import { WebsiteDetail } from "../components";
 import { NavLink } from "react-router-dom";
-import onlyLogo from "../assets/images/Vector.png"
+import onlyLogo from "../assets/images/Vector-removebg-preview.png";
 
 const webData = [
   {

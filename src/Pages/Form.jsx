@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import motivationImage1 from "../assets/images/motivationImageOne.png";
 import motivationImage2 from "../assets/images/motivation-image-five.png";
 import motivationImage3 from "../assets/images/motivation-image-three.png";
-import motivationImage4 from "../assets/images/motivation-image-six.png";
+import motivationImage4 from "../assets/images/motivation-image-seven.png";
 import Motivation from "../components/Form/Motivation";
 
 const motivationData = [

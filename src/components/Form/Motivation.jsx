@@ -8,11 +8,11 @@ const Motivation = ({ image, quote }) => {
     setIsShowing(false);
     const showTimeout = setTimeout(() => {
       setIsShowing(true);
-    }, 500);
+    }, 50);
 
     const hideTimeout = setTimeout(() => {
       setIsShowing(false);
-    }, 6000);
+    }, 4000);
 
     return () => {
       clearTimeout(showTimeout);
@@ -27,7 +27,7 @@ const Motivation = ({ image, quote }) => {
       unmountOnExit
     >
       <div className="fixed flex top-[9rem] right-[-4px] justify-start items-center z-[1000]">
-        <div className="quote bg-light_purple_color border-border_color w-[15rem] h-[10rem] p-3 text-center grid place-items-center rounded-lg opacity-80">
+        <div className="quote bg-purple_color border-border_color w-[15rem] h-[10rem] p-3 text-center grid place-items-center rounded-lg opacity-80 ">
           <p className="font-inter text-white font-bold text-[1.2rem] mt-[-2rem]">
             {quote}
           </p>
