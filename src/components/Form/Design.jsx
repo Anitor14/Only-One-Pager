@@ -7,15 +7,14 @@ const Design = ({ formData, handleInputChange }) => {
           Design
         </p>
         <p className="text-[#8f8f8f] font-inter text-left text-[16px] leading-normal">
-          Customize your website in just a few click, select colors and
-          preferred fonts.
+          Customize your website in just a few click.
         </p>
       </div>
 
       <div className="flex flex-col w-full items-center justify-center gap-5">
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you already have a logo
+            Do you already have a logo?
           </p>
           <div className="flex items-center gap-10">
             <Radio
@@ -37,7 +36,7 @@ const Design = ({ formData, handleInputChange }) => {
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you have a brand color already
+            Do you have a brand color already?
           </p>
           <div className="flex items-center gap-10">
             <Radio

@@ -14,7 +14,7 @@ const Communication = ({ formData, handleInputChange }) => {
       <div className="flex flex-col w-full items-center justify-center gap-5">
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you have a business email for contact
+            Do you have a business email for contact?
           </p>
           <div className="flex items-center gap-10">
             <Radio
@@ -36,7 +36,7 @@ const Communication = ({ formData, handleInputChange }) => {
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Would you like to link your business social handles to your website
+            Would you like to link your business social handles to your website?
           </p>
           <div className="flex items-center gap-10">
             <Radio
