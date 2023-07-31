@@ -68,7 +68,7 @@ const Template = () => {
                       to={imageData.url}
                       className="p-2 rounded-[0.25rem]   bg-[#fff] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-purple_color"
                     >
-                      Preview
+                      Preview Site
                     </NavLink>
                   </div>
                   <NavLink
