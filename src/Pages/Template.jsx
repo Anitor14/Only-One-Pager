@@ -73,7 +73,7 @@ const Template = () => {
                   </div>
                   <NavLink
                     to={"/form"}
-                    className="transform transition-[all_0.25s] hover:translate-y-[-0.25em] cursor-pointer p-2 hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] rounded-[0.25rem] bg-[#eee] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+                    className="transform transition-[all_0.25s] active:translate-y-[-0.25em] cursor-pointer p-2 active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] rounded-[0.25rem] bg-[#eee] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-black"
                   >
                     Select template
                   </NavLink>
@@ -83,7 +83,7 @@ const Template = () => {
           })}
         </div>
         <div className=" w-full flex justify-center mt-[50px]  text-[#fff]  ">
-          <button className="bg-[#7a5af8] transform transition-[all_0.25s] hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:bg-[#fff] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] py-[0.3rem] px-[1.625rem] w-[8rem]">
+          <button className="hover:bg-[#7a5af8] hover:text-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] bg-[#fff] text-[#7a5af8] border-[1.5px] hover:border-purple_color rounded-[0.5rem] py-[0.3rem] px-[1.625rem] w-[8rem]">
             <p className="text-[1rem] font-inter leading-normal font-[500]">
               See More
             </p>
