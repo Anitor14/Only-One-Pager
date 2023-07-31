@@ -25,6 +25,11 @@
   background-color: transparent;
 }
 
+// matine select style.
+.mantine-1cn2mlo {
+  height: 4rem;
+}
+
 .active-highlight:after {
   content: "";
   width: 100%;
