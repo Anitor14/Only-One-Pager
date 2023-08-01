@@ -146,7 +146,7 @@ const Form = () => {
     }
   };
   return (
-    <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
+    <section className="w-full px-20 max-sm:px-6 flex flex-col justify-center items-center bg-background_grey_color">
       <Motivation {...motivationDatum} />
       <form className="flex flex-col items-center justify-center mt-[11.5rem] mb-[12rem] sm:mb-[24rem] w-full">
         {renderForm()}

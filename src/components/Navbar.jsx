@@ -18,7 +18,7 @@ const Navbar = () => {
           <NavLink to={"/"}>
             <img src={navLogo} className="w-20 h-8" />
           </NavLink>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 relative">
             <img
               src={notificationBell}
               alt="notification-bell"
@@ -30,6 +30,7 @@ const Navbar = () => {
               alt="notification-bell"
               onClick={() => setShowSubMenu((prev) => !prev)}
             />
+            {showSubMenu && <Submenu onClose={handleSubMenuClose} />}
           </div>
         </div>
         <div className="h-[2.5rem] w-full flex justify-center items-center gap-5">
@@ -65,7 +66,6 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      {showSubMenu && <Submenu onClose={handleSubMenuClose} />}
     </nav>
   );
 };

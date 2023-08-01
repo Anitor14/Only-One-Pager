@@ -4,7 +4,7 @@ import bitcoin from "../assets/images/bitcoin.svg";
 import download from "../assets/images/download.svg";
 const Profile = () => {
   return (
-    <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
+    <section className="w-full px-20 max-sm:px-6 flex flex-col justify-center items-center bg-background_grey_color">
       <div className="w-full max-w-[66rem] items-start justify-start flex flex-col gap-5 mt-[11.5rem] mb-[17rem]">
         <div className="w-full max-w-[38rem] flex flex-col items-start justify-center gap-4">
           <p className="text-left font-inter text-black font-[600] text-[1.5rem] leading-normal">
