@@ -23,6 +23,7 @@ const Design = ({ formData, handleInputChange }) => {
               name="logo"
               onChange={handleInputChange}
               checked={formData.logo === "yes"}
+              className="cursor-pointer"
             />
             <Radio
               value="no"
@@ -30,6 +31,7 @@ const Design = ({ formData, handleInputChange }) => {
               name="logo"
               onChange={handleInputChange}
               checked={formData.logo === "no"}
+              className="cursor-pointer"
             />
           </div>
         </div>

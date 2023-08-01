@@ -5,11 +5,13 @@ import stripe from "../assets/stripe.svg";
 import crypto from "../assets/crypto.svg";
 import arrow from "../assets/arrow.svg";
 
+import paymentAnimation from "../assets/lottieFiles/animation_lks54fl9.json"
+
 const SitePlan = () => {
   const navigate = useNavigate();
   // add this comment
   return (
-    <div className="w-full sm:px-20 px-6 flex justify-center items-center bg-background_grey_color">
+    <div className="w-full px-20 max-sm:px-6 flex justify-center items-center bg-background_grey_color">
       <div
         className="w-8 h-8 rounded-[50%] bg-light_gray_color hover:opacity-70 flex items-center justify-between cursor-pointer absolute top-[150px] left-7 "
         onClick={() => navigate(-1)}
@@ -23,7 +25,7 @@ const SitePlan = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg border-border_color ">
+        <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg bg-white border-border_color ">
           <div className="flex w-full justify-between items-center">
             <p className="text-[#171717]  font-inter text-[24px] leading-normal">
               Basic Plan
@@ -78,15 +80,15 @@ const SitePlan = () => {
           </div>
 
           <div className="mt-[50px] flex w-full gap-[12px] justify-center items-center flex-col">
-            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full shadow-sm">
               <img src={paypal} alt="" />
               <p className="font-inter text-[14px] font-[500]">Paypal</p>
             </button>
-            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full">
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff]  flex items-center justify-center gap-[10px] w-full shadow-sm">
               <img src={stripe} alt="" />
               <p className="font-inter text-[14px]">Stripe</p>
             </button>
-            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff] flex items-center justify-center gap-[10px] w-full">
+            <button className="border-[1px] h-[40px] rounded-[5px] bg-[#fff] flex items-center justify-center gap-[10px] w-full shadow-sm">
               <img src={crypto} alt="" />
               <p className="font-inter text-[14px]">Crypto</p>
             </button>
