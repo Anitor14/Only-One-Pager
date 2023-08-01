@@ -34,7 +34,7 @@ const Motivation = ({ image, quote }) => {
         </div>
         <img
           src={image}
-          className="w-[7rem] h-[7rem] relative top-[100px] left-[-38px]"
+          className="w-[7rem] h-[7rem] object-contain relative top-[100px] left-[-38px]"
           alt="motivation image"
         />
       </div>
