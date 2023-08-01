@@ -66,6 +66,7 @@ const Template = () => {
                   <div className="transform transition-[all_0.25s] hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] cursor-pointer">
                     <NavLink
                       to={imageData.url}
+                      target="_blank"
                       className="p-2 rounded-[0.25rem]   bg-[#fff] hover:bg-purple_color hover:text-[#fff] font-inter font-[500] text-[0.875rem] leading-normal text-purple_color"
                     >
                       Preview
