@@ -4,21 +4,48 @@ import paypal from "../assets/paypal.svg";
 import stripe from "../assets/stripe.svg";
 import crypto from "../assets/crypto.svg";
 import arrow from "../assets/arrow.svg";
+import paymentAnimation from "../assets/gifs/payment_animation.gif";
 
-import paymentAnimation from "../assets/lottieFiles/animation_lks54fl9.json"
+// import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
 
 const SitePlan = () => {
   const navigate = useNavigate();
   // add this comment
   return (
-    <div className="w-full px-20 max-sm:px-6 flex justify-center items-center bg-background_grey_color">
+    <div className="w-full px-20 max-sm:px-6 flex justify-center items-center relative bg-background_grey_color">
       <div
         className="w-8 h-8 rounded-[50%] bg-light_gray_color hover:opacity-70 flex items-center justify-between cursor-pointer absolute top-[150px] left-7 "
         onClick={() => navigate(-1)}
       >
         <img src={arrow} className="mx-auto" />
       </div>
-      <div className="flex max-w-[34rem]  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
+
+      <div className="flex max-w-[34rem] relative  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
+        {/* <Lottie
+          options={{
+            animationData: paymentAnimation,
+            loop: true, // Enable looping
+            autoplay: true, // Auto-start animation
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid meet", // Adjust the aspect ratio
+              // preserveAspectRatio: "xMidYMid slice", // Adjust the aspect ratio
+            },
+            // Other options as needed
+          }}
+          height={300}
+          width={300}
+          style={{
+            height: "500px",
+            width: "500px",
+            position: "absolute",
+            top: "120px",
+            right: "-250px",
+          }}
+        /> */}
+        <img
+          src={paymentAnimation}
+          className="w-[200px] h-[200px] absolute top-[270px] right-[50px]"
+        />
         <div className="flex w-full text-left flex-col items-start gap-[10px]">
           <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
             Site Plan
