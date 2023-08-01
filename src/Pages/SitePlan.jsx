@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import Lottie from "lottie-react-web";
 import check from "../assets/check.svg";
 import paypal from "../assets/paypal.svg";
 import stripe from "../assets/stripe.svg";
 import crypto from "../assets/crypto.svg";
 import arrow from "../assets/arrow.svg";
+import paymentAnimation from "../assets/gifs/payment_animation.gif";
 
-import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
+// import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
 
 const SitePlan = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const SitePlan = () => {
       </div>
 
       <div className="flex max-w-[34rem] relative  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
-        <Lottie
+        {/* <Lottie
           options={{
             animationData: paymentAnimation,
             loop: true, // Enable looping
@@ -41,6 +41,10 @@ const SitePlan = () => {
             top: "120px",
             right: "-250px",
           }}
+        /> */}
+        <img
+          src={paymentAnimation}
+          className="w-[200px] h-[200px] absolute top-[270px] right-[50px]"
         />
         <div className="flex w-full text-left flex-col items-start gap-[10px]">
           <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
