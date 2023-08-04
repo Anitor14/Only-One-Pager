@@ -5,6 +5,9 @@ import stripe from "../assets/stripe.svg";
 import crypto from "../assets/crypto.svg";
 import arrow from "../assets/arrow.svg";
 import paymentAnimation from "../assets/gifs/payment_animation.gif";
+import Motivation from "../components/Form/Motivation";
+import yippieGifs from "../assets/gifs/yippie-gifs.gif";
+import teddyBearGif from "../assets/gifs/teddy-bear-gif.gif";
 
 // import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
 
@@ -21,38 +24,24 @@ const SitePlan = () => {
       </div>
 
       <div className="flex max-w-[34rem] relative  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
-        {/* <Lottie
-          options={{
-            animationData: paymentAnimation,
-            loop: true, // Enable looping
-            autoplay: true, // Auto-start animation
-            rendererSettings: {
-              preserveAspectRatio: "xMidYMid meet", // Adjust the aspect ratio
-              // preserveAspectRatio: "xMidYMid slice", // Adjust the aspect ratio
-            },
-            // Other options as needed
-          }}
-          height={300}
-          width={300}
-          style={{
-            height: "500px",
-            width: "500px",
-            position: "absolute",
-            top: "120px",
-            right: "-250px",
-          }}
-        /> */}
-        <img
-          src={paymentAnimation}
-          className="w-[200px] h-[200px] absolute top-[270px] right-[50px]"
+        <Motivation
+          image={teddyBearGif}
+          quote={
+            "Yippie!!! you have taken a bold step to building your website."
+          }
+          payment
         />
+
         <div className="flex w-full text-left flex-col items-start gap-[10px]">
           <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
             Site Plan
           </p>
         </div>
-
         <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg bg-white border-border_color ">
+          <img
+            src={paymentAnimation}
+            className="w-[200px] h-[200px] absolute top-[260px] right-[50px]"
+          />
           <div className="flex w-full justify-between items-center">
             <p className="text-[#171717]  font-inter text-[24px] leading-normal">
               Basic Plan

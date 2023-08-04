@@ -8,6 +8,10 @@ import {
   Form,
   Upload,
   SitePlan,
+  Register,
+  Login,
+  Verify,
+  Error,
 } from "./Pages";
 
 function App() {
@@ -23,6 +27,10 @@ function App() {
           <Route path="/template" element={<Template />}></Route>
           <Route path="/upload" element={<Upload />}></Route>
           <Route path="/payment" element={<SitePlan />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/user/verify-email" element={<Verify />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
         <Footer />
       </main>
