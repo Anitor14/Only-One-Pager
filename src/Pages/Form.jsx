@@ -44,7 +44,14 @@ const Form = () => {
 
   const [nameIsValid, setNameIsValid] = useState(true);
   const [businessDetailsIsValid, setBusinessDetailsIsValid] = useState(true);
+  const [logoIsValid, setLogoIsValid] = useState(true);
+  const [colorIsValid, setColorIsValid] = useState(true);
+  const [fontIsValid, setFontIsValid] = useState(true);
+  const [emailIsValid, setEmailIsValid] = useState(true);
+  const [socialIsValid, setSocialIsValid] = useState(true);
   const [languageIsValid, setLanguageIsValid] = useState(true);
+  const [mapIsValid, setMapIsValid] = useState(true);
+  const [domainIsValid, setDomainIsValid] = useState(true);
 
   const motivationDatum = motivationData[currentStep - 1];
   const isStep2Valid =
@@ -60,13 +67,16 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (currentStep === 4 && isStep4Valid) {
+    if (currentStep === 4) {
       const isLanguageValid = formData.language.trim() !== "";
-      if (!isLanguageValid) {
-        setLanguageIsValid(isLanguageValid);
-      } else {
-        console.log(formData);
+      const isMapValid = formData.map.trim() !== "";
+      const isDomainValid = formData.domain.trim() !== "";
+      if (isLanguageValid && isMapValid && isDomainValid) {
         navigate("/payment");
+      } else {
+        setLanguageIsValid(isLanguageValid);
+        setMapIsValid(isMapValid);
+        setDomainIsValid(isDomainValid);
       }
     }
   };
@@ -91,6 +101,27 @@ const Form = () => {
     if (name === "business_details") {
       setBusinessDetailsIsValid(true);
     }
+    if (name === "logo") {
+      setLogoIsValid(true);
+    }
+    if (name === "color") {
+      setColorIsValid(true);
+    }
+    if (name === "font") {
+      setFontIsValid(true);
+    }
+    if (name === "email") {
+      setEmailIsValid(true);
+    }
+    if (name === "social") {
+      setSocialIsValid(true);
+    }
+    if (name === "map") {
+      setMapIsValid(true);
+    }
+    if (name === "domain") {
+      setDomainIsValid(true);
+    }
   };
 
   const handleNext = (e) => {
@@ -104,13 +135,29 @@ const Form = () => {
         setNameIsValid(isNameValid);
         setBusinessDetailsIsValid(isBusinessDetailsValid);
       }
-    } else if (
-      (currentStep === 2 && isStep2Valid) ||
-      (currentStep === 3 && isStep3Valid)
-    ) {
-      setCurrentStep((prevStep) => prevStep + 1);
+    } else if (currentStep === 2) {
+      const isLogoValid = formData.logo.trim() !== "";
+      const isColorIsValid = formData.color.trim() !== "";
+      const isFontValid = formData.font.trim() !== "";
+      if (isLogoValid && isColorIsValid && isFontValid) {
+        setCurrentStep((prevStep) => prevStep + 1);
+      } else {
+        setLogoIsValid(isLogoValid);
+        setColorIsValid(isColorIsValid);
+        setFontIsValid(isFontValid);
+      }
+    } else if (currentStep === 3) {
+      const isEmailValid = formData.email.trim() !== "";
+      const isSocialValid = formData.social.trim() !== "";
+      if (isEmailValid && isSocialValid) {
+        setCurrentStep((prevStep) => prevStep + 1);
+      } else {
+        setEmailIsValid(isEmailValid);
+        setSocialIsValid(isSocialValid);
+      }
     }
   };
+
   const handlePrevious = (e) => {
     e.preventDefault();
     setCurrentStep((prevStep) => prevStep - 1);
@@ -129,12 +176,20 @@ const Form = () => {
         );
       case 2:
         return (
-          <Design handleInputChange={handleInputChange} formData={formData} />
+          <Design
+            handleInputChange={handleInputChange}
+            logoIsValid={logoIsValid}
+            colorIsValid={colorIsValid}
+            fontIsValid={fontIsValid}
+            formData={formData}
+          />
         );
       case 3:
         return (
           <Communication
             handleInputChange={handleInputChange}
+            socialIsValid={socialIsValid}
+            emailIsValid={emailIsValid}
             formData={formData}
           />
         );
@@ -145,6 +200,8 @@ const Form = () => {
             formData={formData}
             handleSelectLanguage={handleSelectLanguage}
             languageIsValid={languageIsValid}
+            mapIsValid={mapIsValid}
+            domainIsValid={domainIsValid}
           />
         );
     }

@@ -4,6 +4,8 @@ const Geography = ({
   handleInputChange,
   handleSelectLanguage,
   languageIsValid,
+  mapIsValid,
+  domainIsValid,
 }) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
@@ -55,6 +57,11 @@ const Geography = ({
             />
           </div>
         </div>
+        {mapIsValid === false ? (
+          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+        ) : (
+          ""
+        )}
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
@@ -77,6 +84,11 @@ const Geography = ({
             />
           </div>
         </div>
+        {domainIsValid === false ? (
+          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

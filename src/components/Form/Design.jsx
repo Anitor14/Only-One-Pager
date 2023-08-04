@@ -1,5 +1,11 @@
 import { Radio } from "@mantine/core";
-const Design = ({ formData, handleInputChange }) => {
+const Design = ({
+  formData,
+  handleInputChange,
+  logoIsValid,
+  colorIsValid,
+  fontIsValid,
+}) => {
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex flex-col items-start gap-[10px]">
@@ -35,6 +41,11 @@ const Design = ({ formData, handleInputChange }) => {
             />
           </div>
         </div>
+        {logoIsValid === false ? (
+          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+        ) : (
+          ""
+        )}
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
@@ -57,6 +68,11 @@ const Design = ({ formData, handleInputChange }) => {
             />
           </div>
         </div>
+        {colorIsValid === false ? (
+          <p className="w-full text-left text-red-500 text-sm">check a box</p>
+        ) : (
+          ""
+        )}
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
@@ -79,6 +95,11 @@ const Design = ({ formData, handleInputChange }) => {
             />
           </div>
         </div>
+        {fontIsValid === false ? (
+          <p className="w-full text-left text-red-500 text-sm">check a box</p>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
