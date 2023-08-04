@@ -53,10 +53,14 @@ const Form = () => {
     formData.font.trim() !== "";
   const isStep3Valid =
     formData.email.trim() !== "" && formData.social.trim() !== "";
+  const isStep4Valid =
+    formData.language.trim() !== "" &&
+    formData.map.trim() !== "" &&
+    formData.domain.trim() !== "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (currentStep === 4) {
+    if (currentStep === 4 && isStep4Valid) {
       const isLanguageValid = formData.language.trim() !== "";
       if (!isLanguageValid) {
         setLanguageIsValid(isLanguageValid);
