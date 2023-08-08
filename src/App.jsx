@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, ScrollToTop } from "./components";
 import {
   Analysis,
   Dashboard,
@@ -12,27 +12,32 @@ import {
   Login,
   Verify,
   Error,
+  SharedLayout,
+  Landing,
 } from "./Pages";
 
 function App() {
   return (
     <BrowserRouter>
-      <main className="w-full overflow-hidden bg-background_grey_color">
-        <Navbar />
+      <ScrollToTop />
+      <main className="w-full h-full overflow-hidden bg-background_grey_color">
         <Routes>
-          <Route path="/" element={<Dashboard />}></Route>
-          <Route path="/form" element={<Form />}></Route>
-          <Route path="/profile" element={<Profile />}></Route>
-          <Route path="/analysis" element={<Analysis />}></Route>
-          <Route path="/template" element={<Template />}></Route>
-          <Route path="/upload" element={<Upload />}></Route>
-          <Route path="/payment" element={<SitePlan />}></Route>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="/analysis" element={<Analysis />} />
+            <Route path="/template" element={<Template />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/form" element={<Form />} />
+            <Route path="/upload" element={<Upload />} />
+            <Route path="/payment" element={<SitePlan />} />
+            <Route />
+          </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
-          <Route path="/user/verify-email" element={<Verify />}></Route>
+          <Route path="/landing" element={<Landing />}></Route>
+          <Route path="/verify-email" element={<Verify />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
-        <Footer />
       </main>
     </BrowserRouter>
   );

@@ -46,7 +46,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
           offset={10}
         >
           <NavLink
-            to={"/upload"}
+            to={"/dashboard/upload"}
             className="inline-flex transform transition-[all_0.25s] active:translate-y-[-0.25em] items-center justify-center w-[8rem] gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
           >
             <span>

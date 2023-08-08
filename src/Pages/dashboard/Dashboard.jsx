@@ -1,10 +1,10 @@
-import windowGrid from "../assets/images/window-grid.svg";
-import plusIcon from "../assets/images/plus.svg";
-import templateImage from "../assets/images/template_image_2.jpg";
-import templateImageTwo from "../assets/images/template_image_3.jpg";
-import { WebsiteDetail } from "../components";
+import windowGrid from "../../assets/images/window-grid.svg";
+import plusIcon from "../../assets/images/plus.svg";
+import templateImage from "../../assets/images/template_image_2.jpg";
+import templateImageTwo from "../../assets/images/template_image_3.jpg";
+import { WebsiteDetail } from "../../components";
 import { NavLink } from "react-router-dom";
-import onlyLogo from "../assets/images/Vector-removebg-preview.png";
+import onlyLogo from "../../assets/images/Vector-removebg-preview.png";
 
 const webData = [
   {

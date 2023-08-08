@@ -1,7 +1,7 @@
-import wallet from "../assets/images/wallet.svg";
-import paypal from "../assets/images/paypal.svg";
-import bitcoin from "../assets/images/bitcoin.svg";
-import download from "../assets/images/download.svg";
+import wallet from "../../assets/images/wallet.svg";
+import paypal from "../../assets/images/paypal.svg";
+import bitcoin from "../../assets/images/bitcoin.svg";
+import download from "../../assets/images/download.svg";
 const Profile = () => {
   return (
     <section className="w-full px-20 max-sm:px-6 flex flex-col justify-center items-center bg-background_grey_color">

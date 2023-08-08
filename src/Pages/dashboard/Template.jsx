@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import firstTemplateImage from "../assets/images/firstTemplate.png";
-import secondTemplateImage from "../assets/images/secondTemplate.png";
-import thirdTemplateImage from "../assets/images/thirdTemplate.png";
-import fourthTemplateImage from "../assets/images/fourthTemplate.png";
-import fifthTemplateImage from "../assets/images/fifthTemplate.png";
-import sixthTemplateImage from "../assets/images/sixthTemplate.png";
+import firstTemplateImage from "../../assets/images/firstTemplate.png";
+import secondTemplateImage from "../../assets/images/secondTemplate.png";
+import thirdTemplateImage from "../../assets/images/thirdTemplate.png";
+import fourthTemplateImage from "../../assets/images/fourthTemplate.png";
+import fifthTemplateImage from "../../assets/images/fifthTemplate.png";
+import sixthTemplateImage from "../../assets/images/sixthTemplate.png";
 
 const imagesDatum = [
   {

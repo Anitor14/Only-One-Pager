@@ -9,6 +9,7 @@ import Geography from "./Form/Geography";
 import Design from "./Form/Design";
 import Communication from "./Form/Communication";
 import Business from "./Form/Business";
+import ScrollToTop from "./ScrollToTop";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Design,
   Communication,
   Business,
+  ScrollToTop,
 };
