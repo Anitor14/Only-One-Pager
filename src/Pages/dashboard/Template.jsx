@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import firstTemplateImage from "../assets/images/firstTemplate.png";
-import secondTemplateImage from "../assets/images/secondTemplate.png";
-import thirdTemplateImage from "../assets/images/thirdTemplate.png";
-import fourthTemplateImage from "../assets/images/fourthTemplate.png";
-import fifthTemplateImage from "../assets/images/fifthTemplate.png";
-import sixthTemplateImage from "../assets/images/sixthTemplate.png";
+import firstTemplateImage from "../../assets/images/firstTemplate.png";
+import secondTemplateImage from "../../assets/images/secondTemplate.png";
+import thirdTemplateImage from "../../assets/images/thirdTemplate.png";
+import fourthTemplateImage from "../../assets/images/fourthTemplate.png";
+import fifthTemplateImage from "../../assets/images/fifthTemplate.png";
+import sixthTemplateImage from "../../assets/images/sixthTemplate.png";
 
 const imagesDatum = [
   {
@@ -42,7 +42,7 @@ const imagesDatum = [
 const Template = () => {
   return (
     <div className="w-full px-20 max-sm:px-6 flex justify-center items-center bg-background_grey_color">
-      <div className="w-full max-w-[66rem]  flex flex-col justify-center items-center bg-white text-center py-7 md:py-14 px-20 max-sm:px-6  rounded-lg border  my-48 sm:my-64  border-border_color ">
+      <div className="w-full max-w-[66rem]  flex flex-col justify-center items-center bg-white text-center py-7 md:py-14 px-20 max-sm:px-6  rounded-lg border   my-[12rem]   border-border_color ">
         <p className="text-black_color font-inter  text-[1.5rem] leading-normal font-[600] pb-5">
           Select Template
         </p>

@@ -1,14 +1,17 @@
-import Dashboard from "./Dashboard";
-import Template from "./Template";
-import Profile from "./Profile";
-import Analysis from "./Analysis";
-import Form from "./Form";
-import SitePlan from "./SitePlan";
-import Upload from "./Upload";
+import Dashboard from "./dashboard/Dashboard";
+import Template from "./dashboard/Template";
+import Profile from "./dashboard/Profile";
+import Analysis from "./dashboard/Analysis";
+import Form from "./dashboard/Form";
+import SitePlan from "./dashboard/SitePlan";
+import Upload from "./dashboard/Upload";
 import Login from "./Login";
 import Error from "./Error";
 import Register from "./Register";
 import Verify from "./Verify";
+import SharedLayout from "./dashboard/SharedLayout";
+import Landing from "./Landing";
+
 export {
   Dashboard,
   Template,
@@ -21,4 +24,6 @@ export {
   Register,
   Error,
   Verify,
+  SharedLayout,
+  Landing,
 };

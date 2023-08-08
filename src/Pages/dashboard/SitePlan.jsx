@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import check from "../assets/check.svg";
-import paypal from "../assets/paypal.svg";
-import stripe from "../assets/stripe.svg";
-import crypto from "../assets/crypto.svg";
-import arrow from "../assets/arrow.svg";
-import paymentAnimation from "../assets/gifs/payment_animation.gif";
-import Motivation from "../components/Form/Motivation";
-import yippieGifs from "../assets/gifs/yippie-gifs.gif";
-import teddyBearGif from "../assets/gifs/teddy-bear-gif.gif";
+import check from "../../assets/check.svg";
+import paypal from "../../assets/paypal.svg";
+import stripe from "../../assets/stripe.svg";
+import crypto from "../../assets/crypto.svg";
+import arrow from "../../assets/arrow.svg";
+import paymentAnimation from "../../assets/gifs/payment_animation.gif";
+import Motivation from "../../components/Form/Motivation";
+import yippieGifs from "../../assets/gifs/yippie-gifs.gif";
+import teddyBearGif from "../../assets/gifs/teddy-bear-gif.gif";
 
 // import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
 

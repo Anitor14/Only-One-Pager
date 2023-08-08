@@ -1,9 +1,9 @@
-import arrowDownSvg from "../assets/images/arrow-ios-down.svg";
-import dot from "../assets/images/dot.svg";
-import billing from "../assets/images/billing.svg";
-import monitor from "../assets/images/monitor.svg";
-import webUrlSvg from "../assets/images/web_url_logo.svg";
-import arrowLeftSvg from "../assets/images/arrow-ios-left.svg";
+import arrowDownSvg from "../../assets/images/arrow-ios-down.svg";
+import dot from "../../assets/images/dot.svg";
+import billing from "../../assets/images/billing.svg";
+import monitor from "../../assets/images/monitor.svg";
+import webUrlSvg from "../../assets/images/web_url_logo.svg";
+import arrowLeftSvg from "../../assets/images/arrow-ios-left.svg";
 
 const webData = [
   { webImage: monitor, webText: "Website name" },

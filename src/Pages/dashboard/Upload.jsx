@@ -1,8 +1,6 @@
-// import frame from "../assets/frame.svg";
-import { UploadTemplate } from "../components/UploadTemplate";
-// import link from "../assets/link.svg";
-import cross from "../assets/cross.svg";
-import { AddSection } from "../components/AddSection";
+import { UploadTemplate } from "../../components/UploadTemplate";
+import cross from "../../assets/cross.svg";
+import { AddSection } from "../../components/AddSection";
 
 const Upload = () => {
   return (
