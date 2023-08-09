@@ -1,7 +1,7 @@
 const Register = () => {
   return (
-    <div className="w-full px-20 max-sm:px-6  flex flex-col justify-center items-center bg-background_grey_color">
-      <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 mt-[11.5rem] mb-[9rem] sm:mb-[14rem] bg-white_color text-gray-800 font-inter">
+    <div className="w-full h-screen px-20 max-sm:px-6  flex flex-col justify-center items-center bg-background_grey_color">
+      <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10  bg-white_color text-gray-800 font-inter">
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-inter font-bold">Sign in</h1>
           <p className="text-sm font-inter text-gray-600">
