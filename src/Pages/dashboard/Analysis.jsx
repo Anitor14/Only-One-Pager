@@ -14,7 +14,7 @@ const webData = [
 const Analysis = () => {
   return (
     <section className="w-full sm:px-20 px-6 flex flex-col justify-center items-center bg-background_grey_color">
-      <div className=" w-full max-w-[66rem] items-center justify-center grid grid-cols-[1fr] lg:grid-cols-[18rem,1fr] gap-6 lg:gap-3 mt-[11.5rem] ">
+      <div className=" w-full max-w-[66rem] items-center justify-center grid grid-cols-[1fr] lg:grid-cols-[18rem,1fr] gap-6 lg:gap-3 mt-[11.5rem]">
         <div className="p-5  rounded border border-solid border-border_color min-h-[12rem] bg-white">
           <p className="text-left font-inter font-[500] text-[1rem] leading-normal">
             Total sites created.
