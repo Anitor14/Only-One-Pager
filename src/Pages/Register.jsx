@@ -1,11 +1,18 @@
 import { NavLink } from "react-router-dom";
 import loginImage from "../assets/images/login-image.png";
 import navLogo from "../assets/images/nav_logo.png";
+import { toast } from "react-toastify";
 const Register = () => {
   return (
-    <div className="w-full h-screen px-20 max-sm:px-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
+    <div className="w-full h-screen overflow-scroll px-20 max-sm:px-6 py-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
       <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10  bg-white_color text-gray-800 font-inter">
-        <img src={navLogo} className="w-20 h-8 mx-auto" />
+        <img
+          src={navLogo}
+          className="w-20 h-8 mx-auto"
+          onClick={() => {
+            toast.success("testing the microphone");
+          }}
+        />
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-inter font-bold">Register</h1>
           <p className="text-sm font-inter text-gray-600">
