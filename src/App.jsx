@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   Analysis,
   Dashboard,
@@ -21,6 +23,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <main className="w-full h-full overflow-hidden bg-background_grey_color">
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Dashboard />} />
