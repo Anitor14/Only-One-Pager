@@ -15,6 +15,7 @@ import {
   Verify,
   Error,
   SharedLayout,
+  ProtectedRoute,
   Landing,
 } from "./Pages";
 
@@ -25,7 +26,14 @@ function App() {
       <main className="w-full h-full overflow-hidden bg-background_grey_color">
         <ToastContainer />
         <Routes>
-          <Route path="/" element={<SharedLayout />}>
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <SharedLayout />
+              </ProtectedRoute>
+            }
+          >
             <Route index element={<Dashboard />} />
             <Route path="/analysis" element={<Analysis />} />
             <Route path="/template" element={<Template />} />

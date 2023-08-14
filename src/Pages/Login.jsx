@@ -1,7 +1,53 @@
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import loginImage from "../assets/images/login-image.png";
 import navLogo from "../assets/images/nav_logo.png";
+import { useAppContext } from "../context/appContext";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import {
+  Loader,
+  PasswordInput,
+  Progress,
+  Text,
+  Popover,
+  Box,
+  TextInput,
+} from "@mantine/core";
+const initialState = {
+  email: "",
+  password: "",
+};
 const Login = () => {
+  const navigate = useNavigate();
+  const [values, setValues] = useState(initialState);
+  const { setupUser, user, isLoading } = useAppContext();
+  const handleChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const { email, password } = values;
+    if (!email || !password) {
+      toast.error("please provide all the values");
+      return;
+    }
+    const currentUser = { email, password };
+    console.log("we are just getting started.");
+    setupUser({
+      currentUser,
+      endPoint: "login",
+    });
+  };
+  useEffect(() => {
+    if (user) {
+      console.log("this user is present", user);
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
+    }
+  }, [user, navigate]);
+
   return (
     <div className="w-full h-screen px-20 max-sm:px-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
       <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10  bg-white_color text-gray-800 font-inter">
@@ -9,52 +55,67 @@ const Login = () => {
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-inter font-bold">Login</h1>
           <p className="text-sm font-inter text-gray-600">
-            Sign in to access your account
+            Login to access your account
           </p>
         </div>
-        <form novalidate="" action="" className="space-y-12">
+        <form className="space-y-12" onSubmit={onSubmit}>
           <div className="space-y-4">
             <div>
-              <label for="email" className="block mb-2 text-sm">
-                Email address
-              </label>
-              <input
+              <TextInput
+                placeholder="Your email"
+                label="email"
                 type="email"
                 name="email"
-                id="email"
-                placeholder="leroy@jenkins.com"
-                className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800"
+                value={values.email}
+                onChange={handleChange}
+                required
+                styles={{
+                  label: {
+                    fontSize: "0.875rem",
+                    fontWeight: "400",
+                    marginBottom: "0.5rem",
+                  },
+                }}
               />
             </div>
             <div>
-              <div className="flex justify-between mb-2">
-                <label for="password" className="text-sm">
+              <PasswordInput
+                label="Your password"
+                name="password"
+                placeholder="Your password"
+                value={values.password}
+                onChange={handleChange}
+                required
+                styles={{
+                  label: {
+                    fontSize: "0.875rem",
+                    fontWeight: "400",
+                    marginBottom: "0.5rem",
+                  },
+                }}
+              />
+              <div className="flex justify-between mt-2">
+                {/* <label htmlFo="password" className="text-sm">
                   Password
-                </label>
+                </label> */}
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="text-xs hover:underline text-gray-600"
+                  className="text-xs w-full text-right hover:underline text-gray-600"
                 >
                   Forgot password?
                 </a>
               </div>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="*****"
-                className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800"
-              />
             </div>
           </div>
           <div className="space-y-2">
             <div className="bg-purple_color rounded-md">
               <button
-                type="button"
-                className="w-full px-8 py-3 font-semibold text-white"
+                type="submit"
+                className="w-full flex justify-center items-center px-8 py-3 font-semibold text-white"
+                disabled={isLoading}
               >
-                Sign in
+                {!isLoading ? "Log In" : <Loader color="gray" size="xs" />}
               </button>
             </div>
             <p className="px-6 text-sm text-center text-gray-600">

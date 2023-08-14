@@ -32,6 +32,7 @@ const Geography = ({
               { value: "italian", label: "Italian" },
             ]}
             onChange={handleSelectLanguage}
+            size="xl"
             error={languageIsValid !== true ? "pick a language" : ""}
           />
         </div>
@@ -58,7 +59,9 @@ const Geography = ({
           </div>
         </div>
         {mapIsValid === false ? (
-          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
@@ -85,7 +88,9 @@ const Geography = ({
           </div>
         </div>
         {domainIsValid === false ? (
-          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
