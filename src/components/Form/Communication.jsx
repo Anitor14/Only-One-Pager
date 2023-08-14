@@ -39,7 +39,9 @@ const Communication = ({
           </div>
         </div>
         {emailIsValid === false ? (
-          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
@@ -66,7 +68,9 @@ const Communication = ({
           </div>
         </div>
         {socialIsValid === false ? (
-          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+          <p className=" w-full mt-[-15px] text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}

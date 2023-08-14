@@ -5,6 +5,7 @@ import templateImageTwo from "../../assets/images/template_image_3.jpg";
 import { WebsiteDetail } from "../../components";
 import { NavLink } from "react-router-dom";
 import onlyLogo from "../../assets/images/Vector-removebg-preview.png";
+import { useAppContext } from "../../context/appContext";
 
 const webData = [
   {
@@ -22,11 +23,12 @@ const webData = [
 ];
 
 const Dashboard = () => {
+  const { user } = useAppContext();
   return (
     <div className="w-full px-20 max-sm:px-6  flex flex-col  justify-center items-center bg-background_grey_color">
       <div className="w-full max-w-[66rem] mt-[11.5rem]">
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-2">
-          Hello Norman,
+          Hello {user.name},
         </p>
         <p className="text-left font-inter font-[500] leading-normal text-[#8F8F8F] text-[1rem]">
           Start a new project from scratch or from our template list

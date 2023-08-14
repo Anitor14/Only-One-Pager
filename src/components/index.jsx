@@ -10,6 +10,7 @@ import Design from "./Form/Design";
 import Communication from "./Form/Communication";
 import Business from "./Form/Business";
 import ScrollToTop from "./ScrollToTop";
+import Loading from "./Loading";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Communication,
   Business,
   ScrollToTop,
+  Loading,
 };

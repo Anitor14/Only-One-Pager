@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { useAppContext } from "../context/appContext";
+
 const Submenu = ({ onClose }) => {
+  const { logoutUser } = useAppContext();
+
   const submenuRef = useRef(null);
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -14,13 +18,14 @@ const Submenu = ({ onClose }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [submenuRef, onClose]);
+  const { user } = useAppContext();
   return (
     <div
       className="absolute right-1 top-20 flex flex-col items-start justify-center gap-5  w-52 py-[1.8rem] px-[1.25rem] bg-white rounded-[0.5rem] shadow-md "
       ref={submenuRef}
     >
-      <p className="font-inter font-[400] text-[1rem] leading-normal text-light_gray_color">
-        Norman@gmail.com
+      <p className="font-inter font-[400] text-[1rem] leading-normal text-light_gray_color text-ellipsis">
+        {user.email}
       </p>
       <NavLink
         to="/profile"
@@ -30,7 +35,10 @@ const Submenu = ({ onClose }) => {
         Profile
       </NavLink>
       <div className="w-full h-[0.0625rem] bg-[#DADADA]" />
-      <p className="font-inter font-[400] text-[1rem] leading-normal text-black">
+      <p
+        className="font-inter font-[400] text-[1rem] leading-normal cursor-pointer text-black"
+        onClick={logoutUser}
+      >
         Logout
       </p>
       <div className="w-full h-[0.0625rem] bg-[#DADADA]" />

@@ -11,6 +11,7 @@ import Register from "./Register";
 import Verify from "./Verify";
 import SharedLayout from "./dashboard/SharedLayout";
 import Landing from "./Landing";
+import ProtectedRoute from "./ProtectedRoute";
 
 export {
   Dashboard,
@@ -26,4 +27,5 @@ export {
   Verify,
   SharedLayout,
   Landing,
+  ProtectedRoute,
 };

@@ -42,7 +42,9 @@ const Design = ({
           </div>
         </div>
         {logoIsValid === false ? (
-          <p className=" w-full  text-left text-red-500 text-sm">check a box</p>
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
@@ -69,7 +71,9 @@ const Design = ({
           </div>
         </div>
         {colorIsValid === false ? (
-          <p className="w-full text-left text-red-500 text-sm">check a box</p>
+          <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
@@ -96,7 +100,9 @@ const Design = ({
           </div>
         </div>
         {fontIsValid === false ? (
-          <p className="w-full text-left text-red-500 text-sm">check a box</p>
+          <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
+            select a field
+          </p>
         ) : (
           ""
         )}
