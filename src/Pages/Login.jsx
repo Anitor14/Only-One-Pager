@@ -5,15 +5,7 @@ import navLogo from "../assets/images/nav_logo.png";
 import { useAppContext } from "../context/appContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import {
-  Loader,
-  PasswordInput,
-  Progress,
-  Text,
-  Popover,
-  Box,
-  TextInput,
-} from "@mantine/core";
+import { Loader, PasswordInput, TextInput } from "@mantine/core";
 const initialState = {
   email: "",
   password: "",
@@ -50,7 +42,7 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen px-20 max-sm:px-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
-      <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10  bg-white_color text-gray-800 font-inter">
+      <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color  bg-white_color text-gray-800 font-inter">
         <img src={navLogo} className="w-20 h-8 mx-auto" />
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-inter font-bold">Login</h1>
