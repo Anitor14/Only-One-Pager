@@ -4,8 +4,12 @@ import nLogo from "../assets/images/n_logo.svg";
 import navLogo from "../assets/images/nav_logo.png";
 import { NavLink } from "react-router-dom";
 import { Submenu } from "../components";
+import { useAppContext } from "../context/appContext";
 
 const Navbar = () => {
+  const { user } = useAppContext();
+  const userName = user.name;
+  const firstChar = userName.charAt(0);
   const [showSubMenu, setShowSubMenu] = useState(false);
 
   const handleSubMenuClose = (e) => {
@@ -24,12 +28,18 @@ const Navbar = () => {
               alt="notification-bell"
               className="cursor-pointer"
             />
-            <img
+            {/* <img
               src={nLogo}
               className="cursor-pointer"
               alt="notification-bell"
               onClick={() => setShowSubMenu((prev) => !prev)}
-            />
+            /> */}
+            <div
+              className="w-[2.4rem] h-[2.4rem] rounded-full bg-black grid place-items-center cursor-pointer"
+              onClick={() => setShowSubMenu((prev) => !prev)}
+            >
+              <p className="text-[1rem] text-white font-bold">{firstChar}</p>
+            </div>
             {showSubMenu && <Submenu onClose={handleSubMenuClose} />}
           </div>
         </div>

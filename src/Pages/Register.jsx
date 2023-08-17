@@ -97,7 +97,7 @@ const Register = () => {
 
   return (
     <div className="w-full h-screen overflow-scroll px-20 max-sm:px-6 py-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
-      <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color  bg-white_color text-gray-800 font-inter">
+      <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color shadow-md bg-white_color text-gray-800 font-inter">
         <img src={navLogo} className="w-20 h-8 mx-auto" />
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-inter font-bold">Register</h1>
