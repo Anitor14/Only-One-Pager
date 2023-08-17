@@ -1,0 +1,88 @@
+{
+  "keyword": "Seulement",
+
+  "Dashboard": "Tableau de bord",
+  "Template": "Modèle",
+  "Analysis": "Analyse",
+
+  "DashboardText": "Bonjour {{Normand}}",
+  "DashboardSubText": "Commencez un nouveau projet à partir de zéro ou à partir de notre liste de modèles",
+  "DashboardNewSite": "Créer un nouveau site Web",
+  "DashboardTemplate": "Modèle",
+  "DashboardMessage": "Message",
+  "DashboardEdit": "Modifier",
+  "DashboardView": "Voir",
+  "DashboardCopy": "Copie",
+
+  "HoveredMessage": "Envoyer un message à un développeur",
+  "HoveredEdit": "Continuer la modification du site Web",
+  "HoveredView": "Afficher votre site Web",
+  "HoveredCopy": "Copiez l'URL de votre site Web",
+
+  "WebNameOne": "Arosa Agriculture",
+  "WebNameTwo": "Course d'origine",
+
+  "FooterText": "Copyright © 2023 Web uniquement. Tous droits réservés",
+  "FooterLink": "Maison",
+
+  "TemplateHeader": "Sélectionnez un modèle",
+  "TemplateSubHeader": "Créez des sites Web sans code avec des modèles adaptés aux besoins de votre entreprise",
+  "TemplatePreview": "Aperçu",
+  "TemplateSelect": "Sélectionnez un modèle",
+
+  "AnalysisText": "Nombre total de sites créés",
+  "AnalysisProgress": "En cours",
+  "AnalysisSelect": "Sélectionnez des projets",
+  "AnalysisWeekOne": "Début de la première semaine",
+  "AnalysisWeekTwo": "Début de la deuxième semaine",
+  "AnalysisWeekThree": "Début de la troisième semaine",
+  "AnalysisSites": "Tous les sites",
+  "AnalysisSitesWebName": "Nom du site Web",
+  "AnalysisWebUrl": "URL de site web",
+  "AnalysisBillingPlan": "Plan de facturation",
+  "AnalysisStatus": "Statut",
+
+  "BusinessHeader": "À propos de l'entreprise",
+  "BusinessSubHeader": "Ces informations seront utilisées pour personnaliser la meilleure interface adaptée aux besoins de votre entreprise",
+  "BusinessWebName": "Nom du site Web",
+  "BusinessInfo": "Parlez-nous de votre entreprise",
+
+  "DesignHeader": "Conception",
+  "DesignSubHeader": "Personnalisez votre site Web en quelques clics, sélectionnez les couleurs et les polices préférées",
+  "DesignQOne": "Avez-vous déjà un logo",
+  "DesignQTwo": "Avez-vous déjà une couleur de marque",
+  "DesignQThree": "Avez-vous déjà une police préférée",
+
+  "CommunicationHeader": "Communication",
+  "CommunicationSubHeader": "Connectez les identifiants sociaux à votre site Web pour améliorer votre présence en ligne",
+  "CommunicationQOne": "Avez-vous un e-mail professionnel pour le contact ?",
+  "CommunicationQTwo": "Souhaitez-vous lier les identifiants sociaux de votre entreprise à votre site Web",
+
+  "GeographySelect": "Choisir la langue",
+  "Spanish": "Espagnol",
+  "English": "Anglais",
+  "German": "Allemand",
+  "Dutch": "Néerlandais",
+  "Italian": "Italien",
+  "GeographyQOne": "Avez-vous besoin de l'intégration de google map",
+  "GeographyQTwo": "Avez-vous un e-mail professionnel pour le contact ?",
+
+  "SitePlanHeader": "Plan du site",
+  "BasicPlan": "Régime de base",
+  "SitePlanSubHeader": "Vous ne payez que des frais mensuels de 89 € et des frais d'installation uniques de 159 €",
+  "SitePlanF1": "Optimisé pour le référencement",
+  "SitePlanF2": "Sauvegardes en temps réel",
+  "SitePlanF3": "Mise en cache périphérique globale",
+  "SitePlanF4": "Domaine gratuit pendant 1 an",
+  "SitePlanF5": "Comptes de messagerie professionnels",
+  "SitePlanF6": "Mises à jour automatiques des plugins",
+  "SitePlanF7": "Mises à jour et assistance d'un an",
+  "SitePlanF8": "CDN mondial avec plus de 28 emplacements",
+  "SitePlanF9": "Protection gérée contre les logiciels malveillants",
+
+  "Continue": "Continuer",
+  "Previous": "Précédent",
+  "Yes": "Oui",
+  "No": "Non",
+  "See More": "Voir plus"
+}
