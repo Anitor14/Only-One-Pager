@@ -1,0 +1,88 @@
+{
+  "keyword": "Solo",
+
+  "Dashboard": "Panel",
+  "Template": "Plantilla",
+  "Analysis": "Análisis",
+
+  "DashboardText": "Hola {{Normando}}",
+  "DashboardSubText": "Comience un nuevo proyecto desde cero o desde nuestra lista de plantillas",
+  "DashboardNewSite": "Crear nuevo sitio web",
+  "DashboardTemplate": "Plantilla",
+  "DashboardMessage": "Mensaje",
+  "DashboardEdit": "Editar",
+  "DashboardView": "Vista",
+  "DashboardCopy": "Copiar",
+
+  "HoveredMessage": "Mensaje a un desarrollador",
+  "HoveredEdit": "Continuar editando sitio web",
+  "HoveredView": "Ver su sitio web",
+  "HoveredCopy": "Copie la URL de su sitio web",
+
+  "WebNameOne": "Arosa Agricultura",
+  "WebNameTwo": "Carreras de origen",
+
+  "FooterText": "Copyright © 2023 Solo web. Reservados todos los derechos",
+  "FooterLink": "Hogar",
+
+  "TemplateHeader": "Seleccionar plantilla",
+  "TemplateSubHeader": "Cree sitios web sin código con plantillas que se adapten a los requisitos de su negocio",
+  "TemplatePreview": "Avance",
+  "TemplateSelect": "Seleccionar plantilla",
+
+  "AnalysisText": "Total de sitios creados",
+  "AnalysisProgress": "En curso",
+  "AnalysisSelect": "Seleccionar proyectos",
+  "AnalysisWeekOne": "Comienzo de la semana uno",
+  "AnalysisWeekTwo": "Comienzo de la semana dos",
+  "AnalysisWeekThree": "Comienzo de la semana tres",
+  "AnalysisSites": "Todos los sitios",
+  "AnalysisSitesWebName": "Nombre del Sitio Web",
+  "AnalysisWebUrl": "URL del sitio web",
+  "AnalysisBillingPlan": "Plan de facturación",
+  "AnalysisStatus": "Estado",
+
+  "BusinessHeader": "Acerca de los negocios",
+  "BusinessSubHeader": "Esta información se utilizará para personalizar la mejor interfaz adaptada a sus necesidades comerciales.",
+  "BusinessWebName": "Nombre del Sitio Web",
+  "BusinessInfo": "Cuéntanos sobre tu negocio",
+
+  "DesignHeader": "Diseño",
+  "DesignSubHeader": "Personalice su sitio web con solo unos pocos clics, seleccione los colores y las fuentes preferidas",
+  "DesignQOne": "Ya tienes un logotipo?",
+  "DesignQTwo": "Ya tienes un color de marca?",
+  "DesignQThree": "Ya tienes una fuente preferida?",
+
+  "CommunicationHeader": "Communication",
+  "CommunicationSubHeader": "Connect social handles to your website to improve your online presence",
+  "CommunicationQOne": "Do you have a business email for contact",
+  "CommunicationQTwo": "Would you like to link your business social handles to your website",
+
+  "GeographySelect": "Seleccione el idioma",
+  "Spanish": "Español",
+  "English": "Inglés",
+  "German": "Alemán",
+  "Dutch": "Holandés",
+  "Italian": "Italiano",
+  "GeographyQOne": "Necesita la integración de mapas de Google?",
+  "GeographyQTwo": "Tienes un correo comercial para contacto?",
+
+  "SitePlanHeader": "Plan de sitio",
+  "BasicPlan": "Plan Básico",
+  "SitePlanSubHeader": "Solo paga una tarifa mensual de 89 € y una tarifa única de instalación de 159 €",
+  "SitePlanF1": "SEO optimizado",
+  "SitePlanF2": "Copias de seguridad en tiempo real",
+  "SitePlanF3": "Caché perimetral global",
+  "SitePlanF4": "Dominio gratis por 1 año",
+  "SitePlanF5": "cuentas de correo de empresa",
+  "SitePlanF6": "Actualizaciones automáticas de complementos",
+  "SitePlanF7": "Actualizaciones y soporte de un año",
+  "SitePlanF8": "CDN global con más de 28 ubicaciones",
+  "SitePlanF9": "Protección administrada contra malware",
+
+  "Continue": "Continuar",
+  "Previous": "Previo",
+  "Yes": "Sí",
+  "No": "No",
+  "See More": "Ver más"
+}

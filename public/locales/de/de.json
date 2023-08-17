@@ -1,0 +1,88 @@
+{
+  "keyword": "Nur",
+
+  "Dashboard": "Armaturenbrett",
+  "Template": "Vorlage",
+  "Analysis": "Analyse",
+
+  "DashboardText": "Hallo {{Norman}}",
+  "DashboardSubText": "Starten Sie ein neues Projekt von Grund auf oder mit unserer Vorlagenliste",
+  "DashboardNewSite": "Erstellen Sie eine neue Website",
+  "DashboardTemplate": "Vorlage",
+  "DashboardMessage": "Nachricht",
+  "DashboardEdit": "Bearbeiten",
+  "DashboardView": "Sicht",
+  "DashboardCopy": "Kopieren",
+
+  "HoveredMessage": "Schreiben Sie einem Entwickler eine Nachricht",
+  "HoveredEdit": "Bearbeiten Sie die Website weiter",
+  "HoveredView": "Sehen Sie sich Ihre Website an",
+  "HoveredCopy": "Kopieren Sie die URL Ihrer Website",
+
+  "WebNameOne": "Arosa Landwirtschaft",
+  "WebNameTwo": "Ursprungsrennen",
+
+  "FooterText": "Copyright © 2023 Nur Web. Alle Rechte vorbehalten",
+  "FooterLink": "Heim",
+
+  "TemplateHeader": "Vorlage auswählen",
+  "TemplateSubHeader": "Erstellen Sie Websites ohne Code mit Vorlagen, die Ihren Geschäftsanforderungen entsprechen",
+  "TemplatePreview": "Vorschau",
+  "TemplateSelect": "Vorlage auswählen",
+
+  "AnalysisText": "Gesamtzahl der erstellten Websites",
+  "AnalysisProgress": "Im Gange",
+  "AnalysisSelect": "Wählen Sie Projekte aus",
+  "AnalysisWeekOne": "Beginn der ersten Woche",
+  "AnalysisWeekTwo": "Beginn der zweiten Woche",
+  "AnalysisWeekThree": "Beginn der dritten Woche",
+  "AnalysisSites": "Alle Standorte",
+  "AnalysisSitesWebName": "Webseiten-Name",
+  "AnalysisWebUrl": "Webadresse",
+  "AnalysisBillingPlan": "Abrechnungsplan",
+  "AnalysisStatus": "Status",
+
+  "BusinessHeader": "Über das Geschäft",
+  "BusinessSubHeader": "Diese Informationen werden verwendet, um die beste Schnittstelle anzupassen, die auf Ihre Geschäftsanforderungen zugeschnitten ist",
+  "BusinessWebName": "Webseiten-Name",
+  "BusinessInfo": "Erzählen Sie uns von Ihrem Unternehmen",
+
+  "DesignHeader": "Design",
+  "DesignSubHeader": "Passen Sie Ihre Website mit nur wenigen Klicks an, wählen Sie Farben und bevorzugte Schriftarten aus",
+  "DesignQOne": "Haben Sie bereits ein Logo?",
+  "DesignQTwo": "Haben Sie bereits eine Markenfarbe?",
+  "DesignQThree": "Haben Sie bereits eine bevorzugte Schriftart??",
+
+  "CommunicationHeader": "Kommunikation",
+  "CommunicationSubHeader": "Verknüpfen Sie soziale Netzwerke mit Ihrer Website, um Ihre Online-Präsenz zu verbessern",
+  "CommunicationQOne": "Haben Sie eine geschäftliche E-Mail-Adresse zur Kontaktaufnahme?",
+  "CommunicationQTwo": "Möchten Sie die Social-Media-Kontakte Ihres Unternehmens mit Ihrer Website verknüpfen?",
+
+  "GeographySelect": "Sprache auswählen",
+  "Spanish": "Spanisch",
+  "English": "English",
+  "German": "Deutsch",
+  "Dutch": "Niederländisch",
+  "Italian": "Italienisch",
+  "GeographyQOne": "Benötigen Sie eine Google Map-Integration?",
+  "GeographyQTwo": "Haben Sie eine geschäftliche E-Mail-Adresse zur Kontaktaufnahme?",
+
+  "SitePlanHeader": "Lageplan",
+  "BasicPlan": "Basisplan",
+  "SitePlanSubHeader": "Sie zahlen lediglich eine monatliche Gebühr von 89 € und eine einmalige Einrichtungsgebühr von 159 €",
+  "SitePlanF1": "SEO-optimiert",
+  "SitePlanF2": "Echtzeit-Backups",
+  "SitePlanF3": "Globales Edge-Caching",
+  "SitePlanF4": "Kostenlose Domain für 1 Jahr",
+  "SitePlanF5": "Geschäftliche E-Mail-Konten",
+  "SitePlanF6": "Automatische Plugin-Updates",
+  "SitePlanF7": "Ein Jahr Updates und Support",
+  "SitePlanF8": "Globales CDN mit mehr als 28 Standorten",
+  "SitePlanF9": "Verwalteter Schutz vor Malware",
+
+  "Continue": "Weitermachen",
+  "Previous": "Vorherige",
+  "Yes": "Ja",
+  "No": "NEIN",
+  "See More": "Mehr sehen"
+}
