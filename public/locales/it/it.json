@@ -1,0 +1,88 @@
+{
+  "keyword": "Soltanto",
+
+  "Dashboard": "Pannello di controllo",
+  "Template": "Modello",
+  "Analysis": "Analisi",
+
+  "DashboardText": "Ciao {{Normanno}}",
+  "DashboardSubText": "Inizia un nuovo progetto da zero o dal nostro elenco di modelli",
+  "DashboardNewSite": "Crea nuovo sito web",
+  "DashboardTemplate": "Modello",
+  "DashboardMessage": "Messaggio",
+  "DashboardEdit": "Modificare",
+  "DashboardView": "Visualizzazione",
+  "DashboardCopy": "copia",
+
+  "HoveredMessage": "Invia un messaggio a uno sviluppatore",
+  "HoveredEdit": "Continua a modificare il sito web",
+  "HoveredView": "Visualizza il tuo sito web",
+  "HoveredCopy": "Copia l'URL del tuo sito web",
+
+  "WebNameOne": "Arosa Agricoltura",
+  "WebNameTwo": "Origine Racing",
+
+  "FooterText": "Copyright © 2023 Solo web. Tutti i diritti riservati",
+  "FooterLink": "Casa",
+
+  "TemplateHeader": "Seleziona Modello",
+  "TemplateSubHeader": "Crea siti Web senza codice con modelli adatti alle tue esigenze aziendali",
+  "TemplatePreview": "Anteprima",
+  "TemplateSelect": "Seleziona Modello",
+
+  "AnalysisText": "Siti totali creati",
+  "AnalysisProgress": "In corso",
+  "AnalysisSelect": "Seleziona Progetti",
+  "AnalysisWeekOne": "Inizio della prima settimana",
+  "AnalysisWeekTwo": "Inizio della seconda settimana",
+  "AnalysisWeekThree": "Inizio della terza settimana",
+  "AnalysisSites": "Tutti i siti",
+  "AnalysisSitesWebName": "Nome del sito web",
+  "AnalysisWebUrl": "URL del sito",
+  "AnalysisBillingPlan": "Piano di fatturazione",
+  "AnalysisStatus": "Stato",
+
+  "BusinessHeader": "A proposito di affari",
+  "BusinessSubHeader": "Queste informazioni verranno utilizzate per personalizzare la migliore interfaccia su misura per le tue esigenze aziendali",
+  "BusinessWebName": "Nome del sito web",
+  "BusinessInfo": "Parlaci della tua attività",
+
+  "DesignHeader": "Progetto",
+  "DesignSubHeader": "Personalizza il tuo sito web in pochi click, seleziona colori e font preferiti.",
+  "DesignQOne": "Hai già un logo?",
+  "DesignQTwo": "Hai già un colore di marca",
+  "DesignQThree": "Hai già un carattere preferito",
+
+  "CommunicationHeader": "Comunicazione",
+  "CommunicationSubHeader": "Collega i social handle al tuo sito web per migliorare la tua presenza online",
+  "CommunicationQOne": "Hai un'e-mail aziendale per il contatto",
+  "CommunicationQTwo": "Ti piacerebbe collegare le tue maniglie social aziendali al tuo sito web",
+
+  "GeographySelect": "Seleziona la lingua",
+  "Spanish": "Spagnolo",
+  "English": "Inglese",
+  "German": "Tedesco",
+  "Dutch": "Olandese",
+  "Italian": "Italiano",
+  "GeographyQOne": "Hai bisogno dell'integrazione di Google Maps",
+  "GeographyQTwo": "Hai un'e-mail aziendale per il contatto",
+
+  "SitePlanHeader": "Planimetria",
+  "BasicPlan": "Basic Plan",
+  "SitePlanSubHeader": "Paghi solo un canone mensile di € 89 e una tariffa una tantum di € 159",
+  "SitePlanF1": "Ottimizzazione SEO",
+  "SitePlanF2": "Backup in tempo reale",
+  "SitePlanF3": "Cache perimetrale globale",
+  "SitePlanF4": "Dominio gratuito per 1 anno",
+  "SitePlanF5": "Account di posta elettronica aziendali",
+  "SitePlanF6": "Aggiornamenti automatici dei plug-in",
+  "SitePlanF7": "Aggiornamenti e supporto per un anno",
+  "SitePlanF8": "CDN globale con oltre 28 sedi",
+  "SitePlanF9": "Protezione gestita contro il malware",
+
+  "Continue": "Continua",
+  "Previous": "Precedente",
+  "Yes": "SÌ",
+  "No": "NO",
+  "See More": "Vedi altro"
+}

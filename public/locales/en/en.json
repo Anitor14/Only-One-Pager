@@ -1,0 +1,88 @@
+{
+  "keyword": "Only",
+
+  "Dashboard": "Dashboard",
+  "Template": "Template",
+  "Analysis": "Analysis",
+
+  "DashboardText": "Hello {{Norman}}",
+  "DashboardSubText": "Start a new project from scratch or from our template list",
+  "DashboardNewSite": "Create new website",
+  "DashboardTemplate": "Template",
+  "DashboardMessage": "Message",
+  "DashboardEdit": "Edit",
+  "DashboardView": "View",
+  "DashboardCopy": "Copy",
+
+  "HoveredMessage": "Message a Developer",
+  "HoveredEdit": "Continue Editing Website",
+  "HoveredView": "View Your Website",
+  "HoveredCopy": "Copy Your Website URL",
+
+  "WebNameOne": "Arosa Agriculture",
+  "WebNameTwo": "Origin Racing",
+
+  "FooterText": "Copyright © 2023 Only web. All rights reserved.",
+  "FooterLink": "Home",
+
+  "TemplateHeader": "Select Template",
+  "TemplateSubHeader": "Create no-code websites with templates that suits your business requirements",
+  "TemplatePreview": "Preview",
+  "TemplateSelect": "Select Template",
+
+  "AnalysisText": "Total Sites Created",
+  "AnalysisProgress": "In Progress",
+  "AnalysisSelect": "Select Projects",
+  "AnalysisWeekOne": "Week One Start",
+  "AnalysisWeekTwo": "Week Two Start",
+  "AnalysisWeekThree": "Week Three Start",
+  "AnalysisSites": "All Sites",
+  "AnalysisSitesWebName": "Website Name",
+  "AnalysisWebUrl": "Website url",
+  "AnalysisBillingPlan": "Billing Plan",
+  "AnalysisStatus": "Status",
+
+  "BusinessHeader": "About Business",
+  "BusinessSubHeader": "This information will be used to customize the best interface tailored for your business need",
+  "BusinessWebName": "Website Name",
+  "BusinessInfo": "Tell us about your business",
+
+  "DesignHeader": "Design",
+  "DesignSubHeader": "Customize your website in just a few click, select colors and preferred fonts.",
+  "DesignQOne": "Do you already have a logo",
+  "DesignQTwo": "Do you have a brand color already",
+  "DesignQThree": "Do you already have a preferred font?",
+
+  "CommunicationHeader": "Communication",
+  "CommunicationSubHeader": "Connect social handles to your website to improve your online presence",
+  "CommunicationQOne": "Do you have a business email for contact",
+  "CommunicationQTwo": "Would you like to link your business social handles to your website",
+
+  "GeographySelect": "Select Language",
+  "Spanish": "Spanish",
+  "English": "English",
+  "German": "German",
+  "Dutch": "Dutch",
+  "Italian": "Italian",
+  "GeographyQOne": "Do you need google map integration",
+  "GeographyQTwo": "Do you have a business email for contact",
+
+  "SitePlanHeader": "Site Plan",
+  "BasicPlan": "Basic Plan",
+  "SitePlanSubHeader": "You only pay a monthly fee of €89 and a one-time setup fee of €159.",
+  "SitePlanF1": "SEO Optimized",
+  "SitePlanF2": "Realtime Backups",
+  "SitePlanF3": "Global Edge Caching",
+  "SitePlanF4": "Free domain for 1 year",
+  "SitePlanF5": "Business email accounts",
+  "SitePlanF6": "Automatic plugin updates",
+  "SitePlanF7": "One Year Updates & Support",
+  "SitePlanF8": "Global CDN with 28+ locations",
+  "SitePlanF9": "Managed protection against malware",
+
+  "Continue": "Continue",
+  "Previous": "Previous",
+  "Yes": "Yes",
+  "No": "No",
+  "See More": "See More"
+}
