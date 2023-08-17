@@ -5,7 +5,7 @@
   "Template": "Vorlage",
   "Analysis": "Analyse",
 
-  "DashboardText": "Hallo {{Norman}}",
+  "DashboardText": "Hallo ",
   "DashboardSubText": "Starten Sie ein neues Projekt von Grund auf oder mit unserer Vorlagenliste",
   "DashboardNewSite": "Erstellen Sie eine neue Website",
   "DashboardTemplate": "Vorlage",

@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <main className="w-full h-full overflow-hidden bg-background_grey_color">
-        <ToastContainer />
+        <ToastContainer autoClose={2000} />
         <Routes>
           <Route
             path="/"

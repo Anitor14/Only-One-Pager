@@ -1,13 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import {
-  Form,
-  Profile,
-  Analysis,
-  Template,
-  Upload,
-  SitePlan,
-  Dashboard,
-} from "../../Pages";
+import { Outlet } from "react-router-dom";
 import { Navbar, Footer } from "../../components";
 const SharedLayout = () => {
   return (

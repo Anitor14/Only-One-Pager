@@ -4,8 +4,10 @@ import message from "../assets/images/inbox.svg";
 import copy from "../assets/images/copy.svg";
 import { Tooltip } from "@mantine/core";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
+  const { t } = useTranslation();
   return (
     <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%] ease-in duration-300">
       <div className="flex items-center  gap-6">
@@ -27,7 +29,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
       </div>
       <div className="flex max-sm:w-full py-3 overflow-x-auto items-center gap-5">
         <Tooltip
-          label={"Message a developer"}
+          label={`${t("HoveredMessage")}`}
           color="violet"
           withArrow
           offset={10}
@@ -36,11 +38,11 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
             <span>
               <img src={message} alt="message" />
             </span>
-            Message
+            {t("DashboardMessage")}
           </button>
         </Tooltip>
         <Tooltip
-          label={"Continue editing website."}
+          label={`${t("HoveredEdit")}`}
           color="violet"
           withArrow
           offset={10}
@@ -52,12 +54,12 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
             <span>
               <img src={pen} alt="pen" />
             </span>
-            Edit
+            {t("DashboardEdit")}
           </NavLink>
         </Tooltip>
 
         <Tooltip
-          label={"View your website."}
+          label={`${t("HoveredView")}`}
           color="violet"
           withArrow
           offset={10}
@@ -69,12 +71,12 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
             <span>
               <img src={view} alt="pen" />
             </span>
-            View
+            {t("DashboardView")}
           </button>
         </Tooltip>
 
         <Tooltip
-          label={"Copy your website url."}
+          label={`${t("HoveredCopy")}`}
           color="violet"
           withArrow
           offset={10}
@@ -86,7 +88,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
             <span>
               <img src={copy} alt="pen" />
             </span>
-            Copy
+            {t("DashboardCopy")}
           </button>
         </Tooltip>
       </div>

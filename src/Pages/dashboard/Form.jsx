@@ -6,6 +6,7 @@ import motivationImage2 from "../../assets/images/motivation-image-five.png";
 import motivationImage3 from "../../assets/images/motivation_image_eight.png";
 import motivationImage4 from "../../assets/images/motivation-image-ten-removebg.png";
 import Motivation from "../../components/Form/Motivation";
+import { useTranslation } from "react-i18next";
 
 const motivationData = [
   {
@@ -26,6 +27,7 @@ const motivationData = [
   },
 ];
 const Form = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
 
@@ -215,24 +217,24 @@ const Form = () => {
           <button
             className={` ${
               currentStep === 1 ? "invisible" : "block"
-            } rounded-[0.5rem] border border-border_color py-2 px-6 bg-white font-inter text-[1rem] font-[500] text-purple_color leading-normal w-28 `}
+            } rounded-[0.5rem] border border-border_color py-2 px-6 bg-white font-inter text-[1rem] font-[500] text-purple_color leading-normal w-fit `}
             onClick={handlePrevious}
           >
-            Previous
+            {`${t("Previous")}`}
           </button>
           {currentStep == 4 ? (
             <button
-              className={`hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28   `}
+              className={`hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-fit   `}
               onClick={handleSubmit}
             >
               Submit
             </button>
           ) : (
             <button
-              className="hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-28 "
+              className="hover:bg-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] hover:text-[#7a5af8] hover:border-[1.5px] hover:border-purple_color rounded-[0.5rem] border bg-purple_color border-border_color py-2 px-6 font-inter text-[1rem] font-[500] text-white leading-normal w-fit "
               onClick={handleNext}
             >
-              Continue
+              {`${t("Continue")}`}
             </button>
           )}
         </div>

@@ -5,7 +5,7 @@
   "Template": "Plantilla",
   "Analysis": "Análisis",
 
-  "DashboardText": "Hola {{Normando}}",
+  "DashboardText": "Hola ",
   "DashboardSubText": "Comience un nuevo proyecto desde cero o desde nuestra lista de plantillas",
   "DashboardNewSite": "Crear nuevo sitio web",
   "DashboardTemplate": "Plantilla",

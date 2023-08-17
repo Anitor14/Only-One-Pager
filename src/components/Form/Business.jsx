@@ -1,20 +1,22 @@
 import { Textarea } from "@mantine/core";
 import { TextInput } from "@mantine/core";
+import { useTranslation } from "react-i18next";
+
 const Business = ({
   formData,
   handleInputChange,
   nameIsValid,
   businessDetailsIsValid,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex w-full flex-col items-start text-left gap-[10px]">
         <p className="text-[#171717] font-inter text-[2.25rem] font-[600] leading-normal">
-          About Business
+          {`${t("BusinessHeader")}`}
         </p>
         <p className="text-[#8f8f8f] font-inter text-[1rem] leading-normal">
-          This information will be used to customize the best interface tailored
-          for your business need
+          {`${t("BusinessSubHeader")}`}
         </p>
       </div>
 
@@ -22,7 +24,7 @@ const Business = ({
         <TextInput
           type="text"
           name="name"
-          label="Website Name"
+          label={`${t("BusinessWebName")}`}
           value={formData.name}
           className="flex flex-col gap-3"
           onChange={handleInputChange}
@@ -33,7 +35,7 @@ const Business = ({
           name="business_details"
           value={formData.business_details}
           onChange={handleInputChange}
-          label="Tell us all about your business"
+          label={`${t("BusinessInfo")}`}
           className="flex flex-col gap-3"
           radius="md"
           withAsterisk

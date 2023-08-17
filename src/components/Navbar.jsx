@@ -1,11 +1,18 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import notificationBell from "../assets/images/notification.svg";
 import nLogo from "../assets/images/n_logo.svg";
 import navLogo from "../assets/images/nav_logo.png";
 import { NavLink } from "react-router-dom";
-import { Submenu } from "../components";
+import { Submenu, CountriesDropdown } from "../components";
+import { useAppContext } from "../context/appContext";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  const { user } = useAppContext();
+  const userName = user.name;
+  const firstChar = userName.charAt(0);
   const [showSubMenu, setShowSubMenu] = useState(false);
 
   const handleSubMenuClose = (e) => {
@@ -19,17 +26,19 @@ const Navbar = () => {
             <img src={navLogo} className="w-20 h-8" />
           </NavLink>
           <div className="flex items-center gap-5 relative">
+            <CountriesDropdown />
             <img
               src={notificationBell}
               alt="notification-bell"
               className="cursor-pointer"
             />
-            <img
-              src={nLogo}
-              className="cursor-pointer"
-              alt="notification-bell"
+
+            <div
+              className="w-[2.4rem] h-[2.4rem] rounded-full bg-black grid place-items-center cursor-pointer"
               onClick={() => setShowSubMenu((prev) => !prev)}
-            />
+            >
+              <p className="text-[1rem] text-white font-bold">{firstChar}</p>
+            </div>
             {showSubMenu && <Submenu onClose={handleSubMenuClose} />}
           </div>
         </div>
@@ -42,7 +51,7 @@ const Navbar = () => {
             }
             to="/"
           >
-            Dashboard
+            {t("Dashboard")}
           </NavLink>
           <NavLink
             className={({ isActive }) =>
@@ -52,7 +61,7 @@ const Navbar = () => {
             }
             to="/template"
           >
-            Template
+            {t("Template")}
           </NavLink>
           <NavLink
             className={({ isActive }) =>
@@ -62,7 +71,7 @@ const Navbar = () => {
             }
             to="/analysis"
           >
-            Analysis
+            {t("Analysis")}
           </NavLink>
         </div>
       </div>
