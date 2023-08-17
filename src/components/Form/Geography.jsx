@@ -1,4 +1,5 @@
 import { Select, Radio } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 const Geography = ({
   formData,
   handleInputChange,
@@ -7,6 +8,7 @@ const Geography = ({
   mapIsValid,
   domainIsValid,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="flex max-w-[55rem] w-full flex-col items-start gap-12">
       <div className="flex flex-col items-start gap-[10px]">
@@ -21,15 +23,15 @@ const Geography = ({
       <div className="flex flex-col w-full items-center justify-center gap-5">
         <div className="w-full">
           <Select
-            placeholder="Select Language"
+            placeholder={`${t("GeographySelect")}`}
             name="language"
             value={formData.language}
             data={[
-              { value: "spanish", label: "Spanish" },
-              { value: "english", label: "English" },
-              { value: "german", label: "German" },
-              { value: "dutch", label: "Dutch" },
-              { value: "italian", label: "Italian" },
+              { value: "spanish", label: `${t("Spanish")}` },
+              { value: "english", label: `${t("English")}` },
+              { value: "german", label: `${t("German")}` },
+              { value: "dutch", label: `${t("Dutch")}` },
+              { value: "italian", label: `${t("Italian")}` },
             ]}
             onChange={handleSelectLanguage}
             size="xl"
@@ -39,19 +41,19 @@ const Geography = ({
 
         <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
           <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you need google map integration?
+            {`${t("GeographyQOne")}`}
           </p>
           <div className="flex items-center gap-10">
             <Radio
               value="yes"
-              label="Yes"
+              label={`${t("Yes")}`}
               name="map"
               onChange={handleInputChange}
               checked={formData.map === "yes"}
             />
             <Radio
               value="no"
-              label="No"
+              label={`${t("No")}`}
               name="map"
               onChange={handleInputChange}
               checked={formData.map === "no"}
@@ -73,14 +75,14 @@ const Geography = ({
           <div className="flex items-center gap-10">
             <Radio
               value="yes"
-              label="Yes"
+              label={`${t("Yes")}`}
               name="domain"
               onChange={handleInputChange}
               checked={formData.domain === "yes"}
             />
             <Radio
               value="no"
-              label="No"
+              label={`${t("No")}`}
               name="domain"
               onChange={handleInputChange}
               checked={formData.domain === "no"}

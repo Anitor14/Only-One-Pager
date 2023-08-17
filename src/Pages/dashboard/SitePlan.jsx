@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import check from "../../assets/check.svg";
 import paypal from "../../assets/paypal.svg";
 import stripe from "../../assets/stripe.svg";
@@ -12,6 +13,7 @@ import teddyBearGif from "../../assets/gifs/teddy-bear-gif.gif";
 // import paymentAnimation from "../assets/lottieFiles/animation_lks558m6.json";
 
 const SitePlan = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   // add this comment
   return (
@@ -34,7 +36,7 @@ const SitePlan = () => {
 
         <div className="flex w-full text-left flex-col items-start gap-[10px]">
           <p className="text-[#171717] font-inter text-[34px] font-[600] leading-normal">
-            Site Plan
+            {`${t("SitePlanHeader")}`}
           </p>
         </div>
         <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg bg-white border-border_color ">
@@ -44,7 +46,7 @@ const SitePlan = () => {
           />
           <div className="flex w-full justify-between items-center">
             <p className="text-[#171717]  font-inter text-[24px] leading-normal">
-              Basic Plan
+              {`${t("BasicPlan")}`}
             </p>
             <p className="text-[#171717] font-inter font-[600] text-[34px] leading-normal">
               $159
@@ -52,46 +54,46 @@ const SitePlan = () => {
           </div>
 
           <p className="font-inter font-[400] mt-4 text-[1rem] text-black ">
-            You only pay a monthly fee of €89 and a one-time setup fee of €159.
+            {`${t("SitePlanSubHeader")}`}
           </p>
 
           <div className="flex flex-col items-start mt-[2rem] gap-[20px]">
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>SEO optimized </p>
+              <p>{`${t("SitePlanF1")}`} </p>
             </div>
 
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Realtime Backups </p>
+              <p>{`${t("SitePlanF2")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Global edge caching</p>
+              <p>{`${t("SitePlanF3")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Free domain for 1 year</p>
+              <p>{`${t("SitePlanF4")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Business email accounts</p>
+              <p>{`${t("SitePlanF5")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Automatic plugin updates</p>
+              <p>{`${t("SitePlanF6")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>One Year Updates & Support </p>
+              <p>{`${t("SitePlanF7")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p>Global CDN with 28+ locations </p>
+              <p>{`${t("SitePlanF8")}`}</p>
             </div>
             <div className="flex items-center gap-[9px]">
               <img src={check} alt="" />
-              <p> Managed protection against malware </p>
+              <p> {`${t("SitePlanF9")}`}</p>
             </div>
           </div>
 

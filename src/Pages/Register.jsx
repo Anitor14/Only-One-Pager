@@ -7,6 +7,7 @@ import navLogo from "../assets/images/nav_logo.png";
 import { toast } from "react-toastify";
 import { IconX, IconCheck } from "@tabler/icons-react";
 import { Loader } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import {
   PasswordInput,
   Progress,
@@ -56,6 +57,7 @@ function getStrength(password) {
 }
 
 const Register = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [values, setValues] = useState(initialState);
   const [popoverOpened, setPopoverOpened] = useState(false);
@@ -70,7 +72,6 @@ const Register = () => {
   const strength = getStrength(values.password);
   const color = strength === 100 ? "teal" : strength > 50 ? "yellow" : "red";
   const handleChange = (e) => {
-    console.log("we are typing");
     console.log(e.target.value);
     setValues({ ...values, [e.target.name]: e.target.value });
   };
