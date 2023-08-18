@@ -5,7 +5,7 @@
   "Template": "Plantilla",
   "Analysis": "Análisis",
 
-  "DashboardText": "Hola ",
+  "DashboardText": "Hola",
   "DashboardSubText": "Comience un nuevo proyecto desde cero o desde nuestra lista de plantillas",
   "DashboardNewSite": "Crear nuevo sitio web",
   "DashboardTemplate": "Plantilla",
@@ -84,5 +84,5 @@
   "Previous": "Previo",
   "Yes": "Sí",
   "No": "No",
-  "See More": "Ver más"
+  "SeeMore": "Ver más"
 }

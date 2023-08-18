@@ -85,7 +85,7 @@ const Template = () => {
           })}
         </div>
         <div className=" w-full flex justify-center mt-[50px]  text-[#fff]  ">
-          <button className="hover:bg-[#7a5af8] hover:text-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] bg-[#fff] text-[#7a5af8] border-[1.5px] hover:border-purple_color rounded-[0.5rem] py-[0.3rem] px-[1.625rem] w-[8rem]">
+          <button className="hover:bg-[#7a5af8] hover:text-[#fff] transform transition-[all_0.25s] active:translate-y-[-0.25em] active:shadow-[0_0.5em_0.5em_-0.4em_#7a5af8] bg-[#fff] text-[#7a5af8] border-[1.5px] hover:border-purple_color rounded-[0.5rem] py-[0.3rem] px-[1.625rem] w-fit">
             <p className="text-[1rem] font-inter leading-normal font-[500]">
               {`${t("SeeMore")}`}
             </p>

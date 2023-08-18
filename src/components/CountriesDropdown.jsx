@@ -47,6 +47,9 @@ const CountriesDropdown = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    changeLanguage(storedLanguage);
+  }, []);
   return (
     <div className="relative">
       <button

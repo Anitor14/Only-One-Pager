@@ -6,11 +6,13 @@ import { useAppContext } from "../context/appContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Loader, PasswordInput, TextInput } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 const initialState = {
   email: "",
   password: "",
 };
 const Login = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [values, setValues] = useState(initialState);
   const { setupUser, user, isLoading } = useAppContext();
