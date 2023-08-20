@@ -8,28 +8,29 @@ import motivationImage4 from "../../assets/images/motivation-image-ten-removebg.
 import Motivation from "../../components/Form/Motivation";
 import { useTranslation } from "react-i18next";
 
-const motivationData = [
-  {
-    image: motivationImage1,
-    quote: "Keep going, you're on the right track!",
-  },
-  {
-    image: motivationImage2,
-    quote: "Let's journey together, step by step",
-  },
-  {
-    image: motivationImage3,
-    quote: "Keep the momentum, great things are ahead.",
-  },
-  {
-    image: motivationImage4,
-    quote: "Almost there! The cookies are just a click away",
-  },
-];
 const Form = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
+
+  const motivationData = [
+    {
+      image: motivationImage1,
+      quote: `${t("MotivationOne")}`,
+    },
+    {
+      image: motivationImage2,
+      quote: `${t("MotivationTwo")}`,
+    },
+    {
+      image: motivationImage3,
+      quote: `${t("MotivationThree")}`,
+    },
+    {
+      image: motivationImage4,
+      quote: `${t("MotivationFour")}`,
+    },
+  ];
 
   const [formData, setFormData] = useState({
     name: "",

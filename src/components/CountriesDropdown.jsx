@@ -12,12 +12,12 @@ import {
 } from "../assets/images/flags";
 
 const countries = [
-  { name: "Germany", image: germanFlag, code: "de" },
-  { name: "Netherland", image: netherlandFlag, code: "du" },
-  { name: "England", image: englandFlag, code: "en" },
-  { name: "France", image: franceFlag, code: "fr" },
-  { name: "Spain", image: spainFlag, code: "es" },
-  { name: "Italy", image: italyFlag, code: "it" },
+  { name: "German", image: germanFlag, code: "de" },
+  { name: "Dutch", image: netherlandFlag, code: "du" },
+  { name: "English", image: englandFlag, code: "en" },
+  { name: "French", image: franceFlag, code: "fr" },
+  { name: "Spanish", image: spainFlag, code: "es" },
+  { name: "Italian", image: italyFlag, code: "it" },
 ];
 
 const CountriesDropdown = () => {
@@ -54,14 +54,15 @@ const CountriesDropdown = () => {
     <div className="relative">
       <button
         type="button"
-        className="inline-flex items-center justify-center w-full p-2 border rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className="inline-flex gap-1.5 items-center justify-center w-full p-2 border rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         onClick={toggleDropdown}
       >
-        <span className="mr-2" />
+        <span className="" />
         <img src={selected.image} alt={selected.name} className="w-5 h-5" />
+        <span className="text-[0.875rem] text-gray-400">{selected.name}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="ml-2 w-5 h-5"
+          className="w-5 h-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -83,6 +84,9 @@ const CountriesDropdown = () => {
                 alt={language.name}
                 className="w-auto h-6 mr-2"
               />
+              <span className="text-[0.875rem] text-gray-400">
+                {language.name}
+              </span>
             </button>
           ))}
         </div>

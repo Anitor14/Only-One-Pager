@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { useAppContext } from "../context/appContext";
+import { useTranslation } from "react-i18next";
 
 const Submenu = ({ onClose }) => {
+  const { t } = useTranslation();
   const { logoutUser, user } = useAppContext();
 
   const submenuRef = useRef(null);
@@ -32,18 +34,18 @@ const Submenu = ({ onClose }) => {
         className="font-inter font-[400] text-[1rem] leading-normal text-black"
         onClick={onClose}
       >
-        Profile
+        {`${t("Profile")}`}
       </NavLink>
       <div className="w-full h-[0.0625rem] bg-[#DADADA]" />
       <p
         className="font-inter font-[400] text-[1rem] leading-normal cursor-pointer text-black"
         onClick={logoutUser}
       >
-        Logout
+        {`${t("Logout")}`}
       </p>
       <div className="w-full h-[0.0625rem] bg-[#DADADA]" />
       <button className="bg-purple_color text-center py-2 px-3 rounded-[0.375rem] font-inter font-[500] text-[1rem] leading-normal text-white w-full">
-        Upgrade to pro
+        {`${t("UpgradeToPro")}`}
       </button>
     </div>
   );

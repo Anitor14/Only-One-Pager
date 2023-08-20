@@ -4,16 +4,43 @@ import { Navigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import landingPageImage from "../assets/images/landing-page-image.png";
 import { useAppContext } from "../context/appContext";
+import { useTranslation } from "react-i18next";
+import { CountriesDropdown } from "../components";
+import notificationBell from "../assets/images/notification.svg";
 
 const Landing = () => {
+  const { t } = useTranslation();
   const { user } = useAppContext();
   return (
     <>
       {user && <Navigate to="/" />}
       <div className="h-screen overflow-scroll w-screen bg-background_grey_color">
-        <div className="h-32 w-full px-20 max-sm:px-6 flex justify-center items-center">
-          <div className="xl:max-w-[1280px] w-full flex justify-start items-center">
-            <img src={navLogo} className="w-[10rem] h-[10rem] object-contain" />
+        <div className="w-full px-20 max-sm:px-6 flex justify-center items-center">
+          <div className="h-[5.5rem] w-full flex items-center justify-between">
+            <NavLink to={"/"}>
+              <img src={navLogo} className="w-20 h-8" />
+            </NavLink>
+            <div className="flex items-center gap-5 relative">
+              <CountriesDropdown />
+              {user && (
+                <img
+                  src={notificationBell}
+                  alt="notification-bell"
+                  className="cursor-pointer"
+                />
+              )}
+
+              {user && (
+                <div
+                  className="w-[2.4rem] h-[2.4rem] rounded-full bg-black grid place-items-center cursor-pointer"
+                  onClick={() => setShowSubMenu((prev) => !prev)}
+                >
+                  <p className="text-[1rem] text-white font-bold">
+                    {firstChar}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -25,19 +52,13 @@ const Landing = () => {
                 Website
               </h1>
               <p className="font-inter leading-normal text-light_gray_color text-[1rem]">
-                Unlock the power of simplicity and impact with Only-One-Pager
-                the premier online tool for crafting stunning one-pagers that
-                captivate, inform, and leave a lasting impression. Whether
-                you're an entrepreneur, a creative professional, a freelancer,
-                or simply someone with a message to share, our platform empowers
-                you to distill your content into a single, visually striking
-                page that tells your story like never before.
+                {`${t("LandingMsg")}`}
               </p>
               <NavLink
                 to={"/register"}
-                className="max-w-[8rem] text-center cursor-pointer p-2 rounded-[0.25rem] bg-purple_color text-white font-inter font-[500] text-[0.875rem] leading-normal "
+                className=" text-center cursor-pointer p-2 rounded-[0.25rem] bg-purple_color text-white font-inter font-[500] w-fit grid place-items-center text-[0.875rem] leading-normal "
               >
-                Login/Register
+                {`${t("LoginRegister")}`}
               </NavLink>
             </div>
             <div className="w-full h-[32rem] max-sm:hidden">

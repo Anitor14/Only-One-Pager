@@ -7,10 +7,13 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Loader, PasswordInput, TextInput } from "@mantine/core";
 import { useTranslation } from "react-i18next";
+import { CountriesDropdown } from "../components";
+
 const initialState = {
   email: "",
   password: "",
 };
+
 const Login = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -44,13 +47,18 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen px-20 max-sm:px-6 grid grid-cols-[1fr,1fr] max-md:grid-cols-[1fr] place-items-center bg-background_grey_color">
+      <div className="absolute top-3 right-5">
+        <CountriesDropdown />
+      </div>
       <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color shadow-md  bg-white_color text-gray-800 font-inter">
         <img src={navLogo} className="w-20 h-8 mx-auto" />
         <div className="mb-8 text-center">
-          <h1 className="my-3 text-4xl font-inter font-bold">Login</h1>
-          <p className="text-sm font-inter text-gray-600">
-            Login to access your account
-          </p>
+          <h1 className="my-3 text-4xl font-inter font-bold">{`${t(
+            "Login"
+          )}`}</h1>
+          <p className="text-sm font-inter text-gray-600">{`${t(
+            "LoginText"
+          )}`}</p>
         </div>
         <form className="space-y-12" onSubmit={onSubmit}>
           <div className="space-y-4">
@@ -97,7 +105,7 @@ const Login = () => {
                   href="#"
                   className="text-xs w-full text-right hover:underline text-gray-600"
                 >
-                  Forgot password?
+                  {`${t("ForgotPassword")}`}
                 </a>
               </div>
             </div>
@@ -113,14 +121,13 @@ const Login = () => {
               </button>
             </div>
             <p className="px-6 text-sm text-center text-gray-600">
-              Don't have an account yet?{" "}
+              {`${t("LoginAccount")}`}{" "}
               <NavLink
                 to={"/register"}
                 className="hover:underline text-violet-600"
               >
-                Sign up
+                {`${t("SignUp")}`}
               </NavLink>
-              .
             </p>
           </div>
         </form>

@@ -3,11 +3,13 @@ import navLogo from "../assets/images/nav_logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/appContext";
 import { PinInput, Loader } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
 
 const Verify = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [value, setValue] = useState("");
   const { verifyEmail, user, isLoading } = useAppContext();
@@ -40,7 +42,9 @@ const Verify = () => {
       <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color shadow-md bg-white_color text-gray-800 font-inter">
         <img src={navLogo} className="w-20 h-8 mx-auto" />
         <div className="mb-8 text-center">
-          <h1 className="my-3 text-4xl font-inter font-bold">Verify Email</h1>
+          <h1 className="my-3 text-4xl font-inter font-bold">{`${t(
+            "VerifyEmail"
+          )}`}</h1>
           <p className="text-sm font-inter text-gray-600">
             Verify your email to access your account
           </p>
@@ -67,7 +71,7 @@ const Verify = () => {
                 disabled={isLoading}
               >
                 {!isLoading ? (
-                  "Verify Email"
+                  `${t("VerifyEmail")}`
                 ) : (
                   <Loader color="gray" size="xs" />
                 )}
