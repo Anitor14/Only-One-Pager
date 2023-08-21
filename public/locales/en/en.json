@@ -56,6 +56,7 @@
   "CommunicationQTwo": "Would you like to link your business social handles to your website",
 
   "GeographySelect": "Select Language",
+  "French": "French",
   "Spanish": "Spanish",
   "English": "English",
   "German": "German",
@@ -91,14 +92,16 @@
   "SignUp": "Sign Up",
 
   "VerifyEmail": "Verify Email",
-  "VerifyAccount": "Verify Account",
+  "VerifyAccount": "Verify your email to access your account",
 
   "Error": "Error",
   "Sorry": "Sorry, we couldn't find this page",
   "SorryMsg": "But don't worry, you can find plenty of other things on our homepage",
   "BackToHomepage": "Back to homepage",
 
-  "Create": "Create Your One-Page Website",
+  "CreateYour": "Create Your",
+  "OnePage": "One-Page",
+  "Website": "Website",
   "LandingMsg": "Unlock the power of simplicity and impact with Only-One-Pager the premier online tool for crafting stunning one-pagers that captivate, inform, and leave a lasting impression. Whether you're an entrepreneur, a creative professional, a freelancer, or simply someone with a message to share, our platform empowers you to distill your content into a single, visually striking page that tells your story like never before",
   "LoginRegister": "Login/Register",
 
@@ -155,5 +158,17 @@
   "OfficeAddress": "Office Address",
   "Domain": "Domain",
   "DomainDetails": "Domain Details",
-  "AddSection": "Add New Section"
+  "AddSection": "Add New Section",
+
+  "PlaceholderEmail": "Your Email",
+  "PlaceholderPassword": "Your Password",
+  "PlaceholderName": "Your Name",
+
+  "LabelEmail": "Email",
+  "LabelPassword": "Your Password",
+  "LabelNumber": "Includes Number",
+  "LabelLower": "Includes lowercase letter",
+  "LabelUpper": "Includes uppercase letter",
+  "LabelSpecial": "Includes special symbol",
+  "LabelName": "Full Name"
 }

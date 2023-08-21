@@ -59,6 +59,7 @@
   "CommunicationQTwo": "Souhaitez-vous lier les identifiants sociaux de votre entreprise à votre site Web",
 
   "GeographySelect": "Choisir la langue",
+  "French": "Français",
   "Spanish": "Espagnol",
   "English": "Anglais",
   "German": "Allemand",
@@ -93,14 +94,16 @@
   "SignUp": "S'inscrire",
 
   "VerifyEmail": "Vérifier les courriels",
-  "VerifyAccount": "vérifier le compte",
+  "VerifyAccount": "Vérifiez votre email pour accéder à votre compte",
 
   "Error": "Erreur",
   "Sorry": "Désolé, nous n'avons pas trouvé cette page",
   "SorryMsg": "Mais ne vous inquiétez pas, vous pouvez trouver plein d'autres choses sur notre page d'accueil",
   "BackToHomepage": "retour à la page d'accueil",
 
-  "Create": "Créez votre site Web d'une page",
+  "CreateYour": "Crée ton",
+  "OnePage": "Une page",
+  "Website": "Site web",
   "LandingMsg": "Libérez le pouvoir de la simplicité et de l'impact avec Only-One-Pager, le premier outil en ligne pour créer de superbes pages d'une page qui captivent, informent et laissent une impression durable. Que vous soyez un entrepreneur, un professionnel de la création, un indépendant ou simplement quelqu'un avec un message à partager, notre plateforme vous permet de distiller votre contenu en une seule page visuellement saisissante qui raconte votre histoire comme jamais auparavant.",
   "LoginRegister": "S'identifier/S'enregistrer",
 
@@ -157,5 +160,17 @@
   "OfficeAddress": "Adresse de bureau",
   "Domain": "Domaine",
   "DomainDetails": "Détails du domaine",
-  "AddSection": "Ajouter une nouvelle section"
+  "AddSection": "Ajouter une nouvelle section",
+
+  "PlaceholderEmail": "Votre e-mail",
+  "PlaceholderPassword": "Votre mot de passe",
+  "PlaceholderName": "votre nom",
+
+  "LabelEmail": "E-mail",
+  "LabelPassword": "Votre mot de passe",
+  "LabelNumber": "Comprend le numéro",
+  "LabelLower": "Comprend une lettre minuscule",
+  "LabelUpper": "Comprend une lettre majuscule",
+  "LabelSpecial": "Comprend un symbole spécial",
+  "LabelName": "Nom et prénom"
 }
