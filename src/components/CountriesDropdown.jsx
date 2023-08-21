@@ -31,11 +31,6 @@ const CountriesDropdown = () => {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const changeLanguage = (language) => {
-    // console.log(i18n.changeLanguage(language));
-    // i18next.changeLanguage(language, (err, t) => {
-    //   if (err) return console.log("something went wrong loading", err);
-    //   t("applog"); // -> same as i18next.t
-    // });
     i18next.changeLanguage(language);
     localStorage.setItem("language", language);
     const storedLanguage = localStorage.getItem("language");
@@ -76,7 +71,7 @@ const CountriesDropdown = () => {
             <button
               key={language.name}
               type="button"
-              className="flex items-center w-full mx-auto justify-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="flex items-center w-full mx-auto justify-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               onClick={() => changeLanguage(language.code)}
             >
               <img

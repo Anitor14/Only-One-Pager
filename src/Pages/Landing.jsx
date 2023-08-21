@@ -48,8 +48,10 @@ const Landing = () => {
           <div className="w-full xl:max-w-[1280px] mt-12  grid sm:grid-cols-[1fr,1fr] gap-6 ">
             <div className="flex flex-col gap-4 justify-start w-full">
               <h1 className="font-inter font-[700] text-[2rem] text-black_color">
-                Create Your <span className="text-purple_color">One-Page</span>{" "}
-                Website
+                {`${t("CreateYour")} `}
+                {""}
+                <span className="text-purple_color">{`${t("OnePage")}`}</span>{" "}
+                {`${t("Website")}`}
               </h1>
               <p className="font-inter leading-normal text-light_gray_color text-[1rem]">
                 {`${t("LandingMsg")}`}

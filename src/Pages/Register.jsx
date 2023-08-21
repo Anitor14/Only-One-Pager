@@ -114,7 +114,7 @@ const Register = () => {
           <div className="space-y-4">
             <div>
               <TextInput
-                placeholder="Your name"
+                placeholder={`${t("PlaceholderName")}`}
                 label="Full name"
                 type="text"
                 name="name"
@@ -133,7 +133,7 @@ const Register = () => {
             </div>
             <div>
               <TextInput
-                placeholder="Your email"
+                placeholder={`${t("PlaceholderEmail")}`}
                 label="email"
                 type="email"
                 name="email"
@@ -164,7 +164,7 @@ const Register = () => {
                   <PasswordInput
                     label="Your password"
                     name="password"
-                    placeholder="Your password"
+                    placeholder={`${t("PlaceholderPassword")}`}
                     value={values.password}
                     onChange={handleChange}
                     disabled={isLoading}
