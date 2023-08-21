@@ -5,7 +5,7 @@
   "Template": "Modello",
   "Analysis": "Analisi",
 
-  "DashboardText": "Ciao ",
+  "DashboardText": "Ciao",
   "DashboardSubText": "Inizia un nuovo progetto da zero o dal nostro elenco di modelli",
   "DashboardNewSite": "Crea nuovo sito web",
   "DashboardTemplate": "Modello",
@@ -84,7 +84,7 @@
   "Previous": "Precedente",
   "Yes": "SÌ",
   "No": "NO",
-  "See More": "Vedi altro",
+  "SeeMore": "Vedi altro",
 
   "Login": "Login",
   "LoginText": "Accedi per accedere al tuo account",

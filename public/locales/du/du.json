@@ -5,7 +5,7 @@
   "Template": "Sjabloon",
   "Analysis": "Analyse",
 
-  "DashboardText": "Hallo ",
+  "DashboardText": "Hallo",
   "DashboardSubText": "Start een nieuw project helemaal opnieuw of vanuit onze lijst met sjablonen",
   "DashboardNewSite": "Nieuwe website maken",
   "DashboardTemplate": "Sjabloon",
@@ -83,7 +83,7 @@
   "Previous": "Vorig",
   "Yes": "Ja",
   "No": "Nee",
-  "See More": "Bekijk meer",
+  "SeeMore": "Bekijk meer",
 
   "Login": "Log in",
   "LoginText": "Log in om toegang te krijgen tot uw account",

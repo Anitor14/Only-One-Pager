@@ -30,7 +30,7 @@ const Dashboard = () => {
     <div className="w-full px-20 max-sm:px-6  flex flex-col  justify-center items-center bg-background_grey_color">
       <div className="w-full max-w-[66rem] mt-[11.5rem]">
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-2">
-          {t("DashboardText")} {user.name},
+          {`${t("DashboardText")} ${user.name},`}
         </p>
         <p className="text-left font-inter font-[500] leading-normal text-[#8F8F8F] text-[1rem]">
           {t("DashboardSubText")}

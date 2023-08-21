@@ -36,6 +36,13 @@ const AppProvider = ({ children }) => {
     baseURL: "http://localhost:3000/api",
   });
 
+  const getBrowserLanguage = () => {
+    if (!localStorage.getItem("language")) {
+      const userLanguage = navigator.language.split("-")[0];
+      localStorage.setItem("language", userLanguage);
+    }
+  };
+
   const setupUser = async ({ currentUser, endPoint }) => {
     dispatch({ type: SETUP_USER_BEGIN });
     try {
@@ -122,6 +129,7 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    getBrowserLanguage();
     getCurrentUser();
   }, []);
 
