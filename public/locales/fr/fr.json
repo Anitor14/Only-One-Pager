@@ -172,5 +172,10 @@
   "LabelLower": "Comprend une lettre minuscule",
   "LabelUpper": "Comprend une lettre majuscule",
   "LabelSpecial": "Comprend un symbole spécial",
-  "LabelName": "Nom et prénom"
+  "LabelName": "Nom et prénom",
+
+  "Register": "Registre",
+  "RegisterAccount": "Inscrivez-vous pour créer votre compte",
+  "RegisterAlready": "Vous avez déjà un compte",
+  "SignIn": "Se connecter"
 }

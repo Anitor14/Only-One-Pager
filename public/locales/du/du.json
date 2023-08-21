@@ -172,5 +172,10 @@
   "LabelLower": "Inclusief kleine letter",
   "LabelUpper": "Inclusief hoofdletter",
   "LabelSpecial": "Inclusief speciaal symbool",
-  "LabelName": "Voor-en achternaam"
+  "LabelName": "Voor-en achternaam",
+
+  "Register": "Register",
+  "RegisterAccount": "Registreer om uw account aan te maken",
+  "RegisterAlready": "Heb al een account",
+  "SignIn": "Aanmelden"
 }
