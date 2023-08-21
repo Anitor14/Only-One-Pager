@@ -59,6 +59,7 @@
   "CommunicationQTwo": "Möchten Sie die Social-Media-Kontakte Ihres Unternehmens mit Ihrer Website verknüpfen?",
 
   "GeographySelect": "Sprache auswählen",
+  "French": "Französisch",
   "Spanish": "Spanisch",
   "English": "English",
   "German": "Deutsch",
@@ -93,14 +94,16 @@
   "SignUp": "Melden Sie sich an",
 
   "VerifyEmail": "E-Mail bestätigen",
-  "VerifyAccount": "Konto überprüfen",
+  "VerifyAccount": "Bestätigen Sie Ihre E-Mail-Adresse, um auf Ihr Konto zuzugreifen",
 
   "Error": "Fehler",
   "Sorry": "Leider konnten wir diese Seite nicht finden",
   "SorryMsg": "Aber keine Sorge, auf unserer Homepage finden Sie noch jede Menge weitere Dinge",
   "BackToHomepage": "Zurück zur Startseite",
 
-  "Create": "Erstellen Sie Ihre One-Page-Website",
+  "CreateYour": "Erstelle dein",
+  "OnePage": "Eine Seite",
+  "Website": "Webseite",
   "LandingMsg": "Nutzen Sie die Kraft der Einfachheit und Wirkung mit Only-One-Pager, dem führenden Online-Tool zum Erstellen beeindruckender One-Pager, die fesseln, informieren und einen bleibenden Eindruck hinterlassen. Ganz gleich, ob Sie Unternehmer, Kreativprofi, Freiberufler oder einfach nur jemand sind, der eine Botschaft mitteilen möchte – unsere Plattform ermöglicht es Ihnen, Ihre Inhalte auf einer einzigen, visuell eindrucksvollen Seite zusammenzufassen, die Ihre Geschichte wie nie zuvor erzählt",
   "LoginRegister": "Anmeldung/Registrieren",
 
@@ -157,5 +160,17 @@
   "OfficeAddress": "Büro adresse",
   "Domain": "Domain",
   "DomainDetails": "Domaindetails",
-  "AddSection": "Neuen Abschnitt hinzufügen"
+  "AddSection": "Neuen Abschnitt hinzufügen",
+
+  "PlaceholderEmail": "Deine E-Mail",
+  "PlaceholderPassword": "Ihr Passwort",
+  "PlaceholderName": "Ihr Name",
+
+  "LabelEmail": "Email",
+  "LabelPassword": "Ihr Passwort",
+  "LabelNumber": "Inklusive Nummer",
+  "LabelLower": "Enthält Kleinbuchstaben",
+  "LabelUpper": "Enthält Großbuchstaben",
+  "LabelSpecial": "Enthält ein spezielles Symbol",
+  "LabelName": "Vollständiger Name"
 }

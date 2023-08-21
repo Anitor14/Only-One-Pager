@@ -57,7 +57,9 @@
   "CommunicationSubHeader": "Koppel sociale handvatten aan uw website om uw online aanwezigheid te verbeteren",
   "CommunicationQOne": "Heeft u een zakelijk e-mailadres voor contact",
   "CommunicationQTwo": "Wilt u uw zakelijke sociale handvatten koppelen aan uw website",
+
   "GeographySelect": "Selecteer Taal",
+  "French": "Frans",
   "Spanish": "Spaans",
   "English": "Engels",
   "German": "Duits",
@@ -92,14 +94,16 @@
   "SignUp": "Aanmelden",
 
   "VerifyEmail": "Verifieer Email",
-  "VerifyAccount": "Account verifiëren",
+  "VerifyAccount": "Verifieer uw e-mailadres om toegang te krijgen tot uw account",
 
   "Error": "Fout",
   "Sorry": "Sorry, we konden deze pagina niet vinden",
   "SorryMsg": "Maar maak je geen zorgen, je kunt genoeg andere dingen vinden op onze homepage",
   "BackToHomepage": "terug naar de startpagina",
 
-  "Create": "Maak uw website met één pagina",
+  "CreateYour": "Creëer je",
+  "OnePage": "Een pagina",
+  "Website": "Website",
   "LandingMsg": "Ontgrendel de kracht van eenvoud en impact met Only-One-Pager, de belangrijkste online tool voor het maken van verbluffende one-pagers die boeien, informeren en een blijvende indruk achterlaten. Of u nu een ondernemer, een creatieve professional, een freelancer of gewoon iemand bent met een boodschap om te delen, ons platform stelt u in staat om uw inhoud te destilleren tot een enkele, visueel opvallende pagina die uw verhaal vertelt als nooit tevoren",
   "LoginRegister": "Inloggen/Registreren",
 
@@ -156,5 +160,17 @@
   "OfficeAddress": "Kantoor adres",
   "Domain": "Domein",
   "DomainDetails": "Domeingegevens",
-  "AddSection": "Nieuwe sectie toevoegen"
+  "AddSection": "Nieuwe sectie toevoegen",
+
+  "PlaceholderEmail": "Jouw email",
+  "PlaceholderPassword": "Je wachtwoord",
+  "PlaceholderName": "Uw naam",
+
+  "LabelEmail": "E-mail",
+  "LabelPassword": "Je wachtwoord",
+  "LabelNumber": "Inclusief nummer",
+  "LabelLower": "Inclusief kleine letter",
+  "LabelUpper": "Inclusief hoofdletter",
+  "LabelSpecial": "Inclusief speciaal symbool",
+  "LabelName": "Voor-en achternaam"
 }

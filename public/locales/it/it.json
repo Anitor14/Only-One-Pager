@@ -59,6 +59,7 @@
   "CommunicationQTwo": "Ti piacerebbe collegare le tue maniglie social aziendali al tuo sito web",
 
   "GeographySelect": "Seleziona la lingua",
+  "French": "francese",
   "Spanish": "Spagnolo",
   "English": "Inglese",
   "German": "Tedesco",
@@ -93,14 +94,16 @@
   "SignUp": "Iscrizione",
 
   "VerifyEmail": "Verifica Email",
-  "VerifyAccount": "Verifica Account",
+  "VerifyAccount": "Verifica la tua email per accedere al tuo account",
 
   "Error": "Errore",
   "Sorry": "Spiacenti, non siamo riusciti a trovare questa pagina",
   "SorryMsg": "Ma non preoccuparti, puoi trovare molte altre cose sulla nostra homepage",
   "BackToHomepage": "Torna alla homepage",
 
-  "Create": "Crea il tuo sito Web di una pagina",
+  "CreateYour": "Crea il tuo",
+  "OnePage": "Una pagina",
+  "Website": "Sito web",
   "LandingMsg": "Sblocca il potere della semplicità e dell'impatto con Only-One-Pager, il principale strumento online per creare straordinari one-pager che affascinano, informano e lasciano un'impressione duratura. Che tu sia un imprenditore, un professionista creativo, un libero professionista o semplicemente qualcuno con un messaggio da condividere, la nostra piattaforma ti consente di distillare i tuoi contenuti in un'unica pagina visivamente sorprendente che racconta la tua storia come mai prima d'ora",
   "LoginRegister": "Accedi/Registrati",
 
@@ -157,5 +160,17 @@
   "OfficeAddress": "Indirizzo dell'ufficio",
   "Domain": "Dominio",
   "DomainDetails": "Dettagli del dominio",
-  "AddSection": "Aggiungi nuova sezione"
+  "AddSection": "Aggiungi nuova sezione",
+
+  "PlaceholderEmail": "La tua email",
+  "PlaceholderPassword": "La tua password",
+  "PlaceholderName": "Il tuo nome",
+
+  "LabelEmail": "E-mail",
+  "LabelPassword": "La tua password",
+  "LabelNumber": "Include numero",
+  "LabelLower": "Include lettera minuscola",
+  "LabelUpper": "Include lettera maiuscola",
+  "LabelSpecial": "Include simbolo speciale",
+  "LabelName": "Nome e cognome"
 }
