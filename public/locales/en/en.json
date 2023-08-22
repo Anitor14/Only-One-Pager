@@ -170,5 +170,10 @@
   "LabelLower": "Includes lowercase letter",
   "LabelUpper": "Includes uppercase letter",
   "LabelSpecial": "Includes special symbol",
-  "LabelName": "Full Name"
+  "LabelName": "Full Name",
+
+  "Register": "Register",
+  "RegisterAccount": "Register to create your account",
+  "RegisterAlready": "Already have an account",
+  "SignIn": "Sign In"
 }

@@ -172,5 +172,10 @@
   "LabelLower": "Incluye letra minúscula",
   "LabelUpper": "Incluye letra mayúscula",
   "LabelSpecial": "Incluye símbolo especial",
-  "LabelName": "Nombre completo"
+  "LabelName": "Nombre completo",
+
+  "Register": "Registro",
+  "RegisterAccount": "Regístrese para crear su cuenta",
+  "RegisterAlready": "Ya tienes una cuenta",
+  "SignIn": "Iniciar sesión"
 }

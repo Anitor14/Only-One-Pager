@@ -172,5 +172,10 @@
   "LabelLower": "Enthält Kleinbuchstaben",
   "LabelUpper": "Enthält Großbuchstaben",
   "LabelSpecial": "Enthält ein spezielles Symbol",
-  "LabelName": "Vollständiger Name"
+  "LabelName": "Vollständiger Name",
+
+  "Register": "Registrieren",
+  "RegisterAccount": "Registrieren Sie sich, um Ihr Konto zu erstellen",
+  "RegisterAlready": "Sie haben bereits ein Konto",
+  "SignIn": "Anmelden"
 }
