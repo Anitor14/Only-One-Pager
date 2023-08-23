@@ -131,6 +131,8 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     getBrowserLanguage();
+  }, []);
+  useEffect(() => {
     getCurrentUser();
   }, []);
 
