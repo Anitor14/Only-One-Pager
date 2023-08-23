@@ -64,8 +64,8 @@ const Login = () => {
           <div className="space-y-4">
             <div>
               <TextInput
-                placeholder="Your email"
-                label="email"
+                placeholder={`${t("PlaceholderEmail")}`}
+                label={`${t("LabelEmail")}`}
                 type="email"
                 name="email"
                 value={values.email}
@@ -82,9 +82,9 @@ const Login = () => {
             </div>
             <div>
               <PasswordInput
-                label="Your password"
+                label={`${t("LabelPassword")}`}
                 name="password"
-                placeholder="Your password"
+                placeholder={`${t("PlaceholderPassword")}`}
                 value={values.password}
                 onChange={handleChange}
                 required

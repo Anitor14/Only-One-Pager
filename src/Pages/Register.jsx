@@ -17,7 +17,6 @@ import {
   Box,
   TextInput,
 } from "@mantine/core";
-
 const initialState = {
   name: "",
   email: "",
@@ -39,7 +38,7 @@ function PasswordRequirement({ meets, label }) {
 }
 
 const requirements = [
-  { re: /[0-9]/, label: "Includes number" },
+  { re: /[0-9]/, label: "Includes Number" },
   { re: /[a-z]/, label: "Includes lowercase letter" },
   { re: /[A-Z]/, label: "Includes uppercase letter" },
   { re: /[$&+,:;=?@#|'<>.^*()%!-]/, label: "Includes special symbol" },
@@ -63,6 +62,38 @@ const Register = () => {
   const [values, setValues] = useState(initialState);
   const [popoverOpened, setPopoverOpened] = useState(false);
   const { registerUser, user, isLoading } = useAppContext();
+  function PasswordRequirement({ meets, label }) {
+    return (
+      <Text
+        color={meets ? "teal" : "red"}
+        sx={{ display: "flex", alignItems: "center" }}
+        mt={7}
+        size="sm"
+      >
+        {meets ? <IconCheck size="0.9rem" /> : <IconX size="0.9rem" />}{" "}
+        <Box ml={10}>{label}</Box>
+      </Text>
+    );
+  }
+
+  const requirements = [
+    { re: /[0-9]/, label: `${t("LabelNumber")}` },
+    { re: /[a-z]/, label: `${t("LabelLower")}` },
+    { re: /[A-Z]/, label: `${t("LabelUpper")}` },
+    { re: /[$&+,:;=?@#|'<>.^*()%!-]/, label: `${t("LabelSpecial")}` },
+  ];
+
+  function getStrength(password) {
+    let multiplier = password.length > 5 ? 0 : 1;
+
+    requirements.forEach((requirement) => {
+      if (!requirement.re.test(password)) {
+        multiplier += 1;
+      }
+    });
+
+    return Math.max(100 - (100 / (requirements.length + 1)) * multiplier, 10);
+  }
   const checks = requirements.map((requirement, index) => (
     <PasswordRequirement
       key={index}
@@ -105,9 +136,11 @@ const Register = () => {
       <div className="flex flex-col max-w-[26rem] w-full p-6 rounded-md sm:p-10 border border-solid border-border_color shadow-md bg-white_color text-gray-800 font-inter">
         <img src={navLogo} className="w-20 h-8 mx-auto" />
         <div className="mb-8 text-center">
-          <h1 className="my-3 text-4xl font-inter font-bold">Register</h1>
+          <h1 className="my-3 text-4xl font-inter font-bold">
+            {`${t("Register")}`}
+          </h1>
           <p className="text-sm font-inter text-gray-600">
-            Register to create your account.
+            {`${t("RegisterAccount")}`}
           </p>
         </div>
         <form className="space-y-12" onSubmit={onSubmit}>
@@ -115,7 +148,7 @@ const Register = () => {
             <div>
               <TextInput
                 placeholder={`${t("PlaceholderName")}`}
-                label="Full name"
+                label={`${t("LabelName")}`}
                 type="text"
                 name="name"
                 value={values.name}
@@ -134,7 +167,7 @@ const Register = () => {
             <div>
               <TextInput
                 placeholder={`${t("PlaceholderEmail")}`}
-                label="email"
+                label={`${t("LabelEmail")}`}
                 type="email"
                 name="email"
                 value={values.email}
@@ -162,7 +195,7 @@ const Register = () => {
                   onBlurCapture={() => setPopoverOpened(false)}
                 >
                   <PasswordInput
-                    label="Your password"
+                    label={`${t("LabelPassword")}`}
                     name="password"
                     placeholder={`${t("PlaceholderPassword")}`}
                     value={values.password}
@@ -196,16 +229,20 @@ const Register = () => {
                 className="w-full flex justify-center items-center px-8 py-3 font-semibold text-white"
                 disabled={isLoading}
               >
-                {!isLoading ? "Sign up" : <Loader color="gray" size="xs" />}
+                {!isLoading ? (
+                  `${t("SignUp")}`
+                ) : (
+                  <Loader color="gray" size="xs" />
+                )}
               </button>
             </div>
             <p className="px-6 text-sm text-center text-gray-600">
-              Already have an account?{" "}
+              {`${t("RegisterAlready")} `}
               <NavLink
                 to={"/login"}
                 className="hover:underline text-violet-600"
               >
-                Sign in
+                {`${t("SignIn")}`}
               </NavLink>
             </p>
           </div>
