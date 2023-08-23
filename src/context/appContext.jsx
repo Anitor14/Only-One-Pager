@@ -33,7 +33,8 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   // axios
   const authFetch = axios.create({
-    baseURL: "http://localhost:3000/api",
+    baseURL: "https://seahorse-app-b4eqt.ondigitalocean.app/api",
+    // baseURL: "http://localhost:3000/api",
   });
 
   const getBrowserLanguage = () => {
