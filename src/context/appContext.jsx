@@ -38,7 +38,7 @@ const AppProvider = ({ children }) => {
   });
 
   const getBrowserLanguage = () => {
-    if (!localStorage.getItem("language")) {
+    if (localStorage.getItem("language") === "null") {
       const userLanguage = navigator.language.split("-")[0];
       localStorage.setItem("language", userLanguage);
     }

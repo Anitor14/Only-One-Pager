@@ -34,7 +34,6 @@ const CountriesDropdown = () => {
     i18next.changeLanguage(language);
     localStorage.setItem("language", language);
     const storedLanguage = localStorage.getItem("language");
-    console.log(storedLanguage);
     const matchingCountry = countries.find(
       (language) => language.code === storedLanguage
     );
