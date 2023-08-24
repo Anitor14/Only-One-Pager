@@ -22,6 +22,7 @@ const countries = [
 
 const CountriesDropdown = () => {
   const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const storedLanguage = localStorage.getItem("language");
   const matchingCountry = countries.find(
@@ -40,10 +41,24 @@ const CountriesDropdown = () => {
     setSelected(matchingCountry);
     setIsOpen(false);
   };
+  const getBrowserLanguage = async () => {
+    if (!localStorage.getItem("language")) {
+      console.log("we are here.");
+      const userLanguage = navigator.language.split("-")[0];
+      localStorage.setItem("language", userLanguage);
+      storedLanguage = userLanguage;
+      changeLanguage(userLanguage);
+    }
+  };
 
   useEffect(() => {
-    changeLanguage(storedLanguage);
+    if (!localStorage.getItem("language")) {
+      getBrowserLanguage();
+    } else if (localStorage.getItem("language")) {
+      changeLanguage(localStorage.getItem("language"));
+    }
   }, []);
+
   return (
     <div className="relative">
       <button
