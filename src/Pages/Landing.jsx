@@ -22,24 +22,6 @@ const Landing = () => {
             </NavLink>
             <div className="flex items-center gap-5 relative">
               <CountriesDropdown />
-              {user && (
-                <img
-                  src={notificationBell}
-                  alt="notification-bell"
-                  className="cursor-pointer"
-                />
-              )}
-
-              {user && (
-                <div
-                  className="w-[2.4rem] h-[2.4rem] rounded-full bg-black grid place-items-center cursor-pointer"
-                  onClick={() => setShowSubMenu((prev) => !prev)}
-                >
-                  <p className="text-[1rem] text-white font-bold">
-                    {firstChar}
-                  </p>
-                </div>
-              )}
             </div>
           </div>
         </div>
