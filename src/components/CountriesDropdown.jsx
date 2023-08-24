@@ -24,7 +24,7 @@ const CountriesDropdown = () => {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
-  const storedLanguage = localStorage.getItem("language");
+  let storedLanguage = localStorage.getItem("language");
   const matchingCountry = countries.find(
     (language) => language.code === storedLanguage
   );
@@ -34,7 +34,7 @@ const CountriesDropdown = () => {
   const changeLanguage = (language) => {
     i18next.changeLanguage(language);
     localStorage.setItem("language", language);
-    const storedLanguage = localStorage.getItem("language");
+    let storedLanguage = localStorage.getItem("language");
     const matchingCountry = countries.find(
       (language) => language.code === storedLanguage
     );
