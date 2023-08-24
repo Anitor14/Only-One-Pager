@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
   const { t } = useTranslation();
   return (
-    <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%] ease-in duration-300">
+    <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%] overflow-auto ease-in duration-300">
       <div className="flex items-center  gap-6">
         <div className="w-6 h-6 bg-[#eee] cursor-pointer">
           <img

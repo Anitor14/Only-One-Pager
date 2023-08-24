@@ -53,7 +53,7 @@ const Navbar = () => {
           >
             {t("Dashboard")}
           </NavLink>
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive
                 ? "font-inter font-[400] text-[0.875rem] leading-normal text-black relative active-highlight"
@@ -62,7 +62,7 @@ const Navbar = () => {
             to="/template"
           >
             {t("Template")}
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className={({ isActive }) =>
               isActive
