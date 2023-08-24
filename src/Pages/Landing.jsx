@@ -26,8 +26,8 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="w-full h-[calc(100vh-5.5rem)] px-20 max-sm:px-6 flex justify-center items-center">
-          <div className="w-full xl:max-w-[1280px] mt-12  grid sm:grid-cols-[1fr,1fr] gap-6 ">
+        <div className="w-full h-[calc(100vh-5.5rem)] px-20 max-sm:px-6 flex justify-center max-sm:items-start sm:items-center">
+          <div className="w-full xl:max-w-[1280px] mt-12 grid sm:grid-cols-[1fr,1fr] gap-6 ">
             <div className="flex flex-col gap-4 justify-start w-full">
               <h1 className="font-inter font-[700] text-[2rem] text-black_color">
                 {`${t("CreateYour")} `}

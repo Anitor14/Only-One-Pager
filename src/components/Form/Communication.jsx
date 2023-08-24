@@ -42,7 +42,7 @@ const Communication = ({
         </div>
         {emailIsValid === false ? (
           <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            select a field
+            {`${t("FieldError")}`}
           </p>
         ) : (
           ""
@@ -71,7 +71,7 @@ const Communication = ({
         </div>
         {socialIsValid === false ? (
           <p className=" w-full mt-[-15px] text-left text-red-500 text-sm">
-            select a field
+            {`${t("FieldError")}`}
           </p>
         ) : (
           ""

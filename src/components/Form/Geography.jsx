@@ -34,8 +34,8 @@ const Geography = ({
               { value: "italian", label: `${t("Italian")}` },
             ]}
             onChange={handleSelectLanguage}
-            size="xl"
-            error={languageIsValid !== true ? "pick a language" : ""}
+            style={{ fontSize: "0.875rem" }}
+            error={languageIsValid !== true ? `${t("GeographySelect")}` : ""}
           />
         </div>
 

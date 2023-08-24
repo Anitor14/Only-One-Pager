@@ -45,7 +45,7 @@ const Design = ({
         </div>
         {logoIsValid === false ? (
           <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            select a field
+            {`${t("FieldError")}`}
           </p>
         ) : (
           ""
@@ -74,7 +74,7 @@ const Design = ({
         </div>
         {colorIsValid === false ? (
           <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
-            select a field
+            {`${t("FieldError")}`}
           </p>
         ) : (
           ""
@@ -103,7 +103,7 @@ const Design = ({
         </div>
         {fontIsValid === false ? (
           <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
-            select a field
+            {`${t("FieldError")}`}
           </p>
         ) : (
           ""

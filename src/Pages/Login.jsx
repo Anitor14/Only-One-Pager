@@ -70,6 +70,7 @@ const Login = () => {
                 name="email"
                 value={values.email}
                 onChange={handleChange}
+                disabled={isLoading}
                 required
                 styles={{
                   label: {
@@ -88,6 +89,7 @@ const Login = () => {
                 value={values.password}
                 onChange={handleChange}
                 required
+                disabled={isLoading}
                 styles={{
                   label: {
                     fontSize: "0.875rem",

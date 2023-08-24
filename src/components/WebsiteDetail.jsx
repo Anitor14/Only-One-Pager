@@ -4,12 +4,17 @@ import message from "../assets/images/inbox.svg";
 import copy from "../assets/images/copy.svg";
 import { Tooltip } from "@mantine/core";
 import { NavLink } from "react-router-dom";
+import { useAppContext } from "../context/appContext";
 import { useTranslation } from "react-i18next";
 
-const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
+const WebsiteDetail = ({ webPicture, webName, date, preview, userEmail }) => {
+  const { user, sendEmailToFreshDesk } = useAppContext();
   const { t } = useTranslation();
+  // const handleMessageClick = () => {
+  //   sendEmailToFreshDesk();
+  // };
   return (
-    <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%] overflow-auto ease-in duration-300">
+    <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%]  ease-in duration-300">
       <div className="flex items-center  gap-6">
         <div className="w-6 h-6 bg-[#eee] cursor-pointer">
           <img
@@ -32,9 +37,14 @@ const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
           label={`${t("HoveredMessage")}`}
           color="violet"
           withArrow
+          position="top"
           offset={10}
+          style={{ zIndex: "50" }}
         >
-          <button className=" transform transition-[all_0.25s] active:translate-y-[-0.25em] inline-flex w-[8rem] items-center justify-center gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black">
+          <button
+            className=" transform transition-[all_0.25s] active:translate-y-[-0.25em] inline-flex w-[8rem] items-center justify-center gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
+            onClick={() => sendEmailToFreshDesk(user.email, webName)}
+          >
             <span>
               <img src={message} alt="message" />
             </span>

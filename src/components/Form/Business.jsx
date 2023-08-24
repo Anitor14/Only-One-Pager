@@ -29,7 +29,7 @@ const Business = ({
           className="flex flex-col gap-3"
           onChange={handleInputChange}
           withAsterisk
-          error={nameIsValid !== true ? "field cannot be empty" : ""} // Add error prop to show error state if the name is invalid
+          error={nameIsValid !== true ? `${t("SelectField")}` : ""} // Add error prop to show error state if the name is invalid
         />
         <Textarea
           name="business_details"
@@ -40,7 +40,7 @@ const Business = ({
           radius="md"
           withAsterisk
           minRows={7}
-          error={businessDetailsIsValid !== true ? "field cannot be empty" : ""}
+          error={businessDetailsIsValid !== true ? `${t("SelectField")}` : ""}
         />
       </div>
     </div>
