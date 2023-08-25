@@ -7,12 +7,14 @@ import { NavLink } from "react-router-dom";
 import { useAppContext } from "../context/appContext";
 import { useTranslation } from "react-i18next";
 
-const WebsiteDetail = ({ webPicture, webName, date, preview, userEmail }) => {
+const WebsiteDetail = ({ webPicture, webName, date, preview }) => {
   const { user, sendEmailToFreshDesk } = useAppContext();
   const { t } = useTranslation();
   // const handleMessageClick = () => {
   //   sendEmailToFreshDesk();
   // };
+  const userEmail = user.email;
+  console.log(userEmail);
   return (
     <div className="w-full  max-w-[66rem] gap-6 flex flex-col md:flex-row justify-between items-start sm:items-center border border-border_color bg-white py-5 px-5 rounded-[0.5rem] hover:scale-[101%]  ease-in duration-300">
       <div className="flex items-center  gap-6">
@@ -43,7 +45,7 @@ const WebsiteDetail = ({ webPicture, webName, date, preview, userEmail }) => {
         >
           <button
             className=" transform transition-[all_0.25s] active:translate-y-[-0.25em] inline-flex w-[8rem] items-center justify-center gap-2 px-3 py-2 rounded-[0.25rem] bg-[#eee] font-inter font-[500] text-[0.875rem] leading-normal text-black"
-            onClick={() => sendEmailToFreshDesk(user.email, webName)}
+            onClick={() => sendEmailToFreshDesk(userEmail, webName)}
           >
             <span>
               <img src={message} alt="message" />
