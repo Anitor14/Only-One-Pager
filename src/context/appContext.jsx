@@ -3,7 +3,7 @@ import { Buffer } from "buffer";
 
 import reducer from "./reducer";
 import axios from "axios";
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 
 import {
   SETUP_USER_BEGIN,
@@ -36,10 +36,12 @@ const AppProvider = ({ children }) => {
   const authFetch = axios.create({
     baseURL: "https://seahorse-app-b4eqt.ondigitalocean.app/api",
     // baseURL: "http://localhost:3000/api",
+    withCredentials: true,
   });
   // fresh desk
   const freshDeskApiKey = "ivu06vg8WJhdL1gwT13";
   const freshDeskDomain = "expectootechnologies";
+  const freshDeskEmail = "support@only-onepager.com";
 
   const setupUser = async ({ currentUser, endPoint }) => {
     dispatch({ type: SETUP_USER_BEGIN });
@@ -126,13 +128,14 @@ const AppProvider = ({ children }) => {
     }
   };
 
-  const sendEmailToFreshDesk = async ({ email, webName }) => {
-    const subject = `Modification on ${webName}`;
-    const description = `Please change the button color ${webName}`;
+  const sendEmailToFreshDesk = async (email, webName) => {
+    const subject = `Project Commencement of ${webName}`;
+    const description = `I wanted to inform you that the project has officially commenced. This is my email: ${email}. Feel free to reach out if you have any questions or need further information.`;
     const data = {
       email: email,
       subject: subject,
       description: description,
+      priority: 1,
       status: 2,
     };
 
@@ -147,12 +150,11 @@ const AppProvider = ({ children }) => {
           },
         }
       );
-      toast.success("successfully sent ticket");
-      console.log(response);
-      console.log("Support ticket created successfully:", response.data);
+      toast.success(
+        "successfully sent an email to the developers , check your email for corresponding communication."
+      );
     } catch (error) {
-      console.log(error);
-      toast.error("error in sending email");
+      toast.error("There was an error in sending your email.");
     }
   };
 
