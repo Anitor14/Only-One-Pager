@@ -140,18 +140,10 @@ const AppProvider = ({ children }) => {
       const response = await axios.post(
         `https://${freshDeskDomain}.freshdesk.com/api/v2/tickets`,
         data,
-        // {
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //     Authorization: "Basic " + btoa(freshDeskApiKey),
-        //   },
-        // }
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Basic ${Buffer.from(freshDeskApiKey).toString(
-              "base64"
-            )}`,
+            Authorization: `Basic ${btoa(freshDeskApiKey)}`,
           },
         }
       );
@@ -160,7 +152,7 @@ const AppProvider = ({ children }) => {
       console.log("Support ticket created successfully:", response.data);
     } catch (error) {
       console.log(error);
-      toast.error("error in send email");
+      toast.error("error in sending email");
     }
   };
 
