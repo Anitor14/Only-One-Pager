@@ -20,8 +20,12 @@ const Design = ({
       </div>
 
       <div className="flex flex-col w-full items-center justify-center gap-5">
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] ${
+            logoIsValid === false ? "border-red-500" : ""
+          }  justify-between flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className="font-inter text-[1rem] max-sm:text-center font-[400] leading-normal">
             {`${t("DesignQOne")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -44,15 +48,19 @@ const Design = ({
           </div>
         </div>
         {logoIsValid === false ? (
-          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            {`${t("FieldError")}`}
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""
         )}
 
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] ${
+            colorIsValid === false ? "border-red-500" : ""
+          } justify-between flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className="font-inter text-[1rem] max-sm:text-center font-[400] leading-normal">
             {`${t("DesignQTwo")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -73,15 +81,19 @@ const Design = ({
           </div>
         </div>
         {colorIsValid === false ? (
-          <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
-            {`${t("FieldError")}`}
+          <p className="w-full mt-[-15px] text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""
         )}
 
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] justify-between ${
+            fontIsValid === false ? "border-red-500" : ""
+          } flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className=" w-full font-inter max-sm:text-center text-[1rem] font-[400] leading-normal">
             {`${t("DesignQThree")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -102,8 +114,8 @@ const Design = ({
           </div>
         </div>
         {fontIsValid === false ? (
-          <p className="w-full mt-[-15px] text-left text-red-500 text-sm">
-            {`${t("FieldError")}`}
+          <p className="w-full mt-[-15px] text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""

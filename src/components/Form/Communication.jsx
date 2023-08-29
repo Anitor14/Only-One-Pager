@@ -19,8 +19,12 @@ const Communication = ({
       </div>
 
       <div className="flex flex-col w-full items-center justify-center gap-5">
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] ${
+            emailIsValid === false ? "border-red-500" : ""
+          }  justify-between flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className="font-inter text-[1rem] max-sm:text-center font-[400] leading-normal">
             {`${t("CommunicationQOne")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -41,15 +45,19 @@ const Communication = ({
           </div>
         </div>
         {emailIsValid === false ? (
-          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            {`${t("FieldError")}`}
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""
         )}
 
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] ${
+            socialIsValid === false ? "border-red-500" : ""
+          } justify-between flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className="font-inter max-sm:text-center text-[1rem] font-[400] leading-normal">
             {`${t("CommunicationQTwo")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -71,7 +79,7 @@ const Communication = ({
         </div>
         {socialIsValid === false ? (
           <p className=" w-full mt-[-15px] text-left text-red-500 text-sm">
-            {`${t("FieldError")}`}
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""

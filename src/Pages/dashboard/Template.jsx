@@ -46,7 +46,7 @@ const Template = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full px-20 max-sm:px-6 flex flex-col gap-8 justify-center items-center bg-background_grey_color">
-      <div className="w-full max-w-[66rem] flex flex-col items-start justify-center text-left gap-12 mt-[12rem] ">
+      <div className="w-full max-w-[66rem] flex flex-col items-start justify-center text-left sm:gap-12 gap-6 sm:mt-[12rem] mt-[9rem]  ">
         <div className="w-full flex gap-4 items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"

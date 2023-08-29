@@ -45,28 +45,28 @@ const Analysis = () => {
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 1
+                {`${t("Week")} 1`}
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
-              </p>
-            </div>
-            <div className="flex flex-col justify-center items-center text-center">
-              <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 2
-              </p>
-              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
+                {`${t("Start")}`}
               </p>
             </div>
             <div className="flex flex-col justify-center items-center text-center">
               <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Week 3
+                {`${t("Week")} 2`}
               </p>
               <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
-                Start
+                {`${t("Start")}`}
+              </p>
+            </div>
+            <div className="flex flex-col justify-center items-center text-center">
+              <div className="h-4 w-[0.0625rem] bg-light_gray_color" />
+              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
+                {`${t("Week")} 3`}
+              </p>
+              <p className="font-inter text-[0.75rem] font-[500] leading-normal text-light_gray_color">
+                {`${t("Start")}`}
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Analysis = () => {
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-5">
           {`${t("AnalysisSites")}`}
         </p>
-        <div className="w-full items-center overflow-x-auto  px-5 py-1 flex justify-between rounded-[0.5rem] border border-border_color bg-white">
+        <div className="w-full items-start overflow-x-auto  px-5 py-1 flex justify-between gap-2 rounded-[0.5rem] border border-border_color bg-white">
           {webData.map((webDatum, index) => {
             return (
               <div
@@ -87,7 +87,7 @@ const Analysis = () => {
                 <img
                   src={webDatum.webImage}
                   alt={webDatum.webText}
-                  className=""
+                  className="max-sm:hidden"
                 />
                 <p className="font-inter font-[400] text-[0.875rem] text-black">
                   {webDatum.webText}

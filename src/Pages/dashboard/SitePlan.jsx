@@ -25,7 +25,7 @@ const SitePlan = () => {
         <img src={arrow} className="mx-auto" />
       </div>
 
-      <div className="flex max-w-[34rem] relative  w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
+      <div className="flex max-w-[34rem] relative w-full  flex-col items-center gap-[20px] mt-[11rem] mb-[11rem]">
         <Motivation
           image={teddyBearGif}
           quote={
@@ -42,7 +42,7 @@ const SitePlan = () => {
         <div className="w-full max-w-[34rem] p-[30px] border-[1px] rounded-lg bg-white border-border_color ">
           <img
             src={paymentAnimation}
-            className="w-[200px] h-[200px] absolute top-[260px] right-[50px]"
+            className="w-[200px] h-[200px] absolute top-[260px] max-sm:hidden right-[50px]"
           />
           <div className="flex w-full justify-between items-center">
             <p className="text-[#171717]  font-inter text-[24px] leading-normal">

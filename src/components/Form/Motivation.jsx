@@ -29,7 +29,7 @@ const Motivation = ({ image, quote, payment }) => {
       <div
         className={`fixed flex top-[9rem] ${
           payment ? " right-[0px]" : " right-[-4px]"
-        }  justify-start items-center z-[1000]`}
+        }  justify-start items-center z-[1000] max-sm:opacity-0 `}
       >
         <div className="quote bg-purple_color border-border_color w-[15rem] min-h-[10rem] p-3 text-center grid place-items-center rounded-lg opacity-80 ">
           <p className="font-inter text-white font-bold text-[1.2rem] mt-[-2rem]">

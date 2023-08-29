@@ -60,16 +60,13 @@ const AppProvider = ({ children }) => {
     }
   };
 
-  const registerUser = async ({ currentUser, navigate }) => {
+  const registerUser = async ({ currentUser }) => {
     dispatch({ type: REGISTER_USER_BEGIN });
     try {
       const { data } = await authFetch.post(`/register`, currentUser);
       const message = data.description;
       dispatch({ type: REGISTER_USER_SUCCESS });
       toast.success(message);
-      setTimeout(() => {
-        navigate("/verify-email");
-      }, 1500);
     } catch (error) {
       dispatch({ type: REGISTER_USER_ERROR });
       toast.error(
