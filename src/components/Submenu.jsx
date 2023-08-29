@@ -23,7 +23,7 @@ const Submenu = ({ onClose }) => {
 
   return (
     <div
-      className="absolute right-1 top-20 flex flex-col items-start justify-center gap-5  w-fit py-[1.8rem] px-[1.25rem] bg-white rounded-[0.5rem] shadow-md "
+      className="absolute right-1 top-20 z-50 flex flex-col items-start justify-center gap-5  w-fit py-[1.8rem] px-[1.25rem] bg-white rounded-[0.5rem] shadow-md "
       ref={submenuRef}
     >
       <p className="font-inter font-[400] text-[1rem] leading-normal text-light_gray_color text-ellipsis">

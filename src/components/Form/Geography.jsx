@@ -35,12 +35,23 @@ const Geography = ({
             ]}
             onChange={handleSelectLanguage}
             style={{ fontSize: "0.875rem" }}
+            styles={{
+              error: {
+                fontSize: "0.75rem",
+                fontWeight: "400",
+                marginTop: "0rem",
+              },
+            }}
             error={languageIsValid !== true ? `${t("GeographySelect")}` : ""}
           />
         </div>
 
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
+        <div
+          className={`w-full border-[1px] justify-between flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] ${
+            mapIsValid === false ? "border-red-500" : ""
+          } bg-[#fff]`}
+        >
+          <p className="font-inter text-[1rem] max-sm:text-center font-[400] leading-normal">
             {`${t("GeographyQOne")}`}
           </p>
           <div className="flex items-center gap-10">
@@ -61,16 +72,20 @@ const Geography = ({
           </div>
         </div>
         {mapIsValid === false ? (
-          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            select a field
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""
         )}
 
-        <div className="w-full border-[1px] justify-between flex flex-row items-center px-6 py-6 rounded-[8px] bg-[#fff]">
-          <p className="font-inter text-[1rem] font-[400] leading-normal">
-            Do you have a domain?
+        <div
+          className={`w-full border-[1px] justify-between ${
+            domainIsValid === false ? "border-red-500" : ""
+          } flex flex-col sm:flex-row gap-3 items-center px-6 py-6 rounded-[8px] bg-[#fff]`}
+        >
+          <p className="font-inter max-sm:text-center text-[1rem] font-[400] leading-normal">
+            {`${t("GeographyQThree")}`}
           </p>
           <div className="flex items-center gap-10">
             <Radio
@@ -90,8 +105,8 @@ const Geography = ({
           </div>
         </div>
         {domainIsValid === false ? (
-          <p className=" w-full mt-[-15px]  text-left text-red-500 text-sm">
-            select a field
+          <p className=" w-full mt-[-15px]  text-left text-red-500 text-[0.75rem]">
+            {`${t("SelectField")}`}
           </p>
         ) : (
           ""

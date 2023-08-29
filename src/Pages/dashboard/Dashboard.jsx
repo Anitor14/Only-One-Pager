@@ -27,7 +27,7 @@ const Dashboard = () => {
   const { t } = useTranslation();
   const { user } = useAppContext();
   return (
-    <div className="w-full px-20 max-sm:px-6  flex flex-col  justify-center items-center bg-background_grey_color">
+    <div className="w-full h-full  px-20 max-sm:px-6  flex flex-col  justify-center items-center bg-background_grey_color">
       <div className="w-full max-w-[66rem] mt-[11.5rem]">
         <p className="text-left font-inter font-[500] leading-normal text-black text-[1.25rem] mb-2">
           {`${t("DashboardText")} ${user.name},`}
@@ -43,7 +43,7 @@ const Dashboard = () => {
             className="flex flex-col items-center justify-center gap-2"
           >
             <img src={plusIcon} />
-            <p className="font-inter font-[400] text-[0.875rem] leading-normal text-black">
+            <p className="font-inter font-[400] text-[0.875rem] leading-normal text-center text-black">
               {t("DashboardNewSite")}
             </p>
           </NavLink>
@@ -54,7 +54,7 @@ const Dashboard = () => {
             className="flex flex-col items-center justify-center gap-2"
           >
             <img src={windowGrid} />
-            <p className="font-inter font-[400]  leading-normal text-black text-[0.875rem]">
+            <p className="font-inter font-[400]  leading-normal text-center text-black text-[0.875rem]">
               {t("DashboardTemplate")}
             </p>
           </NavLink>

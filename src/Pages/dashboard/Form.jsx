@@ -214,7 +214,7 @@ const Form = () => {
       <Motivation {...motivationDatum} />
       <form className="flex flex-col items-center justify-center mt-[11.5rem] mb-[12rem] sm:mb-[24rem] w-full">
         {renderForm()}
-        <div className="w-full max-w-[55rem] mt-6 flex items-center justify-between">
+        <div className="w-full max-w-[55rem] mt-6 flex items-center gap-2 justify-between">
           <button
             className={` ${
               currentStep === 1 ? "invisible" : "block"
