@@ -1,5 +1,4 @@
 import React, { useReducer, useContext, useEffect } from "react";
-import { Buffer } from "buffer";
 
 import reducer from "./reducer";
 import axios from "axios";

@@ -45,11 +45,16 @@ const Verify = () => {
           <h1 className="my-3 text-4xl font-inter font-bold">{`${t(
             "VerifyEmail"
           )}`}</h1>
+          <p className="text-sm font-inter my-4 font-bold text-gray-600">
+            preciousngelale@gmail.com
+          </p>
+
           <p className="text-sm font-inter text-gray-600">
-            Verify your email to access your account
+            {/* Verify your email to access your account */}A mail has been sent
+            to this address. Please Verify
           </p>
         </div>
-        <form className="space-y-12" onSubmit={onSubmit}>
+        {/* <form className="space-y-12" onSubmit={onSubmit}>
           <div className="space-y-4">
             <div className="grid place-items-center">
               <PinInput
@@ -78,7 +83,7 @@ const Verify = () => {
               </button>
             </div>
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );
